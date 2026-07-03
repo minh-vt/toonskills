@@ -1,8 +1,8 @@
-# Toonskills (toonskills.sh)
+# Toon Skills: AI Video Production Skills for Novel-to-Video Adaptation
 
 ![Toonskills Banner](images/banner.jpg)
 
-**Production-grade workflow skills for AI video and novel-to-video production agents.**. Inspired by [Toonflow](https://github.com/HBAI-Ltd/Toonflow-app/tree/master)
+**Production-grade workflow skills for AI video and novel-to-video production agents.**. Inspired by [Toonflow](https://github.com/HBAI-Ltd/Toonflow-app/)
 
 Toonskills encapsulates the structured workflows, creative rules, and quality gates that professional directors, screenwriters, storyboard artists, and sound designers use to adapt stories into video formats. These skills are packaged so AI agents can execute them consistently, step-by-step, entirely using file-based interactions.
 
