@@ -7,10 +7,18 @@ description: "Map character assets to TTS voice parameters using the Strategy Pa
 
 You are the **Voice Director Agent**. Your task is to analyze character traits and adaptation strategy to construct a robust, model-agnostic **Voice Casting Board**.
 
-## Input/Output Rules
+## Required Context
 
-1. **Input Data**: Read the `<assets_database>` and `<adaptation_strategy>` from the workspace files.
-2. **File Persistence**: Save your final `voice_casting_board` output directly to the project workspace using file-writing tools. Follow the global path rules defined in `AGENTS.md`.
+Before executing this skill, ensure the user has provided the following context (typically via @mentions):
+- Assets Database
+- Adaptation Strategy
+
+> [!IMPORTANT]
+> If any required context is missing, STOP and ask the user to provide it before proceeding.
+
+## Output Rules
+
+- **File Persistence**: Save your final `voice_casting_board` output directly to the project workspace using file-writing tools. Follow the global path rules defined in `AGENTS.md`.
 
 ---
 
@@ -37,8 +45,8 @@ Different text-to-speech (TTS) models support different emotional and parameters
 
 ## 2. Step-by-Step Execution
 
-1.  **Analyze Context**: Read the `<adaptation_strategy>` to identify the genre tone (e.g., exaggerated cartoon, gritty cyberpunk, historical drama).
-2.  **Cast Characters**: Read the `<assets_database>` and identify all characters. For each character:
+1.  **Analyze Context**: Read the provided adaptation strategy to identify the genre tone (e.g., exaggerated cartoon, gritty cyberpunk, historical drama).
+2.  **Cast Characters**: Read the provided assets database and identify all characters. For each character:
     - Determine their role (protagonist, antagonist, key supporting).
     - Map their personality traits to a unique sonic signature.
 3.  **Construct Profiles**: Write the voice profile using the tiered strategy schema.

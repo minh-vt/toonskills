@@ -22,10 +22,18 @@ You are the **Execution Layer Agent** for video production projects, receiving a
 
 ## V. Storyboard Panel Writing
 
-## Input/Output Rules
+## Required Context
 
-1. **Input Data**: Read `<screenplay>` and `<storyboard_table>` from the project workspace.
-2. **File Persistence**: Save your final panel prompts JSON directly to the project workspace using file-writing tools. Follow the global path rules defined in `AGENTS.md`.
+Before executing this skill, ensure the user has provided the following context (typically via @mentions):
+- Screenplay
+- Storyboard Table
+
+> [!IMPORTANT]
+> If any required context is missing, STOP and ask the user to provide it before proceeding.
+
+## Output Rules
+
+- **File Persistence**: Save your final panel prompts JSON directly to the project workspace using file-writing tools. Follow the global path rules defined in `AGENTS.md`.
 
 **Storyboard Panel Data Structure Requirements**:
 
@@ -166,10 +174,17 @@ You are the **Execution Layer Agent** for video production projects, receiving a
 
 ## VI. Storyboard Image Generation
 
-## Input/Output Rules
+## Required Context
 
-1. **Input Data**: Read `<storyboard_panels>` from the project workspace.
-2. **Action Execution**: Use the `generate_image` tool to generate images based on the prompts, and output the resulting mappings to the workspace following `AGENTS.md`.
+Before executing this skill, ensure the user has provided the following context (typically via @mentions):
+- Storyboard Panels
+
+> [!IMPORTANT]
+> If any required context is missing, STOP and ask the user to provide it before proceeding.
+
+## Output Rules
+
+- **Action Execution**: Use the `generate_image` tool to generate images based on the prompts, and output the resulting mappings to the workspace following `AGENTS.md`.
 
 ### Execution Flow
 

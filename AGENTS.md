@@ -4,11 +4,14 @@
 Toonskills is a repository of AI video production skills for novel-to-video adaptation. 
 
 ## Workflow & Persistence
-Agents executing these skills operate autonomously. There is no external orchestrator parsing XML wrappers. When you execute a skill, you must handle file persistence directly.
+Agents executing these skills operate autonomously. There is no external orchestrator parsing XML wrappers. 
 
-### File Structure Convention
-Read inputs from and save outputs to the following standard locations in the workspace:
-- **Project Config**: `config/project.json`
+### Input Workflow (Context-Driven)
+Do not assume or hardcode where input files live. The user will provide the necessary input files as context via `@mentions` when invoking a skill. 
+If a skill specifies "Required Context" and the user has not provided it, **pause and ask the user to provide it before proceeding.**
+
+### Output Workflow (File Structure Convention)
+When you generate an output, you must handle file persistence directly. Save outputs to the following standard locations in the workspace:
 - **Events**: `events/events.md`
 - **Story Skeleton**: `skeleton/skeleton.md`
 - **Adaptation Strategy**: `strategy/strategy.md`

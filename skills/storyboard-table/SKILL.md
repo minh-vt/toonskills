@@ -114,11 +114,20 @@ Respond with a brief confirmation; do not reiterate content. Task terminates.
 
 ## Workspace I/O Rules and Permissions
 
-## Input/Output Rules
+## Required Context
 
-1. **Input Data**: Read `<screenplay>`, `<assets_database>`, and `<script_plan>` from the project workspace.
-2. **File Persistence**: Save your final storyboard table directly to the project workspace using file-writing tools. Follow the global path rules defined in `AGENTS.md`.
-3.  **Read-only reference, no asset operations**: Strictly prohibited from creating / modifying / deleting / generating any assets, nor calling any asset writing or generation tools. The storyboard table can only reference existing assets in the assets file. For characters / objects required by the script but missing from the assets file, they should only be reflected in the visual content, **without fabricating names or IDs**.
+Before executing this skill, ensure the user has provided the following context (typically via @mentions):
+- Screenplay
+- Assets Database
+- Script Plan
+
+> [!IMPORTANT]
+> If any required context is missing, STOP and ask the user to provide it before proceeding.
+
+## Output Rules
+
+- **File Persistence**: Save your final storyboard table directly to the project workspace using file-writing tools. Follow the global path rules defined in `AGENTS.md`.
+- **Read-only reference, no asset operations**: Strictly prohibited from creating / modifying / deleting / generating any assets, nor calling any asset writing or generation tools. The storyboard table can only reference existing assets in the assets file. For characters / objects required by the script but missing from the assets file, they should only be reflected in the visual content, **without fabricating names or IDs**.
 
 ---
 

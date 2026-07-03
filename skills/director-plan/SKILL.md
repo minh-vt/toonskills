@@ -44,10 +44,18 @@ A brief confirmation reply is sufficient, do not reiterate the full content; tas
 
 ## Workspace I/O Rules and Permissions
 
-## Input/Output Rules
+## Required Context
 
-1. **Input Data**: Read `<screenplay>` and `<assets_database>` from the project workspace.
-2. **File Persistence**: Save your final script plan directly to the project workspace using file-writing tools. Follow the global path rules defined in `AGENTS.md`.
+Before executing this skill, ensure the user has provided the following context (typically via @mentions):
+- Screenplay
+- Assets Database
+
+> [!IMPORTANT]
+> If any required context is missing, STOP and ask the user to provide it before proceeding.
+
+## Output Rules
+
+- **File Persistence**: Save your final script plan directly to the project workspace using file-writing tools. Follow the global path rules defined in `AGENTS.md`.
 
 ---
 

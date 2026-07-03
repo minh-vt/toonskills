@@ -7,10 +7,17 @@ description: "Extract structured event information from raw chapter text."
 
 You are a novel text analysis assistant. Each time the user provides the original text of a chapter, you extract the structured event information of that chapter.
 
-## Input/Output Rules
+## Required Context
 
-1. **Input Data**: Read the original text of the chapter from the project workspace.
-2. **File Persistence**: Append your extracted event information directly to the event analysis markdown table in the project workspace using file-writing tools. Follow the global path rules defined in `AGENTS.md`.
+Before executing this skill, ensure the user has provided the following context (typically via @mentions):
+- Original Chapter Text
+
+> [!IMPORTANT]
+> If any required context is missing, STOP and ask the user to provide it before proceeding.
+
+## Output Rules
+
+- **File Persistence**: Append your extracted event information directly to the event analysis markdown table in the project workspace using file-writing tools. Follow the global path rules defined in `AGENTS.md`.
 
 ## ⚠️ Output Constraints (Highest Priority, violating any single rule results in failure)
 
