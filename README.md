@@ -83,6 +83,70 @@ Copy the markdown files under `skills/` to your `.agent/skills/` or reference th
 
 ---
 
+## End-to-End Workflow Example
+
+Here is an example of how a user (or an automated agent) sequentially adapts a novel chapter into a complete storyboard and audio direction. Assuming your agent platform supports slash commands (like `/<skill-name>`) and `@` references for file inputs, the following commands can be executed in order:
+
+**1. Parse the Novel**
+Extract the core dramatic events from your raw text.
+```bash
+/event-analysis @chapter1.txt
+```
+or
+```bash
+/event-analysis @chapters/
+```
+
+**2. Structure the Arc**
+Turn the raw events into a structured dramatic skeleton.
+```bash
+/story-skeleton @presets/story/xianxia-fantasy.md
+```
+
+**3. Define the Direction**
+Choose an art style and narrative tone (e.g., 2D Anime and Comedy).
+```bash
+/adaptation-strategy @presets/story/comedy-humor.md
+```
+
+**4. Write the Screenplay**
+Generate the standard 3-column script based on the strategy.
+```bash
+/write-script
+```
+
+**5. Extract Assets**
+Identify all unique characters, props, and locations.
+```bash
+/extract-assets @presets/art/2D_90s_japanese_anime
+```
+
+**6. Plan the Direction**
+Chunk the script into manageable scenes with estimated durations.
+```bash
+/director-plan @presets/art/2D_90s_japanese_anime @presets/story/comedy-humor.md
+```
+
+**7. Construct the Storyboard Table**
+Map out every single shot (camera angle, visual description, action).
+```bash
+/storyboard-table @presets/art/2D_90s_japanese_anime @presets/story/comedy-humor.md
+```
+
+**8. Generate Prompts**
+Convert the visual descriptions into precise image generation prompts with reference bindings.
+```bash
+/storyboard-panel @presets/art/2D_90s_japanese_anime
+```
+
+**9. Audio Design**
+Generate the final audio mix instructions (TTS, Foley, Ambience).
+```bash
+/sound-design
+```
+
+---
+
 ## License
 
 This repository is distributed under the MIT License.
