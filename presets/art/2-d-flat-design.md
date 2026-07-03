@@ -513,7 +513,7 @@ No text in the image
 |---|---|---|
 | Headwear | Flattened, geometric. | Flat headwear, geometric accessories. |
 | Earrings | Line-style tassels / jade. | Line earrings, flat ear pendants. |
-| Necklaces | Line-style璎珞 (Yingluo) / collars. | Line Yingluo, flat necklace. |
+| Necklaces | Line-style Yingluo / collars. | Line Yingluo, flat necklace. |
 | Waist | Line-style ribbons / jade pendants. | Line ribbon, flat jade pendant. |
 | Hand | Line-style jade bracelets / armbands. | Line bracelet, flat armband. |
 
@@ -601,10 +601,10 @@ Flat ancient-style {gender} character four-view setting sheet,
 2d flat design, vector art, flat illustration,
 minimalist, clean lines, solid colors,
 maintain the base image silhouette, {overall temperament},
-【L1·Makeup】Decision based on user clues: {Basic Makeup/Soft Makeup/Formal Makeup}; use {Makeup Style}, solid color skin, flat skin tone, {Eyebrows}, {Eyes}, {Lips},
-【L2·Hairstyle】{Style Type}, line-style hair, {Hair Accessory Description},
-【L3+L4·Clothing】{Main Color}{Style Type}, {Material}, {Decor Craft}, clear lines, distinct color blocks,
-【L5·Accessories】{Headwear}, {Earrings}, {Necklace}, {Waist Accessory},
+[L1·Makeup]Decision based on user clues: {Basic Makeup/Soft Makeup/Formal Makeup}; use {Makeup Style}, solid color skin, flat skin tone, {Eyebrows}, {Eyes}, {Lips},
+[L2·Hairstyle]{Style Type}, line-style hair, {Hair Accessory Description},
+[L3+L4·Clothing]{Main Color}{Style Type}, {Material}, {Decor Craft}, clear lines, distinct color blocks,
+[L5·Accessories]{Headwear}, {Earrings}, {Necklace}, {Waist Accessory},
 Side-by-side from left to right: Portrait closeup + front view + side view + back view,
 Natural standing, pure neutral gray background, no shadows, no gradients,
 Four-view consistency, clean lines, color-block fill,
@@ -1245,7 +1245,7 @@ When generating video prompts, the following visual style tags must be injected:
 |------|----------|
 | **General Multi-parameter Mode (English)** | `2D flat design, geometric shapes, solid color blocks, minimal shadows, clean lines, modern aesthetic` |
 | **General Start/End Frame Mode (English)** | `2D flat design, geometric shapes, solid color blocks, minimal shadows, clean lines, modern aesthetic, shallow depth of field` |
-| **Seedance 2.0 (Chinese)** | `2D扁平风格，几何造型，纯色色块，无阴影，简洁线条，现代简约` |
+| **Seedance 2.0** | `2D flat style, geometric shape, solid color blocks, no shadows, simple lines, modern simplicity` |
 </art_storyboard_video>
 
 <director_planning_style>

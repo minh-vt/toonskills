@@ -609,10 +609,10 @@ Using the character's base image as reference, img2img overlay with attire and g
 Urban {Gender} character four-view setting sheet, photorealistic, urban documentary style, high contrast, extreme detail, 8K, high fidelity,
 character design sheet, character turnaround,
 Maintain base facial features, {Overall Vibe},
-【L1·Makeup】Decided by user cues: {Basic/Light/Formal}; use {Makeup Style}, natural skin, {Brow Makeup}, {Eye Makeup}, {Lip Makeup},
-【L2·Hairstyle】{Hair Style}, individual hair strands visible, {Hair Accessory Description},
-【L3+L4·Outfit】{Primary Color} {Clothing Style}, {Material}, {Decoration Craft}, clear clothing texture, ultra-clear texture,
-【L5·Accessories】{Head Accessory}, {Earrings}, {Necklace}, {Watch},
+[L1·Makeup]Decided by user cues: {Basic/Light/Formal}; use {Makeup Style}, natural skin, {Brow Makeup}, {Eye Makeup}, {Lip Makeup},
+[L2·Hairstyle]{Hair Style}, individual hair strands visible, {Hair Accessory Description},
+[L3+L4·Outfit]{Primary Color} {Clothing Style}, {Material}, {Decoration Craft}, clear clothing texture, ultra-clear texture,
+[L5·Accessories]{Head Accessory}, {Earrings}, {Necklace}, {Watch},
 Four-view alignment from left to right: Closeup + Front View + Side View + Back View,
 Natural standing posture, pure neutral gray background, even soft lighting, no hard shadows,
 Four-view consistency, delicate facial rendering, delicate hair rendering, ultra-clear texture details
@@ -1240,7 +1240,7 @@ When generating video prompts, the following visual style tags must be injected:
 |------|----------|
 | **General Multi-Parameter Mode (English)** | `modern urban drama, photorealistic, cinematic, natural lighting, ultra-fine detail` |
 | **General Start/End Frame Mode (English)** | `modern urban drama, photorealistic, cinematic, natural lighting, ultra-fine detail, shallow depth of field` |
-| **Seedance 2.0 (Chinese)** | `都市写实摄影，电影风格，自然光照，极致细节` |
+| **Seedance 2.0** | `Urban realistic photography, movie style, natural lighting, extreme details` |
 </art_storyboard_video>
 
 <director_planning_style>
@@ -1417,7 +1417,7 @@ Urban realism aesthetic, modern oriental temperament, cinematic storyboard compo
 **Image Quality Lock (Must be included in all outputs, placed after the style closing):**
 
 Mode A (Chinese) — Default (When no in-frame text is required):
-超清4K画质，高细节，自然锐度，写实清晰感，画面无字幕、无水印、无标题叠字
+Ultra-clear 4K picture quality, high details, natural sharpness, realistic clarity, no subtitles, no watermarks, and no overlapping titles
 
 Mode B (English) — Default:
 ultra-sharp 4K, high detail, crisp textures, naturalistic sharpness, photorealistic clarity, no subtitles, no captions, no watermark, no title overlay
@@ -1465,8 +1465,8 @@ The following terms/styles must not appear in the output prompts:
 ### Example Output A (Mode A · Seedream)
 
 [Prompt]
-真人写实摄影，电影级画质，超现实主义纪实，强对比度，极致细节，纹理超清晰，中景构图，人物半身入镜，皮肤细腻，面容细腻渲染，五官立体，发丝根根分明，发丝细腻渲染，女性主角立于咖啡厅窗边，双手自然捧着一杯咖啡，目光望向窗外，眼神期待又略带思念，咖啡厅暖调侧光，窗外冷蓝雨光勾勒人物边缘，木质桌椅纹理清晰，玻璃窗上的雨滴细节，现代东方气质，电影级分镜构图，超清4K画质，自然锐度，写实清晰感，画面无字幕、无水印、无标题叠字。
-Based on the reference image of 林晚, maintain consistent: face features, hairstyle, costume details. Generate a new scene: standing by the cafe window on a rainy day, holding a coffee cup, gazing outside. Keep character appearance identical to reference.
+Realistic photography, movie-level picture quality, surreal documentary, strong contrast, extreme details, ultra-clear textures, mid-shot composition, half-body of the character in the mirror, delicate skin, delicately rendered face, three-dimensional facial features, clearly defined hair strands, finely rendered hair, the female protagonist stands by the window of the cafe, holding a cup of coffee in her hands naturally. The light looks out the window, with expectant and slightly yearning eyes. The warm side lighting of the cafe, the cold blue rain outside the window outlines the edges of the characters, the clear texture of the wooden tables and chairs, the details of raindrops on the glass windows, the modern oriental temperament, the movie-level storyboard composition, the ultra-clear 4K picture quality, natural sharpness, realistic clarity, and the picture has no subtitles, no watermarks, and no title overlays.
+Based on the reference image of Lin Wan, maintain consistent: face features, hairstyle, costume details. Generate a new scene: standing by the cafe window on a rainy day, holding a coffee cup, gazing outside. Keep character appearance identical to reference.
 
 ### Example Output B (Mode B · Nanobanana)
 
@@ -1476,7 +1476,7 @@ You are a cinematographer and storyboard artist.
 Maintain strict visual continuity across all shots.
 </role>
 <character_reference>
-Image [1]: 林晚 — black long hair tied in a half ponytail, gentle eyes, modern casual outfit, slim body shape
+Image [1]: Lin Wan — black long hair tied in a half ponytail, gentle eyes, modern casual outfit, slim body shape
 </character_reference>
 <continuity_rules>
 - Same wardrobe, hairstyle, face features across ALL shots

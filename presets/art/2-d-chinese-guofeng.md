@@ -591,10 +591,10 @@ Traditional Chinese anime style, New Chinese aesthetics, Japanese animation rend
 Chinese-style {gender} character four-view setting sheet, 8K, ultra-high fidelity,
 character design sheet, character turnaround,
 Maintain base facial features, {Overall Vibe},
-【L1·Makeup】Decision based on user clues: {Basic/Light/Formal}; use {Style}, Cel-shaded, {Brow}, {Eye}, {Lip},
-【L2·Hairstyle】{Style Type}, detailed clear hair strands, {Hair accessories},
-【L3+L4·Outfit】{Main Color}{Design}, {Material}, {Decor}, clear clothing texture, Cel-shaded,
-【L5·Accessories】{Headwear}, {Earring}, {Necklace}, {Waist ornament},
+[L1·Makeup]Decision based on user clues: {Basic/Light/Formal}; use {Style}, Cel-shaded, {Brow}, {Eye}, {Lip},
+[L2·Hairstyle]{Style Type}, detailed clear hair strands, {Hair accessories},
+[L3+L4·Outfit]{Main Color}{Design}, {Material}, {Decor}, clear clothing texture, Cel-shaded,
+[L5·Accessories]{Headwear}, {Earring}, {Necklace}, {Waist ornament},
 Four views side-by-side from left to right: Portrait+Front+Side+Back,
 Natural standing, Moon White solid color background, even soft light, no hard shadows,
 Four-view consistency, clear Chinese-style anime design, delicate clear lines,
@@ -1254,7 +1254,7 @@ When generating video prompts, the following visual style tags must be injected:
 |------|----------|
 | **General Multi-Parameter Mode (English)** | `Chinese style anime, cel-shaded, neo-chic oriental aesthetic, cinematic, vivid colors, detailed brushwork` |
 | **General Start/End Frame Mode (English)** | `Chinese style anime, cel-shaded, neo-chic oriental aesthetic, cinematic, vivid colors, detailed brushwork, shallow depth of field` |
-| **Seedance 2.0 (Chinese)** | `国风二次元动画，赛璐璐平涂，新国潮东方美学，电影风格，色彩鲜明，细腻笔触` |
+| **Seedance 2.0** | `Chinese style two-dimensional animation, celluloid flat painting, new national trend oriental aesthetics, film style, bright colors, delicate brushstrokes` |
 </art_storyboard_video>
 
 <director_planning_style>
@@ -1438,10 +1438,10 @@ Chinese-style anime cinematic quality, oriental classical charm, neo-chic style,
 **Image Quality Lock (Must be included in all outputs, placed after style finishing):**
 
 Mode A (Chinese) — Default (When no in-frame text is required):
-国风二次元高清渲染，高细节，细腻线条，赛璐璐平涂感，电影质感，画面无字幕、无水印、无标题叠字
+Chinese style two-dimensional high-definition rendering, high details, fine lines, celluloid flat coating, movie texture, no subtitles, no watermarks, no title overlays
 
 Mode A (Chinese) — In-frame Text Scene (When description includes plaques/couplets/book text, etc.):
-国风二次元高清渲染，高细节，细腻线条，赛璐璐平涂感，电影质感，画面无字幕、无水印、无标题叠字，牌匾/对联等场景道具上的文字清晰可辨
+Chinese style two-dimensional high-definition rendering, high details, fine lines, flat cel coating, movie texture, no subtitles, no watermarks, no title overlays, and the text on the plaques/couplets and other scene props is clearly legible
 
 Mode B (English) — Default:
 Chinese style anime, neo-chic aesthetic, Japanese animation rendering technique, cel shading, fine brushstrokes, cinematic quality, high detail, no subtitles, no captions, no watermark, no title overlay
@@ -1488,8 +1488,8 @@ The following terms/styles must not appear in the output prompt:
 ### Example Output A (Mode A · Seedream)
 
 [Prompt]
-国风二次元，新国潮美学，日式动画渲染，赛璐璐平涂，细腻笔触，二次元国风造型，线条清晰，赛璐璐上色，服饰细节精致，光影层次丰富，中景构图，古装少女站在宫殿前，手持花枝侧身而立，神情温柔，眼神温柔，朱红宫墙背景，金黄高光点缀，体积光氛围，景深虚化，国风二次元电影质感，东方古韵，新国潮风格，日式动画渲染技法，国风二次元高清渲染，高细节，细腻线条，赛璐璐平涂感，电影质感，画面无字幕、无水印、无标题叠字。
-Based on the reference image of 古装少女，maintain consistent: face features, hairstyle, costume details. Generate a new scene: standing in front of palace at dusk, holding flower branch. Keep visual style identical to reference.
+Two-dimensional Chinese style, new national trend aesthetics, Japanese animation rendering, flat cel painting, delicate brushstrokes, two-dimensional Chinese style shape, clear lines, celluloid coloring, exquisite clothing details, rich light and shadow levels, mid-shot composition, a girl in ancient costume stands in front of the palace, holding a flower branch and standing sideways, with a gentle expression, gentle eyes, and vermilion Palace wall background, golden highlight embellishment, volume light atmosphere, depth of field blur, Chinese-style two-dimensional movie texture, oriental ancient charm, new national trend style, Japanese animation rendering techniques, Chinese-style two-dimensional high-definition rendering, high details, delicate lines, celluloid flat coating, movie texture, no subtitles, no watermarks, and no title overlays.
+Based on the reference image of costumed girl, maintain consistent: face features, hairstyle, costume details. Generate a new scene: standing in front of palace at dusk, holding flower branch. Keep visual style identical to reference.
 
 ### Example Output B (Mode B · Nanobanana)
 
@@ -1499,7 +1499,7 @@ You are an anime storyboard artist.
 Maintain strict visual continuity across all shots.
 </role>
 <character_reference>
-Image [1]: 古装少女 — 国风二次元造型，典雅服饰，新国潮美学
+Image [1]: Girl in ancient costume—Chinese two-dimensional style, elegant clothing, new national trend aesthetics
 </character_reference>
 <continuity_rules>
 - Same outfit, hairstyle, face features across ALL shots

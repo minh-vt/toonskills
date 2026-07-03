@@ -591,7 +591,7 @@ real_life_urban/
 | Photographic Feature | Description | Prompt Keywords |
 |---|---|---|
 | Facial Structure | Broad contours, wide forehead, wide and powerful jaw, face has "used" marks—sun-baked, wind-blown, life-worn. | Broad contours, wide forehead, wide and powerful jaw, face carved by life. |
-| Eyes | Monolid/hidden double eyelid, relatively small and long eye shape, eyes show streetwise shrewdness and loyalty, direct and non-evasive gaze. | Monolid/hidden double eyelid, small and long eyes, shrewd yet loyal gaze, direct non-evasive注视. |
+| Eyes | Monolid/hidden double eyelid, relatively small and long eye shape, eyes show streetwise shrewdness and loyalty, direct and non-evasive gaze.
 | Mouth | Thick lips, blurred lip lines, lips slightly open in a natural state, life marks left by smoking/drinking tea. | Thick lips, soft blurred lip lines, naturally slightly open, daily life marks. |
 | Skin | Wheat/darker base tone, distinct sun tan lines (collar/cuffs), heavy skin texture, large visible pores, potential old scars. | Wheat/darker skin, distinct sun tan lines, real heavy skin texture, large visible pores, natural old scars. |
 | Photography | Best for 35mm documentary style, street natural light, realistic high-contrast colors. | — |
@@ -727,7 +727,7 @@ Plain base top (crewneck T-shirt/Henley long sleeve/cotton shirt) + base bottom 
 ## IX. Prompt Template
 
 {Gender} live-action urban character portrait series, live-action photography, studio soft lighting, seamless grey backdrop, character reference sheet,
-同一画面从左至右并排：近景特写+正面全身+侧面全身+背面全身,
+The same picture is arranged side by side from left to right: close-up + full body from the front + full body from the side + full body from the back,
 {Face type description: face shape, eye shape, nose shape, lip shape, overall temperament}, raw bare-face state, no makeup marks or only extremely light daily makeup,
 {Skin tone description}, real skin texture, real skin pores and texture, natural skin luster, non-dermabrasion, non-silicone feel,
 {Height description}, real Asian {male/female} body proportions, natural head-to-body ratio, real daily standing posture, center of gravity shifted instead of standing attention,
@@ -869,16 +869,16 @@ Real photorealistic quality, 35mm full frame photography texture, non-3D, non-re
 
 #### Streetwise and Down-to-Earth
 
-| 强度 | 妆容意图 | Prompt Keywords |
+| Strength | Makeup Intention | Prompt Keywords |
 |---|---|---|
-| 素肌级 | 被太阳晒过的脸——日晒痕迹、自然的肤色不均、不化妆 | 日晒痕迹的自然面孔、真实的肤色不均、未经化妆的皮肤、生活本身的面孔 |
-| 日常级 | "抹了点面霜就出门"——极淡润色隔离、自身唇色 | 极淡润色、几乎看不见的底妆、自身唇色、刚洗完脸的自然状态 |
-| 场合级 | 简单体面——自然色唇膏、眉毛稍作整理、轻薄的底妆 | 自然色系唇膏、稍作整理的眉形、轻薄不打底的底妆、朴素的体面 |
+| Vegan Skin Level | A sun-baked face - sunburn marks, natural uneven skin tone, no makeup | A natural face with sunburn marks, real uneven skin tone, skin without makeup, the face of life itself |
+| Everyday level | "Put on some cream and go out" - very light touch-up, isolation, natural lip color | Very light touch-up, almost invisible base makeup, natural lip color, natural state just after washing your face |
+| Occasion level | Simple and decent - natural color lipstick, slightly arranged eyebrows, light makeup | Natural color lipstick, slightly arranged eyebrows, light and light makeup without foundation, simple and decent |
 | Makeup Intensity | Makeup Intent | Prompt |
 
-### 男性妆容
+### Male makeup
 
-> 男性妆容的最高标准是"看不出来化了妆"。
+>The highest standard for men's makeup is "it cannot be seen that they are wearing makeup".
 
 |---|---|---|
 | Bare-Skin | No makeup—wheat-toned skin, natural thick brows, natural lip color. | No makeup traces, healthy wheat skin, natural thick brows, natural lip color with life texture |
@@ -890,47 +890,47 @@ Real photorealistic quality, 35mm full frame photography texture, non-3D, non-re
 
 ## IV. Hairstyling — Styled with Real Tools (L2)
 
-### 女性发型
+### Women's Hairstyles
 
-#### 按造型方式分类
+#### Classified by styling method
 
-| 造型方式 | 类型 | 发型描述 | 适配面孔类型 |
+| Styling method | Type | Hair style description | Suitable face type |
 |---|---|---|---|
-| 自然垂落 | 黑长直 | 自然柔顺直发、发尾轻微内扣、中分发缝或侧分、碎发自然散落额前和颈后 | 清冷克制/温柔治愈/都市干练 |
-| 自然垂落 | 慵懒微卷 | 大弧度慵懒卷发、发根自然蓬松、卷度不均匀（非电卷棒一式一样）、碎发环绕面部 | 温柔治愈/青春元气 |
-| 自然垂落 | 锁骨层次短发 | 齐肩长度、发尾有层次碎剪、一侧拨到耳后露出耳饰、后颈碎发自然 | 都市干练/清冷克制 |
-| 自然垂落 | 羊毛小卷 | 全头中小卷、蓬松有空气感、发根自然站立、卷度有手工感而非机械均匀 | 青春元气/市井烟火 |
-| 扎束造型 | 高马尾 | 高颅顶位置扎起、发根自然蓬松、马尾有自然弧度而非直线垂落、额前和鬓角碎发自然散落 | 青春元气/都市干练/运动场景 |
-| 扎束造型 | 低马尾/低髻 | 后颈或耳后位置束起、松而不散、后颈碎发自然、有"随手扎起来"的松弛感 | 温柔治愈/市井烟火/居家场景 |
-| 扎束造型 | 丸子头 | 头顶或后脑位置盘起、松散不紧绷、碎发环绕面部和颈部 | 居家/日常/运动 |
-| 编发造型 | 单侧麻花辫 | 侧编麻花、松散有手工感、编入自然碎发、辫尾自然毛躁 | 温柔治愈/青春元气 |
-| 编发造型 | 双麻花/双辫 | 两侧对称编发、松紧适中、适合年轻感造型 | 青春元气 |
-| 短发造型 | 齐耳短发 | 耳上或耳下长度、发尾整齐或碎剪、一侧挽耳后、后颈清爽 | 都市干练/清冷克制 |
-| 短发造型 | 少年感碎短发 | 层次碎剪短发、后颈推短、额前碎发自然散落 | 清冷克制/都市干练/中性风 |
+| Naturally falling | Long and straight black hair | Naturally smooth and straight hair, slightly buttoned at the ends, split in the middle or side parted, and broken hair naturally scattered in front of the forehead and behind the neck | Cool and restrained/gentle healing/urban sophistication |
+| Natural fall | Lazy and slightly curled | Lazy curls with large arcs, naturally fluffy roots, uneven curls (non-electric curling irons are the same), broken hair surrounding the face | Gentle healing/youthful vitality |
+| Falling naturally | Short clavicle-level hair | Shoulder-length, with layered chop at the end, one side pulled behind the ear to reveal earrings, and natural broken hair on the back of the neck | Urban smart/cool and restrained |
+| Natural hanging | Small woolen curls | Small to medium curls for the whole head, fluffy and airy, the roots stand naturally, and the curling feels handmade rather than uniform by machine | Youthful vitality/market fireworks |
+| Tie up style | High ponytail | Tie up high on the top of the skull, hair roots are naturally fluffy, ponytail has a natural arc instead of falling in a straight line, and broken hair on the forehead and sideburns is naturally scattered | Youthful energy/urban smart/sports scene |
+| Tie-up style | Low ponytail/low bun | Tie up the nape of the neck or behind the ears and leave it loose but not loose. The loose hair on the nape of the neck will be natural and have a relaxed feeling of "tying it up casually" | Gentle healing/city fireworks/home scenes |
+| Tie-up style | Ball head | Tucked up at the top or back of the head, loose and not tight, with broken hair surrounding the face and neck | Home/Daily/Sports |
+| Braided hair styling | Single-sided twist braid | Side braided twist, loose and handmade, braided into natural broken hair, braided tail naturally frizzy | Gentle healing/youthful vitality |
+| Braided hair style | Double twist/double braid | Symmetrically braided hair on both sides, with moderate elasticity, suitable for a youthful look | Youthful vitality |
+| Short hair styling | Ear-length short hair | Above or below the ear length, neat or chopped hair ends, one side pulled behind the ear, and a clean nape of the neck | Urban smart/cool and restrained |
+| Short hair style | Boyish short hair | Layered short hair, the back of the neck is pushed short, and the broken hair on the forehead is naturally scattered | Cool and restrained/urban smart/neutral style |
 
-#### 头发在摄影机前的真实状态（所有发型共享）
+#### The real state of hair in front of the camera (shared by all hairstyles)
 
-| 状态 | Prompt Keywords |
+| Status | Prompt Keywords |
 |---|---|
-| 碎发 | 额前碎发自然散落、鬓角婴儿发、后颈碎发、发际线自然不整齐 |
-| 发根 | 发根自然蓬松而非紧贴头皮、分缝处自然可见头皮 |
-| 发尾 | 发尾自然毛躁/分叉、扎束后发尾有自然弧度 |
-| 光泽 | 健康发质的自然反光——非油光非哑光、逆光下头发半透明暖色轮廓 |
+| Broken hair | Broken hair is naturally scattered on the forehead, baby hair on the sideburns, broken hair on the back of the neck, and naturally uneven hairline |
+| Hair roots | The hair roots are naturally fluffy rather than close to the scalp, and the scalp is naturally visible at the parting |
+| Hair ends | The ends of the hair are naturally frizzy/split, and the ends have a natural curvature after being tied up |
+| Gloss | Natural reflection of healthy hair - non-oily, non-matte, translucent and warm outline of hair under backlight |
 | | Hairstyling is the work of a stylist using real tools (combs, hair dryers, curling irons, hair ties) on real hair. It must retain the weight, texture, and natural imperfections of real hair. | |
 
 ### Hairstyling Specifications
 
-| 造型 | 描述 | 适配面孔类型 |
+| Shape | Description | Adapt to face type |
 |---|---|---|
-| 利落短发 | 两侧推短、顶部留长可造型、发丝有自然走向、额头可见 | 硬朗成熟/都市干练（对应男性面孔） |
-| 微分碎盖 | 额前碎发微盖眉毛、顶部蓬松有层次、两侧自然过渡 | 阳光少年/温润内敛 |
-| 侧分短发 | 侧分缝、一侧向后梳理、商务整洁但非油头硬壳 | 清冽克制/温润内敛 |
-| 寸头/板寸 | 极短发、头皮可见、发际线自然、头型轮廓清晰 | 硬朗成熟/市井江湖 |
-| 狼尾/鲻鱼头 | 前短后长、后颈发尾留长、层次利落、有"没认真剪"的随性感 | 阳光少年/清冽克制 |
-| 中长发 | 及肩长度、自然垂落或半扎、发质自然 | 清冽克制/艺术气质 |
-| 卷发/纹理 | 自然卷或微烫纹理、蓬松有空气感、不僵硬 | 阳光少年/温润内敛 |
+| Neat short hair | Short on the sides, long at the top for styling, hair has a natural direction, and the forehead is visible | Tough and mature/urban and capable (corresponds to male faces) |
+| Slightly broken hair | The forehead hair is slightly covered with eyebrows, the top is fluffy and layered, and the sides transition naturally | Sunshine boy/warm and restrained |
+| Side parted short hair | Side parted, one side combed back, business neat but not greasy-headed | Fresh and restrained/warm and restrained |
+| Short hair/Square hair | Very short hair, visible scalp, natural hairline, clear head shape | Tough and mature/marketable |
+| Wolf tail/mullet head | Short in the front and long in the back, long hair at the back of the neck, neat layers, and a casual sense of "not cutting it seriously" | Sunshine boy/fresh and restrained |
+| Medium-length hair | Shoulder length, naturally hanging or half-tied, natural hair texture | Fresh and restrained/artistic temperament |
+| Curly hair/texture | Naturally curly or slightly permed texture, fluffy and airy, not stiff | Sunshine boy/warm and restrained |
 
-#### 头发在摄影机前的真实状态（男性共享）
+#### The true state of hair in front of the camera (shared by men)
 
 | Hairstyle | Style Description | Photography & Prompt Keywords |
 |---|---|---|
@@ -943,35 +943,35 @@ Real photorealistic quality, 35mm full frame photography texture, non-3D, non-re
 
 ## V. Clothing — Apparel with Wearing History (L3 & L4)
 
-### 真人都市的服饰逻辑
+### Real People Urban Clothing Logic
 
 > Clothing must look like it has been worn and washed, showing natural fabric drape, movement wrinkles, and realistic textures.
 
--  **叠穿来自天气和场合，不是来自"设计层次"**：T恤外面套衬衫因为早晚温差大、风衣因为今天有风、针织开衫因为办公室空调太冷
--  **衣服有穿着痕迹**：领口微微变形、袖口有摩擦痕迹、牛仔裤膝盖有拉伸纹理、白T恤洗涤后微微泛旧
--  **合身而非紧身**：衣服贴合身体但不紧绷，肩线在自然位置（可因体态微偏），裤长刚好或微堆在鞋面
--  **中国当代都市的真实穿搭**——不是韩剧、不是日杂、不是欧美街拍
+- **layering comes from the weather and occasion, not from "design level"**: wear a shirt over a T-shirt because the temperature difference between morning and evening is large, a windbreaker because it's windy today, a knitted cardigan because the office air conditioner is too cold
+- **Clothes show signs of wear**: The collar is slightly deformed, the cuffs have friction marks, the jeans have a stretch texture on the knees, and the white T-shirt is slightly worn after washing.
+- **Fitting but not tight**: Clothes fit the body but not tight, the shoulder line is in a natural position (may be slightly skewed due to body posture), and the pants are just right or slightly piled on the upper
+- **Real outfits in contemporary Chinese cities** - not Korean dramas, not daily miscellaneous articles, not European and American street photography
 
-### 女性服饰矩阵
+### Women’s Clothing Matrix
 
-| 穿搭风格 | 核心单品 | 适用场景 | Prompt Keywords |
+| Outfit style | Core items | Applicable scenarios | Prompt Keywords |
 |---|---|---|---|
-| 通勤职场 | 西装外套/衬衫/烟管裤/中长半裙/风衣 | 办公室、商务会议、日常通勤 | 通勤职场穿搭、西装外套+衬衫+直筒西裤、驼色/藏蓝/黑色系、面料自然垂坠、合身不紧绷 |
-| 休闲日常 | T恤/卫衣/牛仔裤/阔腿裤/针织开衫 | 周末出街、超市购物、咖啡厅、散步 | 休闲日常穿搭、宽松卫衣+直筒牛仔裤、米白/灰色/卡其色系、棉质自然质感 |
-| 温柔约会 | 针织连衣裙/碎花半裙/羊绒开衫/法式衬衫 | 约会、闺蜜聚会、下午茶 | 温柔约会穿搭、针织连衣裙+短款开衫、奶油/藕粉/浅杏色系、柔软面料质感 |
-| 街头潮范 | Oversize卫衣/工装裤/牛仔外套/棒球帽 | 逛街、潮玩、音乐节、夜生活 | 街头潮范穿搭、oversize连帽卫衣+工装阔腿裤、黑/灰/军绿色系、随性有态度 |
-| 运动户外 | 瑜伽裤/运动bra/速干T恤/冲锋衣/运动鞋 | 健身房、户外跑步、骑行、徒步 | 运动穿搭、瑜伽裤+运动bra+宽松速干T恤、深色系、功能性面料自然质感 |
-| 文艺学院 | 针织背心+衬衫/百褶裙/帆布鞋/毛呢短外套 | 校园、书店、图书馆、展览 | 文艺学院穿搭、针织背心叠穿衬衫+百褶裙、藏蓝/酒红/格纹、书卷气 |
-| 居家慵懒 | 宽松棉质家居服/针织睡袍/毛绒外套 | 家中日常、晨起、深夜 | 居家穿搭、宽松棉质长袖+家居长裤、米白/浅灰/浅蓝、柔软亲肤质感 |
+| Commuting workplace | Blazer/shirt/cigarette pants/mid-length skirt/windbreaker | Office, business meetings, daily commuting | Commuting workplace wear, blazer + shirt + straight trousers, camel/navy blue/black color, natural drape of fabric, fit and not tight |
+| Casual daily wear | T-shirt/sweatshirt/jeans/wide-leg pants/knitted cardigan | Weekend outings, supermarket shopping, cafes, walking | Casual daily wear, loose sweatshirt + straight jeans, off-white/gray/khaki color, natural cotton texture |
+| Gentle date | Knitted dress/floral skirt/cashmere cardigan/French shirt | Date, best friend gathering, afternoon tea | Gentle date outfit, knitted dress + short cardigan, cream/lotus root pink/light apricot color, soft fabric texture |
+| Street fashion style | Oversize sweatshirt/dungarees/denim jacket/baseball cap | Shopping, fashion, music festivals, nightlife | Street fashion style, oversize hooded sweatshirt + work wide-leg pants, black/grey/military green, casual and attitude |
+| Sports and outdoor | Yoga pants/sports bra/quick-drying T-shirt/jacket/sneakers | Gym, outdoor running, cycling, hiking | Sports wear, yoga pants + sports bra + loose quick-drying T-shirt, dark color, functional fabrics with natural texture |
+| School of Literature and Art | Knitted vest + shirt / pleated skirt / canvas shoes / woolen short jacket | Campus, bookstore, library, exhibition | School of Literature and Art outfit, knitted vest layered with shirt + pleated skirt, navy blue / burgundy / plaid, bookish style |
+| Lazy at home | Loose cotton home clothes/knitted nightgown/plush jacket | Daily life at home, morning, late night | Home wear, loose cotton long sleeves + home trousers, off-white/light gray/light blue, soft and skin-friendly texture |
 
 ### Clothing Layers
 
-| 穿搭风格 | 核心单品 | 适用场景 | Prompt Keywords |
+| Outfit style | Core items | Applicable scenarios | Prompt Keywords |
 |---|---|---|---|
-| 商务正装 | 西装套装/白衬衫/领带/正装皮鞋 | 商务会议、正式场合、重要会面 | 商务正装穿搭、深灰/藏蓝西装套装+白衬衫、合身剪裁、面料挺括有垂感 |
-| 商务休闲 | 休闲西装+圆领T恤/针织衫+休闲裤 | 日常通勤、轻商务场合 | 商务休闲穿搭、休闲西装+圆领白T+卡其休闲裤、不系领带、松弛有度 |
-| 日常休闲 | 纯色T恤/亨利领长袖/卫衣+直筒牛仔裤 | 周末、日常、所有非正式场合 | 日常休闲穿搭、纯色棉质T恤+直筒牛仔裤、黑/白/灰/藏蓝、面料自然舒适 |
-| 街头潮牌 | 印花卫衣/工装裤/牛仔夹克/帆布鞋 | 逛街、聚会、夜生活 | 街头潮牌穿搭、印花卫衣+工装束脚裤、黑/军绿/灰色系、松弛有态度 |
+| Business formal wear | Suit/white shirt/tie/formal leather shoes | Business meetings, formal occasions, important meetings | Business formal wear, dark gray/navy blue suit + white shirt, fitted tailoring, crisp and drapey fabric |
+| Business casual | Casual suit + round neck T-shirt/knit sweater + casual pants | Daily commuting, light business occasions | Business casual wear, casual suit + round collar white T + khaki casual pants, no tie, relaxed and relaxed |
+| Daily casual wear | Solid color T-shirt/henry collar long sleeves/sweatshirt + straight jeans | Weekends, daily life, all informal occasions | Daily casual wear, solid color cotton T-shirt + straight jeans, black/white/grey/navy blue, natural and comfortable fabrics |
+| Street fashion brands | Printed sweatshirts/dungarees/denim jackets/canvas shoes | Shopping, parties, nightlife | Street fashion brands, printed sweatshirts + workwear leggings, black/military green/grey, relaxed and attitude |
 | | **L3 (Innerwear):** Cotton T-shirts, shirts, light knitwear, camisoles. Must show natural fabric softness and slight collar wrinkles. | |
 | | **L4 (Outerwear):** Suits, trench coats, denim jackets, wool coats, hoodies. Must show realistic fabric thickness, shoulder drape, and crease lines at elbows. | |
 
@@ -979,23 +979,23 @@ Real photorealistic quality, 35mm full frame photography texture, non-3D, non-re
 
 ## VI. Accessories — Daily Adornment (L5)
 
-### 女性配饰
+### Women’s Accessories
 
-| 品类 | 真人都市的配饰逻辑 | Prompt Keywords |
+| Category | Accessories Logic of Real City | Prompt Keywords |
 |---|---|---|
-| 耳饰 | 不是"金属耳坠"——而是"今天出门前随手拿起的那对"。小巧简约为主，与穿搭风格呼应 | 小巧银质耳钉/金属细圈耳环/珍珠耳钉/亚克力几何耳坠——搭配{穿搭风格} |
-| 项饰 | 锁骨链或中长项链，贴合颈部自然弧度，不悬浮、不嵌进皮肤 | 纤细锁骨链/金属细链吊坠/珍珠短链——自然贴合颈部 |
-| 手表/手饰 | 日常佩戴的表、细手链或戒指，有使用痕迹（表带自然弯折、金属微磨损） | 皮质表带腕表/金属细手链/简约戒指——日常佩戴质感、有使用痕迹 |
-| 帽饰 | 棒球帽/贝雷帽/针织冷帽——帽檐有自然弧度、帽身有佩戴痕迹 | 棒球帽（帽檐自然弧度）/贝雷帽（微微倾斜佩戴）/针织冷帽（松软质感） |
-| 眼镜 | 光学眼镜或墨镜，镜框材质自然，镜片有轻微反光但可看到眼睛 | 金属细框/板材框架眼镜、镜片微反光但仍可见眼神 |
-| 包袋 | 日常通勤/出行的真实包袋——皮质有使用褶皱、帆布有自然泛旧 | 皮质单肩包（自然使用褶皱）/帆布托特包（轻微泛旧）/斜挎小包 |
+| Earrings | Not "metal earrings" - but "the pair I picked up before going out today." Mainly small and simple, echoing the dressing style | Small silver stud earrings/metal thin hoop earrings/pearl earrings/acrylic geometric earrings - match {wear style} |
+| Necklaces | Clavicle chain or medium-length necklace, fits the natural curvature of the neck, does not float or embed into the skin | Slim clavicle chain/metal thin chain pendant/pearl short chain - naturally fits the neck |
+| Watches/Hand Accessories | Watches, thin bracelets or rings for daily wear, with traces of use (the strap is naturally bent, and the metal is slightly worn) | Leather strap watch/thin metal bracelet/simple ring - texture for daily wear, with traces of use |
+| Hat accessories | Baseball cap/beret/knitted cold hat - the brim has a natural curvature and the hat body has traces of wearing | Baseball cap (the brim has a natural curvature)/beret (worn at a slight angle)/knitted cold hat (soft texture) |
+| Glasses | Optical glasses or sunglasses, the frame material is natural, the lenses are slightly reflective but the eyes can be seen | Metal thin frame/plate frame glasses, the lenses are slightly reflective but the eyes can still be seen |
+| Bags | Real bags for daily commuting/traveling - leather with wrinkles and canvas with natural aging | Leather shoulder bag (natural wrinkles)/Canvas tote bag (slightly worn)/Crossbody bag |
 
-### 男性配饰
+### Men’s Accessories
 
-| 品类 | Prompt Keywords |
+| Category | Prompt Keywords |
 |---|---|
-| 手表 | 日常佩戴腕表——金属表带自然磨损/皮质表带弯折痕迹/简约表盘 |
-| 眼镜 | 金属细框/板材框架眼镜、镜片微反光、鼻托自然贴合 |
+| Watches | Daily wear watches - natural wear and tear on metal straps/bending marks on leather straps/simple dial |
+| Glasses | Metal thin frame/plate frame glasses, slightly reflective lenses, natural nose pads |
 | | Accessories must look like they are naturally worn on the body, showing realistic metallic reflection, leather texture, or fabric weave, with subtle signs of use. | |
 | | Includes: watches, glasses, earrings, necklaces, belts, daily bags. | |
 
@@ -1003,11 +1003,11 @@ Real photorealistic quality, 35mm full frame photography texture, non-3D, non-re
 
 ## VII. Scene-Based Styling Match Quick Reference
 
-| 场景 | 妆容强度 | 发型 | 穿搭风格 | 配饰 |
+| Scene | Makeup Intensity | Hairstyle | Style | Accessories |
 |---|---|---|---|---|
-| 居家晨起 | 素肌级 | 自然散落/随意扎起 | 居家慵懒 | 极简或无 |
-| 通勤上班 | 日常级 | 利落垂发/低马尾/侧分短发 | 通勤职场/商务休闲 | 手表+简约包袋 |
-| 周末出街 | 日常级 | 慵懒微卷/微分碎盖/狼尾 | 休闲日常/日常休闲 | 包袋+帽子+手表 |
+| Get up in the morning at home | Skin-friendly | Loosely scattered/tied up at will | Lazy at home | Minimalist or nothing |
+| Commuting to work | Daily level | Neat hanging hair/low ponytail/short side parted hair | Commuting to work/business and leisure | Watch + simple bag |
+| Weekend outing | Everyday level | Lazy slightly curled/micro-shredded cover/wolf tail | Casual daily/daily casual | Bag + hat + watch |
 | Scene Context | Makeup Level | Hairstyle | Clothing (L3+L4) | Accessories (L5) |
 |---|---|---|---|---|
 | Home/Morning | Bare-Skin | Messy loose/Bun | Camisole/T-shirt | None |
@@ -1066,11 +1066,11 @@ live-action urban character styling portrait series, live-action photography, st
 {Gender} portrait series, photorealistic style, non-3D, non-render, non-CGI,
 character portrait series, live-action photography, studio soft lighting,
 maintain base face unchanged, {overall temperament},
-【L1·Makeup】{Makeup level—Bare-Skin/Daily/Occasion/Gala}, {makeup description}, makeup blended with real skin, no mask feel, pores visible,
-【L2·Hairstyle】{hairstyle description}, real hair texture, {stray hair/root/ends description}, non-wig, non-CG strands,
-【L3+L4·Outfit】{outfit style}, {top description} + {bottom description}, {color}, {fabric texture}, natural drape, realistic wear wrinkles, non-showroom clothing,
-【L5·Accessories】{accessories description}, daily wear feel, signs of use, naturally fitting body,
-同一画面从左至右并排：近景特写+正面全身+侧面全身+背面全身,
+[L1·Makeup]{Makeup level—Bare-Skin/Daily/Occasion/Gala}, {makeup description}, makeup blended with real skin, no mask feel, pores visible,
+[L2·Hairstyle]{hairstyle description}, real hair texture, {stray hair/root/ends description}, non-wig, non-CG strands,
+[L3+L4·Outfit]{outfit style}, {top description} + {bottom description}, {color}, {fabric texture}, natural drape, realistic wear wrinkles, non-showroom clothing,
+[L5·Accessories]{accessories description}, daily wear feel, signs of use, naturally fitting body,
+The same picture is arranged side by side from left to right: close-up + full body from the front + full body from the side + full body from the back,
 natural daily standing posture (shifted weight), seamless grey backdrop #B0B0B0, even studio soft lighting, soft light ratio,
 four angles are a continuous photographic record of the same styling shoot,
 clean frame, no text, no watermark, no signature, no border,
@@ -1084,7 +1084,7 @@ symmetrical pose, mannequin pose, runway pose, model stance, military stance, ex
 heavy makeup, dramatic makeup, makeup mask, foundation mask, fake lashes, colored contacts,
 wig, fake hair, helmet hair, stiff hair, perfect hairline, CG hair strands,
 brand new clothes, showroom clothes, stiff fabric, unrealistically clean, no wrinkles, mannequin clothes,
-古风, 古装, 汉服, 仙侠, 武侠, 民国, 赛博朋克, 科幻, 西方奇幻, 中世纪,
+Ancient style, ancient costume, Hanfu, Xianxia, martial arts, Republic of China, cyberpunk, science fiction, Western fantasy, medieval,
 text, watermark, signature, logo, border, frame
 
 ---
@@ -1610,12 +1610,12 @@ text on image, watermark, signature, logo, border, frame
 Realistic urban scene panoramic photography, single wide-angle panorama, non-3D render/non-CG/non-modeled,
 {Indoor/Outdoor} scene, authentic contemporary Chinese urban {Scene Type},
 {Season}, {Time}, {Weather},
-{Light Logic: window direction + artificial light / sunlight + urban light}、light direction and temperature traceable、non-global uniform lighting,
+{Light Logic: window direction + artificial light / sunlight + urban light}, light direction and temperature traceable, non-global uniform lighting,
 Wide-angle 24-28mm lens, full depth of field f/8-f/11, complete spatial depth, foreground to background all sharp,
 Foreground {frame elements}, mid-ground {main structure}, background {spatial extension/view outside/distance},
 {Materials/Surfaces: authentic usage marks on walls/floors/furniture},
 {Urban Blemishes: wear/mottling/dust/leaves/puddles—traces of use},
-Scene empty—{narrative clue for empty space}、strictly prohibit any people/shadows/human silhouettes,
+Scene empty—{narrative clue for empty space}, strictly prohibit any people/shadows/human silhouettes,
 Real photographic quality, 35mm full-frame aesthetic, single-view spatial photography,
 Clean image, no text, no watermark, no signature, no frame
 
@@ -1850,7 +1850,7 @@ When generating video prompts, the following visual style tags must be injected:
 |------|----------|
 | **General Multi-Parameter Mode (English)** | `live-action urban cinema, real human actors photography, contemporary Chinese urban setting, cinematic color science, natural light and practical lighting, shallow depth of field, handheld camera breathing, smooth Steadicam movement, film grain texture, motion blur for video, cinematic frame rate, non-CGI non-rendered` |
 | **General First/Last Frame Mode (English)** | `live-action urban cinema, real human actors photography, contemporary Chinese urban setting, cinematic color science, natural light and practical lighting, rack focus, focal plane locking, shallow depth of field, cinematic bokeh, film grain texture, non-CGI non-rendered` |
-| **Seedance 2.0 (Chinese)** | `真人都市电影摄影，真人实拍质感，当代中国都市，电影级色彩科学，自然光与实用光源调度，浅景深，手持呼吸感或稳定器流动，电影颗粒质感，视频动态优化，非CG非渲染` |
+| **Seedance 2.0 (Chinese)** | `Real-life urban cinematography, real-life texture, contemporary Chinese cities, film-level color science, natural light and practical light source scheduling, shallow depth of field, handheld breathing or stabilizer flow, film grain texture, video dynamic optimization, non-CG non-rendering` |
 
 ---
 </art_storyboard_video>
@@ -2212,10 +2212,10 @@ live-action realistic photography, contemporary urban Chinese film aesthetic, ci
 **Image Quality Anchors:**
 
 Mode A (Chinese) — Default:
-真人摄影高清画质，电影级画面质感，画面无字幕、无水印、无标题叠字、无UI元素
+High-definition quality of real-life photography, movie-like picture quality, no subtitles, no watermarks, no title overlays, and no UI elements
 
 Mode A (Chinese) — Text-in-Scene (when signage/screens/books are present):
-真人摄影高清画质，电影级画面质感，画面无字幕、无水印、无标题叠字、无UI元素，招牌/路牌/屏幕/书本等场景道具上的文字清晰可辨
+High-definition picture quality of real-person photography, movie-like picture quality, no subtitles, no watermarks, no title overlays, no UI elements, the text on signboards/street signs/screens/books and other scene props is clearly legible
 
 Mode B (English) — Default:
 live-action cinematic photography, real human skin texture, contemporary urban China, cinematic color science, natural light photography, high detail, no subtitles, no captions, no watermark, no title overlay, no UI elements
@@ -2258,8 +2258,8 @@ The following terms/styles must NOT appear in the output prompt:
 ### Example Output A (Mode A · Seedream)
 
 [Prompt]
-真人实拍摄影，真人电影剧照，当代中国都市，电影级摄影，自然光与人造光调度，真实色彩科学，真人写实摄影质感，真实皮肤纹理毛孔可见，不磨皮不硅胶脸，发丝自然质感有碎发，服饰面料纹理可见有穿着褶皱，自然微表情，真实肢体语言，中景构图，年轻职场女性身着西装站在写字楼落地窗前，手持咖啡杯侧身而立，神情利落，眼神笃定直视窗外，午后窗光从侧方斜入（约45°），冷白自然光（5000-5500K）为主光，长阴影穿过地面，玻璃幕墙呈现多层反射和城市天际线倒影，浅景深虚化窗外远景，真人写实摄影，当代中国都市电影质感，电影级摄影画面，非3D非渲染非CG，真人摄影高清画质，电影级画面质感，画面无字幕、无水印、无标题叠字、无UI元素。
-Based on the reference image of 职场女性，maintain consistent: face features, hairstyle, costume details. Generate a new scene: standing in front of the floor-to-ceiling window of a modern office building, holding a coffee cup. Keep visual style identical to reference.
+Real-life photography, real-life movie stills, contemporary Chinese cities, film-level photography, natural and artificial light scheduling, real color science, real-life realistic photography texture, real skin texture and pores are visible, no dermabrasion, no silicone face, natural texture of hair with broken hair, clothing fabric texture with visible wearing wrinkles, natural micro-expressions, real body language, mid-range composition, young working woman in a suit standing in front of the floor-to-ceiling window of an office building, holding a coffee cup and standing sideways, with a neat expression and firm eyes. Looking directly out of the window, the afternoon window light enters obliquely from the side (about 45°), cold white natural light (5000-5500K) is the main light, long shadows pass through the ground, the glass curtain wall presents multi-layer reflections and the reflection of the city skyline, and the shallow depth of field blurs the distance outside the window. Scenery, real-person realistic photography, the texture of contemporary Chinese urban movies, movie-level photography, non-3D, non-rendering, non-CG, high-definition quality of real-life photography, movie-level picture texture, no subtitles, no watermarks, no title overlays, and no UI elements.
+Based on the reference image of working women, maintain consistent: face features, hairstyle, costume details. Generate a new scene: standing in front of the floor-to-ceiling window of a modern office building, holding a coffee cup. Keep visual style identical to reference.
 
 ### Example Output B (Mode B · Nanobanana)
 
@@ -2269,7 +2269,7 @@ You are a live-action urban cinema storyboard photographer.
 Maintain strict visual continuity across all shots.
 </role>
 <character_reference>
-Image [1]: 职场女性 — 真人写实摄影，职场西装，干练气质，真人都市风格
+Image [1]: Working women—realistic photography, workplace suits, capable temperament, real-life urban style
 </character_reference>
 <continuity_rules>
 - Same outfit, hairstyle, face features across ALL shots
@@ -2451,7 +2451,7 @@ All character actions must describe: **Trajectory + Speed/Duration + Body Part C
 
 ## X. Seedance 2.0 Storyboard Card Template
 *(Template layout to be strictly followed for every shot)*
-【Shot X】Duration: {X}s | Shot Scale: {Close-up/Medium/Long/etc.}
+[Shot X]Duration: {X}s | Shot Scale: {Close-up/Medium/Long/etc.}
 ... (Visual, Light, Environment, Space, Camera, Transition, Audio, Seedance Anchors)
 
 ---

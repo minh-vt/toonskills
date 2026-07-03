@@ -485,8 +485,8 @@ No text in image
 | Style | Description | Application | Keywords |
 |---|---|---|---|
 | Natural Loose | Long hair hanging naturally, smooth/shiny | Daily, casual | Natural loose hair, smooth long hair |
-| High Ponytail | High束, energetic/professional | Sports, commute | High ponytail, energetic ponytail |
-| Low Ponytail | Low束, elegant/simple | Daily, business | Low ponytail, elegant ponytail |
+| High Ponytail | High beam, energetic/professional | Sports, commute | High ponytail, energetic ponytail |
+| Low Ponytail | Low bunch, elegant/simple | Daily, business | Low ponytail, elegant ponytail |
 | Half-up | Half-up, bottom hanging down | Daily, dating | Half-up hairstyle, half-tied |
 | Twin Tails | Tails on both sides, youthful/lively | Lively scenes | Twin tails, lively hairstyle |
 | Elegant Bun | Updo/Bun, formal feel | Formal occasions | Elegant updo, low bun |
@@ -582,15 +582,15 @@ No text in image
 
 ---
 
-> **🔍 未覆盖场景推断Rule**
+> **🔍 Uncovered scene inference Rule**
 >
-> 当用户描述的场景/情境不在上表时，根据本风格核心基因自行推断：
+> When the scene/situation described by the user is not in the above table, infer by yourself based on the core genes of this style:
 >
-> | 推断维度 | 3D动画渲染都市基因 |
+> | Inferred dimensions | 3D animation rendering urban genes |
 > |---|---|
-> | 妆容强度 | 默认清雅素妆；正式/商务→冷艳霜妆；甜宠/约会→柔媚桃妆；虚弱/受伤→病弱梨妆；晚宴/盛装→华贵晚宴妆 |
-> | 发型 | 日常/通勤→半扎发或马尾；休闲/约会→自然散发；正式→盘发；运动→高马尾；双马尾用于青春活泼场景 |
-> | 服饰 | 都市场景全覆盖；场合正式度决定服饰精致度（通勤<日常<约会<晚宴）；3D赛璐珞材质始终保持 |
+> | Makeup intensity | Default is elegant and plain makeup; formal/business→cool frost makeup; sweet pet/date→soft peach makeup; weak/injured→sick pear makeup; dinner/dressup→luxurious dinner makeup |
+> | Hairstyles | Daily/commuting → half-tied hair or ponytail; casual/dating → natural hair; formal → updo; sports → high ponytail; double ponytail for youthful and lively scenes |
+> | Clothing | Full coverage of urban scenes; the formality of the occasion determines the sophistication of the clothing (commuting <daily <dating <dinner)); 3D celluloid material always maintains |
 > | Bedtime/Solitude | Bare-Skin | Loose/Messy | Loungewear | None |
 > | Street Fashion | Soft/Peach | Curls/Braids | Streetwear | Trendy |
 
@@ -642,10 +642,10 @@ Based on the character's base image, img2img overlay apparel and styling,
 anime style, cel-shaded, 3D animation render, film lighting,
 character design sheet, character turnaround,
 Keep base facial features unchanged, {overall vibe},
-【L1·Makeup】Decision based on user clues: {Basic/Light/Formal} makeup; {Makeup style}, cel-shaded skin, {Brow makeup}, {Eye makeup}, {Lip makeup},
-【L2·Hairstyle】{Style type}, smooth hair rendering, {Hair accessory description},
-【L3+L4·Apparel】{Primary color} {Style}, {Material}, {Decoration craftsmanship}, clear clothing texture, cel-shaded material,
-【L5·Accessories】{Headwear}, {Earrings}, {Necklaces}, {Waist accessories},
+[L1·Makeup]Decision based on user clues: {Basic/Light/Formal} makeup; {Makeup style}, cel-shaded skin, {Brow makeup}, {Eye makeup}, {Lip makeup},
+[L2·Hairstyle]{Style type}, smooth hair rendering, {Hair accessory description},
+[L3+L4·Apparel]{Primary color} {Style}, {Material}, {Decoration craftsmanship}, clear clothing texture, cel-shaded material,
+[L5·Accessories]{Headwear}, {Earrings}, {Necklaces}, {Waist accessories},
 Four-view side-by-side layout: portrait closeup + front view + side view + back view,
 Natural stance, pure neutral gray background, even soft light, no hard shadows,
 Four-view consistency, delicate facial rendering, delicate hair rendering, clear texture details,
@@ -1321,7 +1321,7 @@ When generating video prompts, the following visual style tags must be injected:
 |------|----------|
 | **General Multi-Parameter Mode (English)** | `3D anime render, cel-shaded 3D, cinematic lighting, warm tones, high-detail textures, clear outlines` |
 | **General Start/End Frame Mode (English)** | `3D anime render, cel-shaded 3D, cinematic lighting, warm tones, high-detail textures, clear outlines, shallow depth of field` |
-| **Seedance 2.0 (Chinese)** | `3D动画渲染，赛璐珞质感，电影级光影，温暖色调，高细节材质，清晰轮廓线` |
+| **Seedance 2.0 (Chinese)** | `3D animation rendering, cel texture, film-level light and shadow, warm tones, high-detail materials, clear contours` |
 </art_storyboard_video>
 
 <director_planning_style>
@@ -1550,7 +1550,7 @@ The following terms/styles must not appear in output prompts:
 
 [Prompt]
 3D animation rendering, cel-shading texture, cinematic lighting, high-detail materials, medium shot, character upper body included, clear contour lines, crisp cartoon rendering, uniform and consistent outlines, no broken lines, no rough edges, high-detail materials, blend of realistic materials and cartoon proportions, clear material textures, delicate surface quality, girl standing at a street intersection at dusk, carrying a shopping bag, smiling sideways at the distance, eyes filled with expectation and warmth, sunset glow on hair, sunset backlight, warm orange dominant, pink accents, soft light and shadow layers, clear light-dark contrast, soft and natural light effects, pleasant and healing atmosphere, 3D animation aesthetics, warm emotional expression, modern urban style, 8K ultra-high definition, clear lines, delicate materials, rich colors, no artifacts, no noise.
-Based on the reference image of 女孩, maintain consistent: face features, hairstyle, costume details. Generate a new scene: standing on a street corner at sunset, holding a shopping bag, smiling gently at the distance. Keep character appearance identical to reference.
+Based on the reference image of girl, maintain consistent: face features, hairstyle, costume details. Generate a new scene: standing on a street corner at sunset, holding a shopping bag, smiling gently at the distance. Keep character appearance identical to reference.
 
 ### Example Output B (Mode B · Nanobanana)
 
@@ -1560,7 +1560,7 @@ You are a 3D animation storyboard artist.
 Maintain strict visual continuity across all shots.
 </role>
 <character_reference>
-Image [1]: 女孩 — long brown hair, gentle eyes, modern casual outfit, slim body shape
+Image [1]: girl — long brown hair, gentle eyes, modern casual outfit, slim body shape
 </character_reference>
 <continuity_rules>
 - Same wardrobe, hairstyle, face features across ALL shots

@@ -659,14 +659,14 @@ No text in the image
 
 | No. | Rule |
 |---|---|
-| R1 | 叠加后面容必须与底模一致 |
-| R2 | 服饰必须用「衣服质感清晰 + 纹理超清晰」 |
-| R3 | 女性配饰必须「极繁主义 + 大师工艺」 |
-| R4 | 妆容/发型/服饰/配饰风格统一 |
-| R5 | 必须输出四视图设定图（人像特写+正视图+侧视图+后视图） |
-| R6 | 必须指定「纯净中性灰背景」 |
-| R7 | 必须指定「四视图一致性」 |
-| R8 | **仅输出Prompt Keywords**——禁止输出速查表/分层方案/视觉约束/禁止事项/衍生方案/输出建议等任何非Prompt Keywords内容 |
+| R1 | The face after superposition must be consistent with the base mold |
+| R2 | Clothing must use "Clear Texture + Super Clear Texture" |
+| R3 | Women’s accessories must be “maximalism + master craftsmanship” |
+| R4 | Makeup/hairstyle/clothing/accessories consistent style |
+| R5 | Four-view setting drawing must be output (portrait close-up + front view + side view + rear view) |
+| R6 | "Pure Neutral Gray Background" must be specified |
+| R7 | "Four-view consistency" must be specified |
+| R8 | **Only output Prompt Keywords** - It is prohibited to output any non-Prompt Keywords content such as cheat sheets/layered solutions/visual constraints/prohibited matters/derivative solutions/output suggestions |
 | | **R1**: Face must match the base model exactly. | |
 | | **R2**: Clothing must use "Clear clothing texture + Ultra-clear patterns." | |
 | | **R3**: Female accessories must be "Maximalist + Master craftsmanship." | |
@@ -679,20 +679,19 @@ No text in the image
 
 | No. | Strictly Forbidden |
 |---|---|
-| X1 | 叠加后面容偏移 |
-| X2 | 配饰过于简单/现代化（女性） |
-| X3 | 妆容/服饰风格互相冲突 |
-| X4 | 复杂场景背景（必须纯灰底） |
-| X5 | 四视图间服化妆造不一致 |
-| X6 | 输出Prompt Keywords以外的任何内容（表格/方案/建议/解释/变体等） |
-| X7 | 在人物衍生资产中加入场景描述（山道/雨景/室内/街道/天气等环境元素） |
-| X8 | 输出「核心要素速查」「分层构建方案」「视觉约束」「禁止事项」「衍生方案」等章节 |
-| X9 | 加入任何道具交互（手持伞/剑/扇/书/灯笼/酒杯等物品） |
-| X10 | 改变底模姿态（行走/回眸/举手/侧身/奔跑/低头/仰望等动作描述） |
-| X11 | 加入表情与姿态联动描述（如「侧身45°行走嘴角浅弯」等叙事性描写） |
-| X12 | 未分析用户线索就直接套用固定妆容 |
-| X13 | 错误保持素颜，导致衍生资产缺少应有妆造 |
-| X14 | 仅因道具/场景/动作词而误把妆容升级，导致妆造强度决策错误 |
+| X1 | Facial offset after overlay |
+| X2 | Accessories too simple/modern (female) |
+| X3 | Conflicting makeup/clothing styles |
+| X4 | Complex scene background (must be pure gray background) |
+| X5 | Inconsistent clothing, makeup, and styling across four views |
+| X6 | Output any content other than Prompt Keywords (tables/solutions/suggestions/explanations/variations, etc.) |
+| X7 | Add scene descriptions (mountain path/rain scene/indoor/street/weather, etc.) to character-derived assets |
+| X8 | Output sections such as "Quick Reference for Core Elements," "Layered Construction Scheme," "Visual Constraints," "Prohibited Items," and "Derivative Schemes" |
+| X9 | Add any prop interaction (holding an umbrella/sword/fan/book/lantern/wine glass, etc.) |
+| X10 | Change the base model's pose (walking/looking back/raising hand/turning sideways/running/looking down/looking up, etc.) |
+| X11 | Add descriptive elements linking facial expressions and postures (e.g., narrative descriptions like "walking at a 45° angle with a slight curve to the corners of the mouth") | | X12 | Applying fixed makeup without analyzing user cues |
+| X13 | Incorrectly maintaining a bare face resulted in derivative assets lacking appropriate makeup |
+| X14 | Incorrectly upgrading makeup based solely on props/scenes/action words led to incorrect makeup intensity decisions |
 </art_character_derivative>
 
 <art_prop>
@@ -1281,7 +1280,7 @@ When generating video prompts, you must inject the following visual style tags:
 |------|----------|
 | **General Multi-parameter Mode (English)** | `Chinese period drama, photorealistic, cinematic, high contrast, ultra-fine detail` |
 | **General Start/End Frame Mode (English)** | `Chinese period drama, photorealistic, cinematic, high contrast, ultra-fine detail, shallow depth of field` |
-| **Seedance 2.0 (Chinese)** | `古风写实摄影，电影风格，强对比度，极致细节` |
+| **Seedance 2.0** | `Ancient realistic photography, movie style, strong contrast, extreme details` |
 </art_storyboard_video>
 
 <director_planning_style>
@@ -1502,17 +1501,17 @@ ancient Chinese realistic aesthetic, oriental classical temperament, cinematic s
 
 **Image Quality Locks (Fixed, placed after style finishing):**
 
-Mode A (Chinese) — Default:
+Mode A — Default:
 ```
-超清4K画质，高细节，自然锐度，写实清晰感，画面无字幕、无水印、无标题叠字
-```
-
-Mode A (Chinese) — Text-heavy scene:
-```
-超清4K画质，高细节，自然锐度，写实清晰感，画面无字幕、无水印、无标题叠字，书卷/匾额等场景道具上的文字清晰可辨
+Ultra-clear 4K picture quality, high details, natural sharpness, realistic clarity, no subtitles, no watermarks, and no overlapping titles
 ```
 
-Mode B (English) — Default:
+Mode A — Text-heavy scene:
+```
+Ultra-clear 4K picture quality, high details, natural sharpness, realistic clarity, no subtitles, no watermarks, no title overlays, and the text on scene props such as books/blades is clearly legible
+```
+
+Mode B — Default:
 ```
 ultra-sharp 4K, high detail, crisp textures, naturalistic sharpness, photorealistic clarity, no subtitles, no captions, no watermark, no title overlay
 ```

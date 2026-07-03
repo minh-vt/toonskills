@@ -565,10 +565,10 @@ No text in the image.
 Based on the character's base image, clay stop-motion {gender} character four-view setting sheet, stop-motion style, 3D cartoon rendering, warm lighting,
 character design sheet, character turnaround,
 Keep base facial features unchanged, {overall temperament},
-【L1·Makeup】Decide based on user clues: {Basic/Light/Formal Decorative Makeup}; use {Makeup Style}, matte clay texture, {eyebrow}, {eye}, {lip},
-【L2·Hair】{Style Type}, clay hairstyle, {hair accessory description},
-【L3+L4·Costume】{Main Color}{Pattern}, {material}, {decoration craft}, clear clothing texture,
-【L5·Accessories】{headwear}, {earrings}, {necklace}, {waist},
+[L1·Makeup]Decide based on user clues: {Basic/Light/Formal Decorative Makeup}; use {Makeup Style}, matte clay texture, {eyebrow}, {eye}, {lip},
+[L2·Hair]{Style Type}, clay hairstyle, {hair accessory description},
+[L3+L4·Costume]{Main Color}{Pattern}, {material}, {decoration craft}, clear clothing texture,
+[L5·Accessories]{headwear}, {earrings}, {necklace}, {waist},
 Four views arranged left to right: Portrait + Front + Side + Back,
 Natural standing, pure neutral gray background, warm soft light, no hard shadows,
 Four-view consistency, fine clay texture rendering, soft and healing expression
@@ -1048,11 +1048,11 @@ No text in the image
 
 | Shot Type | Scope | Narrative Function | Keywords |
 |---|---|---|---|
-| Extreme Wide Shot | Full scene + surroundings | Establish spatial sense, orientation | extreme wide shot,大全景 |
-| Wide Shot | Complete scene presentation | Display spatial structure | wide shot,全景 |
-| Medium Shot | Partial area of the scene | Focus on functional zones | medium shot,中景 |
-| Close Shot | Scene details | Close-up of materials/props | close shot,近景 |
-| Extreme Close-up | Extreme detail | Material texture/key props | extreme closeup,特写 |
+| Extreme Wide Shot | Full scene + surroundings | Establish spatial sense, orientation | extreme wide shot, large panorama |
+| Wide Shot | Complete scene presentation | Display spatial structure | wide shot, panorama |
+| Medium Shot | Partial area of the scene | Focus on functional zones | medium shot, medium shot |
+| Close Shot | Scene details | Close-up of materials/props | close shot, close shot |
+| Extreme Close-up | Extreme detail | Material texture/key props | extreme close-up, close-up |
 
 ### Shot-Type Derivation Guidelines
 
@@ -1071,11 +1071,11 @@ No text in the image
 
 | Time | Visual Characteristics | Keywords |
 |---|---|---|
-| Early Morning | Warm soft light, golden hue | 晨光微熹, early morning warmth |
-| Noon | Bright, short shadows, vivid colors | 正午阳光, bright lighting |
-| Dusk | Warm gold tones, long shadows, sky gradients | 黄昏暖金, golden hour |
-| Night (Moonlight) | Cool blue tones, serene and cold | 月光清辉, moonlight |
-| Night (Lamp/Candle) | Warm yellow accents, high contrast | 灯火阑珊, candlelight |
+| Early Morning | Warm soft light, golden hue | Early morning warmth |
+| Noon | Bright, short shadows, vivid colors | Noon sun, bright lighting |
+| Dusk | Warm gold tones, long shadows, sky gradients | Dusk warm gold, golden hour |
+| Night (Moonlight) | Cool blue tones, serene and cold | moonlight clear, moonlight |
+| Night (Lamp/Candle) | Warm yellow accents, high contrast | dim lights, candlelight |
 
 ### Time-of-Day Derivation Guidelines
 
@@ -1093,11 +1093,11 @@ No text in the image
 
 | Weather | Visual Characteristics | Keywords |
 |---|---|---|
-| Sunny | Bright, sharp shadows | 晴空万里, sunny and bright |
-| Overcast | Even lighting, no hard shadows | 阴天柔光, overcast |
-| Misty/Foggy | Low visibility, hazy air | 薄雾弥漫, misty |
-| Light Rain | Water droplets, wet reflections | 细雨如丝, light rain |
-| Snowing | White coverage, falling snowflakes | 飞雪纷纷, snowy |
+| Sunny | Bright, sharp shadows | Sunny, sunny and bright |
+| Overcast | Even lighting, no hard shadows | Cloudy soft light, overcast |
+| Misty/Foggy | Low visibility, hazy air | Misty, misty |
+| Light Rain | Water droplets, wet reflections | Drizzle like silk, light rain |
+| Snowing | White coverage, falling snowflakes | flakes of snow, snowy |
 
 ### Weather Derivation Guidelines
 
@@ -1201,7 +1201,7 @@ When generating video prompts, the following visual style tags must be injected:
 |------|----------|
 | **General Multi-Parameter Mode (English)** | `stop-motion claymation, clay texture, finger imprints, warm tones, soft bokeh, whimsical 3D cartoon` |
 | **General Start/End Frame Mode (English)** | `stop-motion claymation, clay texture, finger imprints, warm tones, soft bokeh, whimsical 3D cartoon, shallow depth of field` |
-| **Seedance 2.0 (Chinese)** | `定格动画黏土风格，黏土肌理，手指压痕，暖色调，柔和浅景深，奇幻3D卡通` |
+| **Seedance 2.0** | `Stop-motion clay style, clay texture, finger indentations, warm colors, soft shallow depth of field, fantasy 3D cartoon` |
 </art_storyboard_video>
 
 <director_planning_style>
@@ -1430,7 +1430,7 @@ The following terms/styles must not appear in the output prompts:
 
 [Prompt]
 Stop-motion animation style, clay texture, visible finger indentations, clay material texture, warm lighting, medium shot composition, two clay characters captured from the waist up, clear clay texture, visible finger indentations, distinct granular texture, handmade marks retained, 3D cartoon character, fantasy style, soft shallow depth of field, clear clay material details, inside a retro wooden cabin, two clay characters sitting opposite each other under warm light, hands gently touching, smiling tenderly, eyes filled with heart-fluttering sweetness, warm side light, soft shallow depth of field, clear wood texture, clay brick wall texture, cinematic lighting layers, clear light-dark contrast, soft natural light effects, healing nostalgic atmosphere, stop-motion animation aesthetic, warm emotional expression, high-definition quality, clear clay texture, soft colors, no artifacts or noise, shallow depth of field effect.
-Based on the reference image of 主角A/B, maintain consistent: face features, hairstyle, costume details. Generate a new scene: two clay characters sitting across from each other inside a retro wooden room at warm light, touching hands gently, smiling tenderly. Keep character appearance identical to reference.
+Based on the reference image of protagonist A/B, maintain consistent: face features, hairstyle, costume details. Generate a new scene: two clay characters sitting across from each other inside a retro wooden room at warm light, touching hands gently, smiling tenderly. Keep character appearance identical to reference.
 
 ### Example Output B (Mode B · Nanobanana)
 
@@ -1440,7 +1440,7 @@ You are a stop-motion claymation director.
 Maintain strict visual continuity across all shots.
 </role>
 <character_reference>
-Image [1]: 主角A/B — clay figurines, soft rounded features, warm earthy tones, small cute proportions
+Image [1]: Protagonist A/B — clay figurines, soft rounded features, warm earthy tones, small cute proportions
 </character_reference>
 <continuity_rules>
 - Same clay texture, color palette, face features across ALL shots

@@ -585,10 +585,10 @@ Use the base character image as a reference, img2img overlay fashion and styling
 Ancient {gender} character four-view setting sheet, 3D rendering, high-precision modeling, 8K, high fidelity,
 character design sheet, character turnaround,
 Maintain base facial features, {Overall Vibe},
-【L1·Makeup】Based on user cues: {Basic/Light/Formal}; use {Style}, PBR material rendering, {Brow}, {Eyes}, {Lips},
-【L2·Hair】{Style Type}, high-precision hair details, {Accessories},
-【L3+L4·Clothing】{Main Color}{Type}, {Material}, {Decorations}, clear clothing texture, PBR material rendering,
-【L5·Accessories】{Headpieces}, {Earrings}, {Necklaces}, {Waist},
+[L1·Makeup]Based on user cues: {Basic/Light/Formal}; use {Style}, PBR material rendering, {Brow}, {Eyes}, {Lips},
+[L2·Hair]{Style Type}, high-precision hair details, {Accessories},
+[L3+L4·Clothing]{Main Color}{Type}, {Material}, {Decorations}, clear clothing texture, PBR material rendering,
+[L5·Accessories]{Headpieces}, {Earrings}, {Necklaces}, {Waist},
 Four views side-by-side from left to right: Portrait+Front View+Side View+Back View,
 Natural standing, neutral gray background, uniform soft light, no hard shadows,
 Consistency across four views, 3D traditional modeling, high-precision,
@@ -1061,11 +1061,11 @@ No text in the image
 
 | Shot | Scope | Narrative Function | Prompt Keywords |
 |---|---|---|---|
-| Extreme Wide Shot | Full scene + surroundings | Establish spatial sense, positioning | extreme wide shot, 大全景 |
-| Wide Shot | Entire scene presented | Display spatial structure | wide shot, 全景 |
-| Medium Shot | Local area of scene | Focus on functional areas | medium shot, 中景 |
-| Close Shot | Scene details | Close-up of materials/props | close shot, 近景 |
-| Extreme Close-up | Micro details | Material texture/key props | extreme closeup, 特写 |
+| Extreme Wide Shot | Full scene + surroundings | Establish spatial sense, positioning | extreme wide shot, large panorama |
+| Wide Shot | Entire scene presented | Display spatial structure | wide shot, panorama |
+| Medium Shot | Local area of scene | Focus on functional areas | medium shot, medium shot |
+| Close Shot | Scene details | Close-up of materials/props | close shot, close shot |
+| Extreme Close-up | Micro details | Material texture/key props | extreme close-up, close-up |
 
 ### Shot Derivative Specifications
 
@@ -1084,11 +1084,11 @@ No text in the image
 
 | Time | Visual Characteristics | Prompt Keywords |
 |---|---|---|
-| Early Morning | Haze, soft light, cold-warm mixed tones | 晨光微熹, 清晨薄雾 |
-| Noon | Bright, short shadows, vivid colors | 正午阳光, 光线明亮 |
-| Dusk | Golden tones, long shadows, sky gradients | 暮色金辉, golden hour |
-| Night (Moonlight) | Cold blue tones, quiet and chilly | 月光清辉, moonlight |
-| Night (Lanterns) | Warm yellow accents, high contrast | 灯火阑珊, 烛光点点 |
+| Early Morning | Haze, soft light, cold-warm mixed tones |
+| Noon | Bright, short shadows, vivid colors | Noon sunlight, bright light |
+| Dusk | Golden tones, long shadows, sky gradients | Dusk golden glow, golden hour |
+| Night (Moonlight) | Cold blue tones, quiet and chilly | Moonlight, moonlight |
+| Night (Lanterns) | Warm yellow accents, high contrast | Dim lights, candlelight |
 
 ### Time-of-Day Derivative Specifications
 
@@ -1106,11 +1106,11 @@ No text in the image
 
 | Weather | Visual Characteristics | Prompt Keywords |
 |---|---|---|
-| Sunny | Bright, sharp shadows | 晴空万里, 阳光明媚 |
-| Overcast | Even lighting, no hard shadows | 阴天柔光, overcast |
-| Misty/Foggy | Lower visibility, hazy air | 薄雾弥漫, 雾气缭绕 |
-| Light Rain | Water droplets, wet reflections, rain streaks | 细雨如丝, 雨幕轻纱 |
-| Snowing | White coverage, falling snowflakes | 飞雪纷纷, 银装素裹 |
+| Sunny | Bright, sharp shadows | Clear sky, sunny |
+| Overcast | Even lighting, no hard shadows | Cloudy soft light, overcast |
+| Misty/Foggy | Lower visibility, hazy air | Misty, foggy |
+| Light Rain | Water droplets, wet reflections, rain streaks | Drizzle like silk, rain curtain gauze |
+| Snowing | White coverage, falling snowflakes | Snowing, falling snowflakes |
 
 ### Weather Derivative Specifications
 
@@ -1216,7 +1216,7 @@ When generating video prompts, the following visual style tags must be injected:
 |------|----------|
 | **General Multi-Parameter Mode (English)** | `Chinese traditional 3D render, PBR materials, volumetric lighting, oriental aesthetic, elegant and grand, cinematic` |
 | **General Start/End Frame Mode (English)** | `Chinese traditional 3D render, PBR materials, volumetric lighting, oriental aesthetic, elegant and grand, cinematic, shallow depth of field` |
-| **Seedance 2.0 (Chinese)** | `国风3D渲染，PBR材质，体积光，东方美学，典雅大气，电影风格` |
+| **Seedance 2.0 (Chinese)** | `Chinese style 3D rendering, PBR material, volumetric light, oriental aesthetics, elegance, movie style` |
 </art_storyboard_video>
 
 <director_planning_style>
@@ -1450,7 +1450,7 @@ The following terms/styles must not appear in the output prompts:
 
 [Prompt]
 3D rendered style, high-precision modeling, PBR materials, Chinese style 3D, cinematic lighting, 3D ancient style modeling, high-precision textures, clear clothing textures, delicate hair rendering, rich light and shadow layers, medium shot composition, a woman in elegant traditional attire stands before a palace, standing sideways holding a lantern, gentle expression, gentle gaze, vermilion palace wall background, golden highlight accents, volumetric lighting atmosphere, depth-of-field blur, Chinese style 3D rendering, Eastern aesthetics, PBR materials, 3D high-definition rendering, high detail, high-precision modeling, PBR materials, no subtitles, no watermarks, no title overlays.
-Based on the reference image of 女子, maintain consistent: face features, hairstyle, costume details. Generate a new scene: standing in front of palace at dusk, holding lantern. Keep visual style identical to reference.
+Based on the reference image of woman, maintain consistent: face features, hairstyle, costume details. Generate a new scene: standing in front of palace at dusk, holding lantern. Keep visual style identical to reference.
 
 ### Sample Output B (Mode B · Nanobanana)
 
@@ -1460,7 +1460,7 @@ You are a 3D storyboard artist.
 Maintain strict visual continuity across all shots.
 </role>
 <character_reference>
-Image [1]: 女子 — 3D ancient style modeling, elegant attire, Chinese style 3D
+Image [1]: Woman — 3D ancient style modeling, elegant attire, Chinese style 3D
 </character_reference>
 <continuity_rules>
 - Same outfit, hairstyle, face features across ALL shots

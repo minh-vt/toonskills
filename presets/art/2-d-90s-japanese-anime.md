@@ -603,11 +603,11 @@ Based on the character's base image, img2img overlay of outfit and makeup,
 90s anime style, retro Japanese anime, {gender} character turnaround, hand-drawn flat-color, warm soft tones, cinematic lighting,
 character design sheet, character turnaround,
 keep facial features of base image unchanged, {overall vibe},
-【L1·Makeup】{Basic/Light/Formal} makeup; use {Style}, uniform skin, {brow}, {eye}, {lip},
-【L2·Hairstyle】{Type}, fluid hair, {accessories},
-【L3+L4·Outfit】{Color}{Style}, {Material}, {craftsmanship}, fluid lines, clear texture,
-【L5·Footwear】{Type}, {material}, {sock/opening design}, unified with outfit,
-【L6·Accessories】{Headwear}, {Earwear}, {Neckwear}, {Waist-acc},
+[L1·Makeup]{Basic/Light/Formal} makeup; use {Style}, uniform skin, {brow}, {eye}, {lip},
+[L2·Hairstyle]{Type}, fluid hair, {accessories},
+[L3+L4·Outfit]{Color}{Style}, {Material}, {craftsmanship}, fluid lines, clear texture,
+[L5·Footwear]{Type}, {material}, {sock/opening design}, unified with outfit,
+[L6·Accessories]{Headwear}, {Earwear}, {Neckwear}, {Waist-acc},
 Four views side-by-side from left to right: closeup + front + side + back,
 standing naturally, pure neutral grey background, soft cinematic lighting, no hard shadows,
 four-view consistency, delicate facial rendering, delicate hair rendering, clear texture details,
@@ -1233,7 +1233,7 @@ When generating video prompts, the following visual style tags must be injected:
 |------|----------|
 | **General Multi-Parameter Mode (English)** | `90s Japanese anime, hand-drawn cel animation, soft warm tones, cinematic, clean line art, nostalgic aesthetic` |
 | **General Start/End Frame Mode (English)** | `90s Japanese anime, hand-drawn cel animation, soft warm tones, cinematic, clean line art, nostalgic aesthetic, shallow depth of field` |
-| **Seedance 2.0 (Chinese)** | `90年代日式动画，手绘赛璐璐，柔和暖调，电影风格，清晰线条，怀旧质感` |
+| **Seedance 2.0** | `90s Japanese animation, hand-painted cel, soft and warm tones, movie style, clear lines, nostalgic texture` |
 </art_storyboard_video>
 
 <director_planning_style>
@@ -1463,8 +1463,8 @@ The following terms/styles must not appear in output prompts:
 ### Example Output A (Mode A · Seedream)
 
 [Prompt]
-90年代日式动画风格，手绘质感，平涂上色，清晰流畅线条，柔和暖色调，中景构图，人物半身入镜，精细流畅线条，轮廓线清晰，线条均匀一致，无断线无粗糙边缘，平涂上色，色彩均匀，无明显渐变，色彩饱和适中，女孩立于浅草站台上，手提书包，侧身微笑望向远方，眼神期待又温暖，黄昏逆光暖调，长影拉伸，怀旧氛围，木质站台纹理清晰，电线杆在背景中，电影感光影层次，明暗对比清晰，光效柔和自然，怀旧治愈氛围，日式动画美学，温馨情感表达，高清画质，线条清晰，上色均匀，色彩柔和，画面无杂色无噪点。
-Based on the reference image of 女孩, maintain consistent: face features, hairstyle, costume details. Generate a new scene: standing on a train station platform at sunset, holding a school bag, smiling at the distance. Keep character appearance identical to reference.
+Japanese animation style of the 1990s, hand-painted texture, flat coloring, clear and smooth lines, soft and warm tones, mid-shot composition, half-body of the character in the mirror, fine and smooth lines, clear outlines, uniform lines, no breaks and rough edges, flat coloring, uniform colors, no obvious gradients, moderate color saturation, a girl standing on the Asakusa platform, holding a school bag, looking sideways with a smile Looking to the distance, the eyes are expectant and warm, the dusk backlight is warm, the long shadows are stretched, the nostalgic atmosphere, the texture of the wooden platform is clear, the telephone pole is in the background, the film-sensitive light and shadow levels, the contrast between light and dark is clear, the light effect is soft and natural, the nostalgic healing atmosphere, Japanese animation aesthetics, warm emotional expression, high-definition picture quality, clear lines, uniform coloring, soft colors, no color and no noise in the picture.
+Based on the reference image of girl, maintain consistent: face features, hairstyle, costume details. Generate a new scene: standing on a train station platform at sunset, holding a school bag, smiling at the distance. Keep character appearance identical to reference.
 
 ### Example Output B (Mode B · Nanobanana)
 
@@ -1474,7 +1474,7 @@ You are a 90s anime storyboard artist.
 Maintain strict visual continuity across all shots.
 </role>
 <character_reference>
-Image [1]: 女孩 — black long hair in twin tails, gentle eyes, school uniform, slim body shape
+Image [1]: Girl — black long hair in twin tails, gentle eyes, school uniform, slim body shape
 </character_reference>
 <continuity_rules>
 - Same wardrobe, hairstyle, face features across ALL shots

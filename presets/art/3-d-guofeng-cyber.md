@@ -187,12 +187,12 @@ A [Age (number)]-year-old [Gender], [Detailed identity/role], [20-character desc
 
 | Step | Processing Content | Decision Result |
 |---|---|---|
-| S1 | Extract user cues: face state words, emotion words, intensity words, style words, scene words (Ancient/Urban) | Form a "Scene + Makeup" dual-dimension需求摘要 |
+| S1 | Extract user cues: face state words, emotion words, intensity words, style words, scene words (Ancient/Urban) | Form a "Scene + Makeup" dual-dimension requirements summary |
 | S2 | Filter out non-makeup cues: props/scenes/action/posture words do not serve as basis for makeup | Prevent misjudgment |
 | S3 | Match Ancient/Urban scene system first, then match makeup style matrix and give intensity level | Ancient: Base / Light / Formal; Urban: Commuter / Business / Cyber-Functional |
 | S4 | Generate final L1 prompt | Output only the conclusion, no analysis process |
 
-### Clue to Makeup Mapping (Execution 口径 · Dual-Scenario Adaptation)
+### Clue to Makeup Mapping (Execution caliber · Dual-Scenario Adaptation)
 
 | Clue Type | Typical Cues | Scene Match | L1 Decision |
 |---|---|---|---|
@@ -235,15 +235,15 @@ A [Age (number)]-year-old [Gender], [Detailed identity/role], [20-character desc
 
 ### Makeup Styles for Different Face Types
 
-| 项目 | 约束 | Prompt Keywords |
+| Project | Constraints | Prompt Keywords |
 |---|---|---|
-| 眉部 | 顺着底模眉形轻修，不改变眉型 | 自然修眉、眉形干净 |
-| 眼部 | 极淡眼部修饰，强调清透与有神 | 眼部清透、极淡眼影 |
-| 面颊 | 极淡气色提亮，粉彩腮红 | 面颊气色自然、粉彩腮红 |
-| 唇部 | 浅粉或朱红润色，保持克制 | 唇色自然润泽、浅粉唇色 |
+| Eyebrows | Gently trim eyebrows along the base mold without changing the eyebrow shape | Trim eyebrows naturally and cleanly |
+| Eyes | Very light eye modification, emphasizing clarity and spirit | Clear eyes, very light eye shadow |
+| Cheeks | Very light complexion brightening, pastel blush | Cheeks with natural complexion, pastel blush |
+| Lips | Light pink or vermilion, maintain restraint | Natural and moist lip color, light pink lip color |
 | System | Makeup Style | Applicable Scenes | Core Keywords |
 
-### 男性妆容（双场景适配）
+### Male makeup (dual scene adaptation)
 
 |---|---|---|---|
 | Ancient | Palace/Grand | Court, formal, ceremony | Exquisite, sharp brows, rosy lips |
@@ -258,34 +258,34 @@ A [Age (number)]-year-old [Gender], [Detailed identity/role], [20-character desc
 
 ## IV. Hairstyle Variants — Real Hair (L2)
 
-### 女性造型类型（双场景全覆盖）
+### Female styling type (full coverage of dual scenes)
 
-| 体系 | 造型 | 描述 | 适用场景 | Prompt Keywords |
+| System | Shape | Description | Applicable Scenarios | Prompt Keywords |
 |---|---|---|---|---|
-| 古风体系 | 高髻云鬓 | 高髻盘发 + 传统发饰 | 古风宫廷、正式、盛典 | 高髻云鬓、精致盘发、传统中式形制 |
-| 古风体系 | 双环髻 | 双环对称、少女感 | 古风年轻角色、日常 | 双环髻、少女风格、中式传统造型 |
-| 古风体系 | 堕马髻 | 侧偏低髻、慵懒感 | 古风日常、休闲、闺中 | 堕马髻、慵懒侧髻、中式传统造型 |
-| 古风体系 | 披发 | 长发全散、自然垂落 | 古风闺中、私密、夜间 | 长发散落、自然垂落、中式传统质感 |
-| 古风体系 | 束发高马尾 | 高束干练、利落 | 古风习武、行动场景 | 高束马尾、干练利落、中式传统束发 |
-| 古风体系 | 半扎发 | 发顶半扎 + 后方垂发 | 古风日常、出行 | 半扎云髻、自然垂发、中式传统造型 |
-| 都市赛博体系 | 国风半扎低马尾 | 中式半扎发+低马尾、利落不拖沓 | 都市通勤、日常出行 | 国风半扎低马尾、中式编发点缀、干练日常、高精度发丝 |
-| 都市赛博体系 | 国风高束机能髻 | 中式高髻+机能结构固定、可内嵌微霓虹光带 | 都市正式、全息盛典、机能场景 | 国风高束机能髻、钛合金发件固定、内嵌可控微霓虹光带 |
-| 都市赛博体系 | 国风半机械编发 | 中式三股编+机能编绳、微光流苏点缀 | 都市休闲、夜行、赛博场景 | 国风半机械编发、中式编发基底、机能编绳、光感流苏点缀 |
-| 都市赛博体系 | 国风高马尾 | 中式束发+高马尾、机能发扣固定 | 都市机能、行动、任务场景 | 国风高马尾、中式束发基底、机能发扣固定、利落干练 |
+| Ancient style system | High bun with temples | High bun + traditional hair accessories | Ancient style palace, formal, grand ceremony | High bun with temples, exquisite hairstyle, traditional Chinese style |
+| Ancient style system | Double-ring bun | Double-ring symmetry, girlish look | Ancient-style young characters, daily life | Double-ring bun, girly style, traditional Chinese style |
+| Ancient style system | Pony bun | Low side bun, lazy feeling | Ancient style daily, casual, boudoir | Down pony bun, lazy side bun, traditional Chinese style |
+| Ancient style system | Loose hair | Long hair loose, hanging naturally | Ancient style boudoir, private, night | Long hair loose, hanging naturally, traditional Chinese texture |
+| Ancient style system | Hair tied up in a high ponytail | High tied up, capable and neat | Ancient style martial arts practice, action scene | High tied up into a ponytail, capable and neat, traditional Chinese style hair tied |
+| Ancient style system | Half-tied hair | Half-tied hair at the top + hanging hair at the back | Ancient-style daily life, travel | Half-tied bun, natural hanging hair, traditional Chinese style |
+| Urban cyber system | Chinese-style half-tied low ponytail | Chinese-style half-tied hair + low ponytail, neat and uncluttered | Urban commuting, daily travel | Chinese-style half-tied low ponytail, Chinese braid embellishment, smart everyday, high-precision hair |
+| Urban cyber system | National-style high-bundle functional bun | Chinese-style high bun + functional structure fixed, micro-neon light belt can be embedded | Urban formal, holographic ceremony, functional scenes | National-style high-bundled functional bun, titanium alloy hairpieces fixed, embedded controllable micro-neon light belt |
+| Urban cyber system | National-style semi-mechanical braiding | Chinese three-strand braid + functional braid, shimmering tassel embellishment | Urban leisure, night walking, cyber scenes | National-style semi-mechanical braiding, Chinese-style braid base, functional braiding, light-sensing tassel embellishment |
+| Urban cyber system | Chinese-style high ponytail | Chinese-style hair tie + high ponytail, functional hair buckle fixed | Urban function, action, mission scene | Chinese-style high ponytail, Chinese-style hair base, functional hair buckle fixed, neat and capable |
 
-### 女性发饰（双场景适配）
+### Female hair accessories (dual scene adaptation)
 
-| 体系 | 约束 | Prompt Keywords |
+| System | Constraints | Prompt Keywords |
 |---|---|---|
-| 古风体系 | 华丽精致、与服饰配套、纯传统中式材质工艺，无赛博元素（无明确线索禁用） | 华丽发饰、精致工艺、金银发簪、珠翠满头、精细雕刻 |
+| Ancient style system | Gorgeous and exquisite, matched with clothing, pure traditional Chinese material craftsmanship, no cybernetic elements (prohibited without clear clues) | Gorgeous hair accessories, exquisite craftsmanship, gold and silver hairpins, head full of pearls and emeralds, fine carvings |
 | | Hairstyle variants are created with real styling tools on real hair. High-precision hair strands are standard. | |
 
 ### Hairstyle Specifications
 
-| 体系 | 造型 | 适用场景 | Prompt Keywords |
+| System | Modeling | Applicable Scenarios | Prompt Keywords |
 |---|---|---|---|
-| 古风体系 | 束发半冠 | 古风日常、文人、雅集 | 束发半冠、玉簪束发、中式传统造型 |
-| 古风体系 | 全冠高束 | 古风正式、朝堂、盛典 | 全冠高束、玉冠束发、中式传统形制 |
+| Ancient style system | Hair tied with half crown | Ancient style daily life, literati, elegant gatherings | Hair tied with half crown, hair tied with hosta, Chinese traditional style |
+| Ancient style system | Full crown and high bundle | Ancient style formal, court, grand ceremony | Full crown and high bundle, jade crown and hair bundle, Chinese traditional shape |
 | Hairstyle | Style Description | Photography & Prompt Keywords |
 |---|---|---|
 | Traditional Buns | Classical Chinese hair buns, updos, or braids. | classical Chinese hair buns, intricate updos, traditional braids, neat hairline |
@@ -296,46 +296,46 @@ A [Age (number)]-year-old [Gender], [Detailed identity/role], [20-character desc
 
 ## V. Clothing & Apparel Variants (L3+L4)
 
-### 核心红线（双场景通用·不可突破）
-*所有服饰必须以中式传统形制为绝对核心**，古风场景严格遵循中式服饰剪裁逻辑；都市赛博场景必须保留立领/斜襟/盘扣/襦裙/对襟/大袖等至少1项中式核心结构，禁止出现无国风内核的纯西式西装、纯机能冲锋衣、纯西式赛博朋克服饰，确保古风+都市场景国风基底不丢失。
+### Core red line (common to both scenarios and cannot be broken through)
+*All clothing must be based on traditional Chinese forms**. Ancient-style scenes strictly follow the tailoring logic of Chinese-style clothing; urban cyber scenes must retain at least one Chinese core structure such as stand-up collars/slanted lapels/pan buckles/underskirts/split lapels/big sleeves. Pure Western-style suits, purely functional jackets, and pure Western-style cyberpunk clothing without a national style core are prohibited to ensure that the traditional Chinese style base of ancient + urban scenes is not lost.
 
-### 女性服饰矩阵（双场景全覆盖）
+### Women’s clothing matrix (full coverage of dual scenes)
 
-| 体系 | 风格 | 款式核心 | 适用场景 | Prompt Keywords |
+| System | Style | Style Core | Applicable Scenarios | Prompt Keywords |
 |---|---|---|---|---|
-| 古风体系 | 古风日常长裙 | 中式襦裙形制、飘逸裙摆、传统刺绣 | 古风日常、闺中、雅集、出行 | 古风襦裙长裙、飘逸衣裙、丝绸质感、传统苏绣纹样、多层叠穿 |
-| 古风体系 | 宫廷礼服 | 中式礼服形制、大袖衫、层叠裙摆、华贵刺绣 | 古风宫廷、正式、盛典、权力场景 | 古风宫廷礼服、华贵裙装、中式大袖衫、金线刺绣、层叠裙摆 |
-| 古风体系 | 轻便常服 | 中式短衫、立领斜襟、收腰剪裁、利落不拖沓 | 古风行动、习武、出行场景 | 古风轻便常服、短衫剪裁、立领斜襟、棉麻丝绸质感、利落干练 |
-| 古风体系 | 寝衣 | 薄纱中衣、素色丝绸、宽松舒适 | 古风室内、夜间、私密场景 | 古风寝衣、宽松舒适、薄纱丝绸材质、素色简约 |
-| 古风体系 | 大婚嫁衣 | 凤冠霞帔形制、层叠红装、传统婚服纹样 | 古风婚礼、大婚典礼 | 古风大婚嫁衣、凤冠霞帔、层叠红裳、金线刺绣、中式婚服形制 |
-| 都市赛博体系 | 国风通勤常服 | 中式立领/斜襟衬衫、改良短款襦裙、机能面料拼接、日常不夸张 | 都市日常、通勤、休闲出行 | 国风赛博通勤常服、中式立领斜襟、改良襦裙剪裁、丝绸与哑光机能面料拼接、极简刺绣、利落日常 |
-| 都市赛博体系 | 国风商务礼服 | 中式对襟西装形制、改良唐装结构、高级哑光面料、极简华贵 | 都市商务、全息会议、正式场合 | 国风赛博商务礼服、中式对襟唐装基底、高级哑光面料、立体剪裁、极简中式纹样、华贵低调 |
-| 都市赛博体系 | 轻机能国风常服 | 中式短衫+机能马甲、斜襟盘扣+磁吸卡扣、收腰剪裁、轻便利落 | 都市行动、夜行、机能休闲场景 | 轻机能国风常服、中式斜襟短衫、机能马甲拼接、磁吸盘扣、哑光机能面料、利落干练 |
-| 都市赛博体系 | 国风赛博大婚/盛典礼服 | 中式凤冠霞帔/礼服形制、钛合金立体结构、层叠裙摆、可控微霓虹光带 | 都市大婚、全息盛典、重要场合 | 国风赛博盛典礼服、中式礼服核心形制、丝绸与3D打印结构拼接、金线刺绣与电路暗纹融合、可控微霓虹光带 |
-| 都市赛博体系 | 国风机能寝衣 | 中式斜襟中衣、薄纱与机能里衬拼接、宽松舒适、微光泽肌理 | 都市室内、夜间、私密场景 | 国风机能寝衣、中式斜襟形制、宽松舒适、薄纱与机能面料拼接、微光泽肌理 |
+| Ancient style system | Ancient style daily long skirt | Chinese-style skirt shape, elegant skirt, traditional embroidery | Ancient style daily, boudoir, elegant gathering, travel | Ancient-style skirt long skirt, elegant skirt, silk texture, traditional Suzhou embroidery pattern, multi-layer wear |
+| Ancient style system | Palace dress | Chinese style dress shape, large-sleeved shirt, layered skirt, luxurious embroidery | Ancient style palace, formal, grand ceremony, power scene | Ancient style palace dress, luxurious skirt, Chinese style large-sleeved shirt, gold thread embroidery, layered skirt |
+| Ancient style system | Light casual clothes | Chinese short shirts, stand-up collars and slanted lapels, waist tailoring, neat and not procrastinating | Ancient style action, martial arts, travel scenes | Ancient style light casual clothes, short shirt tailoring, stand-up collars and slanted lapels, cotton and linen silk texture, neat and capable |
+| Ancient style system | Pajamas | Tulle middle coat, plain silk, loose and comfortable | Ancient style interior, night, private scene | Ancient style pajamas, loose and comfortable, gauze silk material, plain simple |
+| Ancient style system | Wedding dress | Fengguanxiapei shape, layered red dress, traditional wedding dress pattern | Ancient style wedding, wedding ceremony | Ancient style wedding dress, Fengguanxiapei, layered red dress, gold embroidery, Chinese wedding dress shape |
+| Urban cyber system | Chinese-style commuter uniform | Chinese-style stand-up collar/slanted lapel shirt, improved short underskirt, functional fabric splicing, everyday life is not exaggerated | Urban daily life, commuting, leisure travel | National-style cybercommuting uniform, Chinese-style stand-up collar and slanted lapel, improved underskirt tailoring, silk and matte functional fabric splicing, minimalist embroidery, neat daily life |
+| Urban cyber system | National style business dress | Chinese style double-breasted suit shape, improved Tang suit structure, high-end matte fabrics, minimalist luxury | Urban business, holographic conferences, formal occasions | Chinese style cyber business dress, Chinese style double-breasted Tang suit base, high-end matte fabrics, three-dimensional tailoring, minimalist Chinese patterns, luxurious and low-key |
+| Urban cyber system | Lightly functional national-style casual clothes | Chinese-style blouse + functional vest, slanted lapels + magnetic buckles, waisted tailoring, light and convenient | Urban mobility, night walking, functional leisure scenes | Light-functional national-style casual clothes, Chinese slanted blouses, functional vest splicing, magnetic buckles, matte functional fabrics, neat and capable |
+| Urban Cyber System | National Style Cyber Wedding/Grand Ceremony | Chinese-style phoenix crown harem/gown shape, titanium alloy three-dimensional structure, layered skirt, controllable micro-neon light belt | Urban wedding, holographic ceremony, important occasions | National-style Cyber Grand Ceremony, Chinese-style dress core shape, silk and 3D printed structure splicing, gold thread embroidery and circuit dark pattern fusion, controllable micro-neon light belt |
+| Urban cyber system | Chinese-style functional pajamas | Chinese-style slanted lapels, spliced with tulle and functional lining, loose and comfortable, slightly glossy texture | Urban indoor, night, private scenes | Chinese-style functional pajamas, Chinese-style slanted lapels, loose and comfortable, spliced with tulle and functional fabrics, slightly glossy texture |
 
-### 女性服饰通用约束（双场景适配）
+### Universal constraints on women’s clothing (dual scene adaptation)
 
-| 项目 | 约束 | Prompt Keywords |
+| Project | Constraints | Prompt Keywords |
 |---|---|---|
-| 主色 | 古风场景默认中国传统色调；都市场景可搭配低饱和赛博冷调撞色、可控霓虹色点缀，禁止高饱和刺眼配色 | 中国传统色调、国风赛博配色、低饱和撞色、可控霓虹色点缀 |
-| 材质 | 古风场景默认丝绸+刺绣+珠光面料；都市场景可拼接哑光机能面料、高亮反光条、3D打印结构件，必须保留国风核心面料基底 | 丝绸质感、刺绣细节、古风场景纯传统面料；都市场景传统面料与机能面料拼接、3D打印立体结构 |
-| 纹理 | 古风场景默认中式传统纹样；都市场景可融合传统纹样与电路纹理、赛博暗纹，纹理超清晰，禁止无国风内核的纯赛博纹理 | 衣服质感清晰、纹理超清晰、古风场景纯中式传统纹样；都市场景传统纹样与电路纹理深度融合 |
-| 肩部 | 古风场景默认国风云肩/披帛；都市场景可搭配机能肩甲/结构装饰，必须与中式形制统一 | 古风场景云肩华美、披帛飘逸；都市场景国风肩甲点缀、与整体形制统一 |
-| 层次 | 多层叠穿、层次分明、国风内搭与外衣逻辑统一，都市场景机能结构不得破坏叠穿逻辑 | 多层叠穿、层次分明、中式形制逻辑统一 |
+| Main color | Ancient style scenes default to Chinese traditional tones; urban scenes can be paired with low-saturated cyber-cold contrasting colors and controllable neon color embellishments, and high-saturated dazzling colors are prohibited | Chinese traditional tones, national-style cyber color matching, low-saturated contrasting colors, and controllable neon color embellishments |
+| Material | Silk + embroidery + pearlescent fabrics are the default for ancient scenes; matte functional fabrics, high-gloss reflective strips, and 3D printed structural parts can be spliced for urban scenes, and the core national style fabric base must be retained | Silk texture, embroidery details, and pure traditional fabrics for ancient scenes; traditional fabrics and functional fabrics are spliced for urban scenes, and 3D printed three-dimensional structures |
+| Texture | Antique scenes default to Chinese traditional patterns; urban scenes can combine traditional patterns with circuit textures and cyber dark patterns, and the textures are ultra-clear, and pure cyber textures without a national style core are prohibited | Clothes have clear textures, ultra-clear textures, and ancient scenes have pure traditional Chinese patterns; urban scenes have a deep integration of traditional patterns and circuit textures |
+| Shoulders | In ancient-style scenes, national-style cloud shoulders/shawls are used by default; in urban scenes, functional shoulder armor/structural decoration can be used, which must be consistent with the Chinese style | In ancient-style scenes, cloud shoulders are gorgeous and the shawls are elegant; in urban scenes, national-style shoulder armors are embellished and unified with the overall shape |
+| Layers | Multiple layers, clear layers, Chinese-style inner wear and outerwear are logically unified, and the functional structure of urban scenes must not destroy the layering logic | Multi-layers, clear layers, Chinese style logical unity |
 | | Clothing must show realistic fabric texture, PBR physical materials, and natural wear folds. | |
 
 ### Clothing Layers
 
-| 体系 | 风格 | 适用场景 | Prompt Keywords |
+| System | Style | Applicable scenarios | Prompt Keywords |
 |---|---|---|---|
-| 古风体系 | 文人士子装 | 古风日常、书房、雅集、出行 | 古风文人士子装、长衫形制、立领斜襟、丝绸棉麻质感、传统纹样刺绣 |
-| 古风体系 | 武将劲装 | 古风战斗、练武、行动场景 | 古风武将劲装、战袍形制、立领收腰、耐磨面料、利落干练 |
-| 古风体系 | 朝服礼服 | 古风朝堂、典礼、盛典 | 古风朝服、正式礼服形制、大袖宽袍、华贵面料、传统纹样 |
-| 古风体系 | 常服便装 | 古风休闲、私密、日常出行 | 古风常服便装、简约风格、舒适面料、中式立领、宽松得体 |
-| 古风体系 | 大典礼服 | 古风正式、庆典、重要场合 | 古风大典礼服、华贵精致、中式礼服形制、高级面料、金线刺绣 |
-| 都市赛博体系 | 国风商务通勤装 | 都市日常、通勤、商务会议 | 国风商务通勤装、中式立领唐装基底、改良西装剪裁、高级哑光面料、极简中式纹样、利落得体 |
-| 都市赛博体系 | 国风机能休闲装 | 都市日常、休闲出行、轻机能场景 | 国风机能休闲装、中式斜襟短衫、机能面料拼接、磁吸盘扣、宽松舒适、日常百搭 |
+| Ancient style system | Literati's clothing | Ancient style daily life, study, gatherings, travel | Ancient style literati's clothing, long gown shape, stand-up collar and slanted placket, silk and linen texture, traditional pattern embroidery |
+| Ancient style system | Military generals' attire | Ancient style combat, martial arts training, action scenes | Ancient style military generals' attire, shirt shape, stand-up collar and waist, wear-resistant fabrics, neat and capable |
+| Ancient style system | Court dress | Ancient style court hall, ceremony, grand ceremony | Ancient style court dress, formal dress shape, long-sleeved toga, luxurious fabrics, traditional patterns |
+| Ancient style system | Casual wear | Ancient style casual, private, daily travel | Ancient style casual wear, simple style, comfortable fabrics, Chinese stand-up collar, loose and decent |
+| Ancient style system | Grand ceremony attire | Ancient style formal, celebration, important occasions | Ancient style ceremonial attire, luxurious and exquisite, Chinese dress shape, high-end fabrics, gold thread embroidery |
+| Urban cyber system | National-style business commuting wear | Urban daily life, commuting, business meetings | National-style business commuting wear, Chinese stand-up collar Tang suit base, improved suit tailoring, high-end matte fabrics, minimalist Chinese patterns, neat and decent |
+| Urban cyber system | Chinese style functional casual wear | Urban daily life, leisure travel, light functional scenes | Chinese style functional casual wear, Chinese style slanted blouse, functional fabric splicing, magnetic suction cup buckle, loose and comfortable, versatile for daily use |
 | | **L3 (Innerwear):** Traditional silk for ancient scenes; Chinese-style technical fabrics with subtle circuitry for urban scenes. | |
 | | **L4 (Outerwear):** Traditional Chinese robes/ceremonial wear for ancient scenes; cyber-technical clothing with a traditional Chinese silhouette core for urban scenes. | |
 
@@ -343,31 +343,31 @@ A [Age (number)]-year-old [Gender], [Detailed identity/role], [20-character desc
 
 ## VI. Accessories Variants — Daily & Tech Fusion (L5)
 
-### 女性配饰（双场景分体系）
+### Women’s accessories (dual scene sub-system)
 
-| 体系 | 类型 | 约束 | Prompt Keywords |
+| System | Type | Constraints | Prompt Keywords |
 |---|---|---|---|
-| 古风体系 | 头饰 | 华丽精致、不单薄、纯中式传统材质，与发型服饰配套 | 华丽头饰、珠翠满头、金银发簪、玉石步摇、精细雕刻 |
-| 古风体系 | 耳饰 | 传统垂坠流苏/玉珰，与整体风格统一 | 流苏耳环、玉珰垂坠、玉石耳饰、金银镶嵌 |
-| 古风体系 | 项饰 | 传统璎珞/项圈，中式传统形制 | 璎珞华美、精致项圈、金银玉石镶嵌 |
-| 古风体系 | 腰饰 | 传统宫绦/玉佩，中式传统工艺 | 宫绦飘逸、腰间玉佩、玉石禁步、精致编织 |
-| 古风体系 | 手饰 | 传统玉镯/臂钏，中式传统形制 | 玉镯通透、臂钏精致、金银玉石材质 |
-| 都市赛博体系 | 头饰 | 国风形制为核心、传统材质+赛博机能材质融合，与发型服饰配套，光效可控 | 国风赛博头饰、珠翠玉石+钛合金机能件、可控微霓虹光带、全息投影点缀、精致工艺 |
-| 都市赛博体系 | 耳饰 | 传统玉珰+赛博机能耳坠融合，光感流苏可控不夸张 | 国风机能耳坠、玉石镶嵌+钛合金材质、可控微霓虹光感流苏、精致小巧 |
-| 都市赛博体系 | 项饰 | 传统璎珞+机能项圈融合，中式形制为核心 | 国风机能项圈、璎珞结构+钛合金材质、内嵌可控微光、精致贴合 |
-| 都市赛博体系 | 腰饰 | 传统宫绦/玉佩+机能腰封融合，磁吸卡扣、立体结构 | 国风机能腰封、宽腰封+宫绦拼接、腰间玉佩、钛合金磁吸卡扣、质感分明 |
-| 都市赛博体系 | 手饰 | 传统玉镯+机能手环融合，中式形制为核心，无夸张设计 | 国风机能手环、通透玉镯+钛合金材质、可控微光、精致贴合 |
+| Ancient style system | Headwear | Gorgeous and exquisite, not thin, pure traditional Chinese materials, matched with hairstyle and clothing | Gorgeous headwear, full head of pearls, gold and silver hairpins, jade steps, fine carvings |
+| Ancient style system | Earrings | Traditional pendant tassels/jade, unified with the overall style | Tassel earrings, jade pendants, jade earrings, gold and silver inlays |
+| Ancient style system | Necklaces | Traditional Yingluo/necklace, traditional Chinese shape | Gorgeous and exquisite Yingluo necklace, inlaid with gold, silver and jade |
+| Ancient style system | Waist ornaments | Traditional palace ribbons/jade pendants, traditional Chinese craftsmanship | Elegant palace ribbons, jade pendants around the waist, jade forbidden steps, exquisite weaving |
+| Ancient style system | Hand ornaments | Traditional jade bracelets/arm bracelets, traditional Chinese shape | Transparent jade bracelets, exquisite arm bracelets, made of gold, silver and jade |
+| Urban cyber system | Headwear | National style shape as the core, traditional materials + cyber functional materials integrated, matched with hairstyles and clothing, light effects controllable | National style cyber headwear, jade + titanium alloy functional parts, controllable micro-neon light strips, holographic projection embellishment, exquisite craftsmanship |
+| Urban cyber system | Earrings | Fusion of traditional jade + cyber functional earrings, controllable light-sensing tassels without exaggeration | Chinese style functional earrings, jade inlay + titanium alloy material, controllable micro-neon light-sensing tassels, exquisite and compact |
+| Urban Cyber System | Necklaces | Fusion of traditional necklaces + functional collars, Chinese style as the core | Chinese style functional collars, necklace structure + titanium alloy material, embedded with controllable shimmer, exquisite fit |
+| Urban cyber system | Waist ornaments | Fusion of traditional palace sash/jade pendant + functional girdle, magnetic buckle, three-dimensional structure | Chinese style functional girdle, wide girdle + palace sash splicing, waist jade pendant, titanium alloy magnetic buckle, distinct texture |
+| Urban Cyber System | Hand Accessories | Fusion of traditional jade bracelet + functional bracelet, Chinese style as the core, no exaggerated design | Chinese style functional bracelet, transparent jade bracelet + titanium alloy material, controllable shimmer, exquisite fit |
 
-### 男性配饰（双场景分体系）
+### Men’s accessories (dual scene sub-system)
 
-| 体系 | 类型 | 约束 | Prompt Keywords |
+| System | Type | Constraints | Prompt Keywords |
 |---|---|---|---|
-| 古风体系 | 发冠 | 传统玉冠/金冠、精致工艺、中式传统形制，与发型服饰配套 | 玉冠束发、金冠束发、玉石雕刻、精致工艺 |
-| 古风体系 | 腰封 | 传统宽腰封/革带、中式传统形制、质感分明 | 宽腰封、皮质革带、玉石带钩、质感分明 |
-| 古风体系 | 玉佩 | 传统通透温润玉佩、中式传统工艺，腰间佩戴 | 腰间玉佩、通透温润、和田玉质、精致雕刻 |
-| 古风体系 | 腰间配饰 | 佩剑/扇/笛仅限腰间固定配饰，**禁止手持道具**，中式传统形制 | 腰间佩剑固定配饰、折扇腰挂、竹笛腰饰、无手持交互 |
-| 都市赛博体系 | 发冠 | 传统玉冠形制+钛合金机能材质、哑光工艺、精致建模，与发型服饰配套 | 国风机能发冠、中式冠饰基底、哑光钛合金材质、玉石镶嵌、精致工艺 |
-| 都市赛博体系 | 腰封 | 传统宽腰封形制+机能结构、磁吸卡扣、立体剪裁、质感分明 | 国风机能腰封、中式腰封基底、哑光机能面料、钛合金磁吸卡扣、立体结构 |
+| Ancient style system | Hair crown | Traditional jade crown/gold crown, exquisite craftsmanship, traditional Chinese shape, matching hair style and clothing | Jade crown hair binding, gold crown hair binding, jade carving, exquisite craftsmanship |
+| Ancient style system | Girdle | Traditional wide girdle/leather belt, traditional Chinese shape, distinct texture | Wide girdle, leather leather belt, jade belt hook, distinct texture |
+| Ancient style system | Jade pendant | Traditional transparent and warm jade pendant, Chinese traditional craftsmanship, worn around the waist | Waist jade pendant, transparent and warm, Hotan jade quality, exquisite carving |
+| Ancient style system | Waist accessories | Swords/fans/flutes are limited to fixed accessories around the waist, **hand-held props are prohibited**, traditional Chinese shape | Fixed accessories around the waist, folding fans, bamboo flute waist accessories, no hand-held interaction |
+| Urban cyber system | Hair crown | Traditional jade crown shape + titanium alloy functional material, matte craftsmanship, exquisite modeling, matched with hair style and clothing | Chinese style functional hair crown, Chinese crown decoration base, matte titanium alloy material, jade inlay, exquisite craftsmanship |
+| Urban cyber system | Girdle | Traditional wide girdle shape + functional structure, magnetic buckles, three-dimensional tailoring, distinct texture | Chinese style functional girdle, Chinese style girdle base, matte functional fabric, titanium alloy magnetic buckle, three-dimensional structure |
 | | Accessories must show realistic metallic/jade reflection or holographic light effects. | |
 | | Includes: traditional hairpins, pendants, bracelets, or cyber-technical light components. | |
 
@@ -375,14 +375,14 @@ A [Age (number)]-year-old [Gender], [Detailed identity/role], [20-character desc
 
 ## VII. Apparel & Styling Quick Reference (Universal)
 
-| 体系 | 场景 | 妆容 | 发型 | 服饰 | 配饰 |
+| System | Scene | Makeup | Hairstyle | Clothing | Accessories |
 |---|---|---|---|---|---|
-| 古风体系 | 闺中日常 | 清雅素妆 | 披发/半扎发 | 古风日常长裙 | 中等（传统简约配饰） |
-| 古风体系 | 初次相遇/雅集 | 清雅素妆 | 半扎发/堕马髻 | 古风日常长裙 | 中偏多（精致传统配饰） |
-| 古风体系 | 浪漫互动 | 浪漫桃花妆 | 半扎发/堕马髻 | 古风日常长裙/轻便常服 | 中等 |
-| 古风体系 | 宫廷盛典正式亮相 | 宫廷贵气妆 | 高髻云鬓 | 古风宫廷礼服 | 极繁（传统华贵配饰） |
-| 古风体系 | 夜间私密 | 清雅/桃花妆 | 披发/堕马髻 | 古风寝衣 | 极简（无多余配饰） |
-| 古风体系 | 大婚典礼 | 大婚盛妆 | 高髻云鬓 | 古风大婚嫁衣 | 极繁（凤冠霞帔全套配饰） |
+| Ancient style system | Daily boudoir | Elegant makeup | Loose/half-tied hair | Ancient style daily long skirt | Medium (traditional simple accessories) |
+| Ancient style system | First encounter/gathering | Elegant and plain makeup | Half-tied hair/low pony bun | Ancient style daily long skirt | More mid-length (exquisite traditional accessories) |
+| Ancient style system | Romantic interaction | Romantic peach blossom makeup | Half-tied hair/low pony bun | Ancient style daily long skirt/light casual clothes | Medium |
+| Ancient style system | Official appearance at the palace ceremony | Palace noble makeup | High bun with temples | Ancient style palace dress | Extremely complicated (traditional luxurious accessories) |
+| Ancient style system | Private at night | Elegant/peach blossom makeup | Loose hair/low pony bun | Ancient style pajamas | Minimalist (no extra accessories) |
+| Ancient style system | Wedding ceremony | Wedding make-up | High bun with temples | Ancient style wedding dress | Extremely complex (full set of Fengguan Xiale accessories) |
 | Scenario | Makeup | Hairstyle | Clothing (L3+L4) | Accessories (L5) |
 |---|---|---|---|---|
 | Ancient Commute | Plain | Traditional bun | Simple silk robe | Jade hairpin |
@@ -394,17 +394,17 @@ A [Age (number)]-year-old [Gender], [Detailed identity/role], [20-character desc
 
 ---
 
-> **🔍 未覆盖场景推断Rule（双场景通用）**
+> **🔍 Uncovered scenario inference Rule (common to both scenarios)**
 >
-> 当用户描述的场景/情境不在上表时，根据本风格核心基因自行推断，**先锁定古风/都市场景体系，再匹配对应维度Rule**：
+> When the scene/situation described by the user is not in the above table, infer it by yourself based on the core genes of this style, **first lock the ancient style/urban scene system, and then match the corresponding dimension Rule**:
 >
-> | 推断维度 | 古风体系核心基因 | 都市赛博体系核心基因 |
+> | Inferred dimensions | Core genes of the ancient style system | Core genes of the urban cyber system |
 > |---|---|---|
-> | 妆容强度 | 默认清雅素妆；宫廷/权力/正式→宫廷贵气妆；心动/甜宠→浪漫桃花妆；大婚/典礼→大婚盛妆；节日聚会→节日庆典妆 | 默认都市通勤妆；商务/正式→都市商务妆；心动/甜宠→浪漫桃花妆；盛典/大婚→宫廷贵气妆；赛博/机能/夜行→赛博流光妆/机能冷调妆 |
-> | 发型 | 日常/闺中→半扎发或堕马髻；宫廷/正式/盛典→高髻云鬓；私密/夜晚→披发；习武/行动→束发高马尾 | 日常/通勤→半扎低马尾；商务/正式→机能半冠束发；盛典/大婚→高束机能髻；私密/夜晚→披发/低马尾；机能/行动→高马尾 |
-> | 服饰 | 中式传统形制为绝对核心；情感场景→飘逸襦裙长裙；权力/正式→宫廷礼服；行动→轻便常服；PBR材质始终锁定；纯中式传统纹样为默认 | 中式核心形制为绝对基底；日常/通勤→国风通勤常服；商务/正式→国风商务礼服；行动/机能→轻机能常服；PBR材质始终锁定；传统纹样与电路纹理融合为默认 |
-> | 配饰繁度 | 日常→中等；正式/宫廷→极繁；私密→极简；行动→简；纯传统中式配饰为核心 | 日常→中低；商务/盛典→极繁；私密→极简；行动→简；国风+赛博融合配饰为核心，光效可控 |
-> | 质感基准 | PBR材质+电影级柔光始终锁定；体积感与光泽感优先于平面装饰感；无赛博光效（无明确线索禁用） | PBR材质+电影级光影始终锁定；体积感与光泽感优先于平面装饰感；赛博光效为内嵌可控微霓虹，禁止过曝；国风与赛博元素深度融合，无割裂感 |
+> | Makeup intensity | Default is elegant and simple makeup; palace/power/formal→palace and noble makeup; heart-warming/sweet pet→romantic peach blossom makeup; wedding/ceremony→wedding makeup; holiday party→festival makeup | Default urban commuting makeup; business/formal→urban business makeup; heartbeat/sweet pet→romantic peach blossom makeup; grand ceremony/big wedding→palace and noble makeup; cyber/function/night walk→cyber streamer makeup/functional cold-toned makeup |
+> | Hairstyles | Everyday/boudoir→half-tied hair or ponytail; palace/formal/ceremony→high bun with temples; private/night→let hair down; martial arts/action→high ponytail | Daily/commuting→half-tied low ponytail; business/formal→functional half-crown hair; grand ceremony/wedding→high functional bun; private/night→hair loose/low ponytail; functional/action→high ponytail |
+> | Clothing | Chinese traditional shapes are the absolute core; emotional scenes → elegant skirts and long skirts; power/formal → palace dresses; action → light casual wear; PBR material is always locked; pure traditional Chinese patterns are the default | Chinese core shapes are the absolute base; daily/commuting → national style commuting casual wear; business/formal → national style business dress; action/functional → light functional casual wear; PBR material is always locked; the integration of traditional patterns and circuit textures is the default |
+> | Complexity of accessories | Daily → medium; formal/palace → extremely complex; private → minimalist; action → simple; pure traditional Chinese accessories as the core | Daily → medium low; business/ceremony → extremely complex; private → minimalist; action → simple; national style + cyber fusion accessories as the core, with controllable light effects |
+> | Texture benchmark | PBR material + movie-level soft light is always locked; volume and gloss take precedence over plane decoration; no cyber light effect (disabled without clear clues) | PBR material + movie-level light and shadow are always locked; volume and gloss take precedence over plane decoration; cyber light effect is embedded with controllable micro-neon, and overexposure is prohibited; national style and cyber elements are deeply integrated, without a sense of fragmentation |
 
 ## VIII. Character Portrait Series — Four-Angle Photography Specifications
 
@@ -421,7 +421,7 @@ A [Age (number)]-year-old [Gender], [Detailed identity/role], [20-character desc
 
 ### Visual Norms
 
-| 项目 | 约束 |
+| Project | Constraints |
 | Item | Photography Requirement |
 |---|---|
 | Layout | Four angles side-by-side from left to right in the same frame, evenly spaced. |
@@ -438,7 +438,7 @@ A [Age (number)]-year-old [Gender], [Detailed identity/role], [20-character desc
 
 ### Output Format Constraints
 
-| 项目 | 约束 |
+| Project | Constraints |
 | Item | Constraint |
 |---|---|
 | Output Content | **Output prompt text ONLY**, do not output analysis, comparisons, quick-reference tables, or constraint descriptions. |
@@ -450,8 +450,8 @@ A [Age (number)]-year-old [Gender], [Detailed identity/role], [20-character desc
 ### Full Styling Overlay Prompt Template
 
 ```
-【L5·Accessories】{accessories description}, daily wear feel, signs of use, naturally fitting body,
-同一画面从左至右并排：近景特写+正面全身+侧面全身+背面全身,
+[L5·Accessories]{accessories description}, daily wear feel, signs of use, naturally fitting body,
+The same picture is arranged side by side from left to right: close-up + full body from the front + full body from the side + full body from the back,
 natural daily standing posture (shifted weight), seamless grey backdrop #B0B0B0, even studio soft lighting, soft light ratio,
 four angles are a continuous photographic record of the same styling shoot,
 clean frame, no text, no watermark, no signature, no border,
@@ -462,7 +462,7 @@ symmetrical pose, mannequin pose, runway pose, model stance, military stance, ex
 heavy makeup, dramatic makeup, makeup mask, foundation mask, fake lashes, colored contacts,
 wig, fake hair, helmet hair, stiff hair, perfect hairline, CG hair strands,
 brand new clothes, showroom clothes, stiff fabric, unrealistically clean, no wrinkles, mannequin clothes,
-古风, 古装, 汉服, 仙侠, 武侠, 民国, 赛博朋克, 科幻, 西方奇幻, 中世纪,
+Ancient style, ancient costume, Hanfu, Xianxia, martial arts, Republic of China, cyberpunk, science fiction, Western fantasy, medieval,
 ```
 
 ---
@@ -473,9 +473,9 @@ brand new clothes, showroom clothes, stiff fabric, unrealistically clean, no wri
 
 | No. | Rule |
 |---|---|
-| R1 | 叠加后面容必须与底模完全一致，禁止任何五官偏移、变形、风格化篡改 |
-| R2 | 服饰必须用「衣服质感清晰 + PBR材质渲染」，赛博元素不得破坏服饰基础质感与国风核心形制 |
-| R3 | 全场景必须以中式国风形制为绝对核心，古风场景纯传统国风，都市场景国风基底不可丢失，禁止无国风内核的纯西式设计 |
+| R1 | The facial features after superimposition must be completely consistent with the base model, and any deviation, deformation, or stylized tampering of the facial features is prohibited |
+| R2 | Clothing must use "clear clothing texture + PBR material rendering", and cyber elements must not destroy the basic texture of the clothing and the core shape of the national style |
+| R3 | The entire scene must have Chinese-style national style as the absolute core. Ancient-style scenes must be purely traditional Chinese-style. Urban scenes must not lose the national-style base. Pure Western-style designs without a national-style core are prohibited |
 | No. | Rule |
 |---|---|
 | R1 | Face after styling must remain consistent with base model—styling serves the face, not masks it. |
@@ -497,10 +497,10 @@ brand new clothes, showroom clothes, stiff fabric, unrealistically clean, no wri
 
 | No. | Strictly Forbidden |
 |---|---|
-| X1 | 叠加后面容偏移、五官变形、与底模不一致 |
-| X2 | 服饰丢失国风核心形制，出现无中式内核的纯西式西装、纯机能服、纯西式赛博朋克设计 |
-| X3 | 妆容/服饰/赛博元素风格互相冲突、出现割裂感，国风与赛博元素对立 |
-| X4 | 复杂场景背景（必须纯色），禁止添加任何环境/场景/天气元素 |
+|
+|
+|
+| X4 | Complex scene background (must be solid color), adding any environment/scene/weather elements is prohibited |
 | No. | Prohibited |
 |---|---|
 | X1 | Strictly forbid "3D render / 3D modeling / CG / PBR material / 8K modeling / UE engine / Blender" and other CG terms. |
@@ -519,13 +519,13 @@ brand new clothes, showroom clothes, stiff fabric, unrealistically clean, no wri
 
 ---
 
-## ✅ 校验完成说明
-1.  **双场景100%适配**：完整搭建「古风传统体系」+「都市赛博体系」两套并行Rule，无明确赛博线索时可完美生成纯古风内容，有都市线索时可精准生成国风赛博内容，互不冲突
-2.  **国风基底零偏移**：全手册贯穿「中式形制为绝对核心」的红线，都市赛博场景所有服饰、发型、配饰均保留国风内核，杜绝纯西式赛博跑偏
-3.  **赛博融合可控化**：赛博元素分为「可选轻量款」和「都市强化款」，边界清晰，不会出现古风场景过度赛博化、都市场景国风丢失的问题
-4.  **3D标准全统一**：古风/都市场景共用一套高精度3D渲染标准，PBR材质、光影、建模精度无差异，确保生成效果稳定
-5.  **核心约束无遗漏**：完整保留原手册的「面容不变、姿态不变、逐层可控、纯服化范畴」等核心Rule，优化后不破坏原手册的底层逻辑
-6.  **全场景无死角覆盖**：补全了古风+都市全细分场景的服化组合、推断Rule、Prompt Keywords模板，可直接落地使用，无需二次调整
+## ✅ Verification completion instructions
+1. **Dual scene 100% adaptation**: Completely build two sets of parallel rules of "ancient style traditional system" + "urban cyber system". When there are no clear cyber clues, pure ancient style content can be perfectly generated. When there are urban clues, Chinese style cyber content can be accurately generated without conflicting with each other.
+2. **Zero deviation of the base of Chinese style**: The entire manual runs through the red line of "Chinese style is the absolute core". All clothing, hairstyles, and accessories in urban cyber scenes retain the core of Chinese style to prevent pure Western cyber deviations.
+3. **Cyber integration is controllable**: Cyber elements are divided into "optional lightweight models" and "urban enhanced models" with clear boundaries. There will be no problems of over-cyberization of ancient scenes and loss of national style in urban scenes.
+4. **Unified 3D standards**: Ancient style/urban scenes share a set of high-precision 3D rendering standards. There is no difference in PBR materials, light and shadow, and modeling accuracy to ensure stable generation effects.
+5. **No core constraints are omitted**: The core rules of the original manual such as "face unchanged, posture unchanged, controllable layer by layer, and purely serviceable categories" are completely retained, and the underlying logic of the original manual is not destroyed after optimization.
+6. **Full scene coverage without blind spots**: Completes the service combination of ancient style + urban full subdivision scenes, inferred Rules, and Prompt Keywords templates, which can be used directly on the ground without secondary adjustments.
 </art_character_derivative>
 
 <art_prop>
@@ -607,11 +607,11 @@ brand new clothes, showroom clothes, stiff fabric, unrealistically clean, no wri
 ---
 
 ## IV. Material Rendering Constraints (PBR Standard)
-| 材质分类 | 通用渲染要求（PBR标准） | 古风场景渲染标准 | 都市赛博场景渲染标准 | 标准化Prompt Keywords |
+| Material Classification | General Rendering Requirements (PBR Standard) | Ancient Style Scene Rendering Standard | Urban Cyber Scene Rendering Standard | Standardized Prompt Keywords |
 |---|---|---|---|---|
-| 传统金属 | 反光/高光/冷光泽精准，划痕/磨损/包浆微可见，金属度/粗糙度参数符合物理属性 | 青铜/玄铁/精钢/黄金，哑光质感为主，低反光，古旧磨损自然 | 钛钢/阳极氧化铝/18K金，金属度拉满，高反光/哑光可选，精密质感 | 金属质感，物理级反光，{金属类型}，{质感描述} |
-| 玉石/宝石 | 次表面散射精准，内透光、温润、微通透，切面/纹理清晰，色散效果自然 | 和田玉/翡翠/玛瑙，低饱和，强次表面散射，温润如脂，内藏能量回路 | 莫桑石/水晶/玉髓，高通透，强色散，切面清晰，内藏发光芯片/光导纤维 | 玉质通透，温润如脂，次表面散射，宝石璀璨，光芒折射 |
-| 木质/竹质 | 木纹/年轮/竹节清晰，肌理写实，粗糙度符合物理属性，无模糊纹理 | 檀木/楠木/竹材，做旧质感，木纹清晰，温润哑光，适配古风陈设 | 黑胡桃/白蜡木/碳化竹，全新质感，木纹细腻，哑光/漆面光泽可选，适配都市居家 | 木纹清晰，年轮可见，肌理写实，质感温润 |
+| Traditional metal | Reflective/high gloss/cold gloss is precise, scratches/wear/patina are slightly visible, metallicity/roughness parameters conform to physical properties | Bronze/black iron/stainless steel/gold, mainly matte texture, low reflection, natural wear and tear | Titanium steel/anodized aluminum/18K gold, full metallicity, high reflective/matte optional, precise texture | Metallic texture, physical grade reflection, {metal type}, {texture description} |
+| Jade/Gemstone | Accurate subsurface scattering, internal light transmission, warmth, micro-transparency, clear cut surface/texture, natural dispersion effect | Hotan jade/jade/agate, low saturation, strong subsurface scattering, warm as grease, built-in energy circuit | Moissanite/crystal/chalcedony, high transparency, strong dispersion, clear cut surface, built-in luminescent chip/optical fiber | Jade is transparent, warm and moist like grease, subsurface scattering, gemstones are brilliant, and light is refracted |
+| Wood/bamboo | Clear wood grain/annual rings/bamboo knots, realistic texture, roughness consistent with physical properties, no blurry texture | Sandalwood/nanmu/bamboo, old texture, clear wood grain, warm matte, suitable for antique furnishings | Black walnut/ash wood/carbonized bamboo, new texture, fine wood grain, matte/lacquered gloss optional, suitable for urban homes | The wood grain is clear, the growth rings are visible, the texture is realistic, and the texture is warm |
 | | **Metals:** High-precision specular/gloss, PBR standard roughness/metalness. | |
 | | **Jade/Gems:** Precise sub-surface scattering, internal translucency. | |
 | | **Wood/Bamboo:** Realistic fibers and growth ring textures. | |
@@ -621,11 +621,11 @@ brand new clothes, showroom clothes, stiff fabric, unrealistically clean, no wri
 ---
 
 ## V. Standardized Prompt Templates (Use as base)
-### 【General】 Ancient + Urban Compatible
+### [General] Ancient + Urban Compatible
 ```
-国风赛博朋克道具设定图，8K超高清，次世代高精度3D建模，PBR物理材质，光线追踪，全局光照，3D国风赛博风格，东方古典形制融合赛博机能美学，电影级光影，
-{道具类型}，{材质描述}，{工艺/装饰描述}，{机能元素描述}，{状态描述}，{发光效果描述}，
-纯道具静物展示，道具独立陈列，无人持有，无人佩戴，无人使用，
+National-style cyberpunk props setting diagram, 8K ultra-high definition, next-generation high-precision 3D modeling, PBR physical materials, ray tracing, global illumination, 3D national-style cyber style, oriental classical shape combined with cyber functional aesthetics, movie-level light and shadow,
+{Prop Type}, {Material Description}, {Craftsmanship/Decoration Description}, {Functional Element Description}, {State Description}, {Lighting Effect Description},
+Pure prop still life display, props are displayed independently, no one holds them, no one wears them, no one uses them,
 "Chinese cyberpunk prop setting sheet, 8K UHD, next-gen high-precision 3D modeling, PBR physical materials, ray tracing, global illumination, 3D Chinese cyber style, Eastern classical form fused with cyber-functional aesthetics, cinematic lighting, {Item Type}, {Material}, {Craft/Deco}, {Functional element}, {Condition}, {Glow effect}, standalone prop display, no characters/hands/usage, 2x2 grid (front/side/back/detail), neutral gray background #B8B8B8, soft lighting, no hard shadows, ultra-clear textures, no text/labels/watermarks."
 
 *(Templates for specific sub-styles follow the same core structure while adjusting the mood/style tags.)*
@@ -647,11 +647,11 @@ Mandatory Rules
 
 ### Prohibited Redlines (Immediate Disqualification)
 ```
-新中式都市赛博朋克道具设定图，8K超高清，次世代高精度3D建模，PBR物理材质，光线追踪，全局光照，3D都市国风赛博风格，极简新中式设计为核心，赛博机能为功能载体，赛博朋克电影级光影，
-{道具类型}，{材质描述}，{工艺描述}，{智能机能元素描述}，{状态描述}，{霓虹发光效果描述}，
-纯道具静物展示，道具独立陈列，无人持有，无人佩戴，无人使用，
-同一画面四宫格（2×2）：左上正面正交视图+右上侧面正交视图+左下背面正交视图+右下细节特写，
-素灰纯色#B8B8B8背景，全局光照，均匀柔光，物理级反射，无硬阴影，无过曝，
+New Chinese style urban cyberpunk props setting diagram, 8K ultra-high definition, next generation high-precision 3D modeling, PBR physical materials, ray tracing, global illumination, 3D urban Chinese style cyber style, minimalist new Chinese style design as the core, cyber function as the functional carrier, cyberpunk movie-level light and shadow,
+{Prop type}, {Material description}, {Process description}, {Intelligent functional element description}, {Status description}, {Neon glow effect description},
+Pure prop still life display, props are displayed independently, no one holds them, no one wears them, no one uses them,
+Four grids of the same picture (2×2): upper left front orthogonal view + upper right side orthogonal view + lower left back orthogonal view + lower right detail close-up,
+Plain gray solid color #B8B8B8 background, global illumination, uniform soft light, physical level reflection, no hard shadows, no overexposure,
 **X1-X5:** No backgrounds, no characters, no hands/limbs, no "in-use" poses, no signs of human interaction.
 **X6-X8:** No discordant elements (e.g., modern guns in ancient settings, pure western tech without Chinese motifs).
 **X9-X11:** No overexposure, no text/watermarks, no perspective-distorted modeling.
@@ -659,33 +659,33 @@ Mandatory Rules
 
 ---
 
-## 六、约束Rule（双场景Must Follow+Strictly Forbidden红线）
-### Must FollowRule（违反即不合格）
-| No. | 强制Rule |
+## 6. Constraint Rule (dual scene Must Follow+Strictly Forbidden red line)
+### Must FollowRule (violation means disqualification)
+| No. | Mandatory Rule |
 |---|---|
-| R1 | 必须指定「素灰纯色#B8B8B8背景」，禁止任何多余背景元素，可选适配场景的合规背景 |
-| R2 | 必须明确道具材质与工艺，传统材质与赛博材质标注清晰，PBR属性完整，渲染标准统一 |
-| R3 | 道具造型必须以东方古典形制/新中式设计为核心骨架，禁止无国风内核的纯西方赛博/纯现代设计 |
-| R4 | 必须使用正交视图呈现四宫格多角度内容，3D建模比例精准，无透视畸变、无穿模、无比例失衡 |
-| R5 | 必须遵循双场景兼容准则，所有道具设计必须同时具备古风场景和都市场景的适配空间，禁止单一场景绑定 |
-| R6 | 所有赛博机能元素必须服务于道具核心功能与叙事，禁止无意义的特效堆砌、元素堆砌 |
-| R7 | 必须遵循8K超高清、次世代3D渲染、PBR物理材质的核心渲染标准，无噪点、无锯齿、无模糊 |
+| R1 | "Plain gray solid color #B8B8B8 background" must be specified, any redundant background elements are prohibited, and a compliant background suitable for the scene can be selected |
+| R2 | Prop materials and processes must be clear, traditional materials and cyber materials are clearly marked, PBR attributes are complete, and rendering standards are unified |
+| R3 | Prop modeling must be based on oriental classical shapes/new Chinese design as the core skeleton, and purely Western cyber/pure modern designs without a national style core are prohibited |
+| R4 | Orthogonal views must be used to present four-square multi-angle content, with accurate 3D modeling proportions, no perspective distortion, no mold penetration, and no proportional imbalance |
+| R5 | Dual scene compatibility guidelines must be followed. All prop designs must have adaptability to both ancient scenes and urban scenes. Single scene binding is prohibited |
+| R6 | All cyber functional elements must serve the core function and narrative of the prop, and meaningless stacking of special effects and elements is prohibited |
+| R7 | Must comply with the core rendering standards of 8K ultra-high definition, next-generation 3D rendering, and PBR physical materials, with no noise, no aliasing, and no blur |
 
-### Strictly Forbidden红线（触碰即作废）
-| No. | Strictly Forbidden内容 |
+### Strictly Forbidden red line (touched and invalidated)
+| No. | Strictly Forbidden Content |
 |---|---|
-| X1 | 复杂场景背景、带环境的场景化画面，禁止任何非合规纯色的背景元素 |
-| X2 | 道具与人物同画面，本手册为纯道具设定图规范，禁止任何人物相关元素 |
-| X3 | 出现任何人物形象，包括全身、半身、局部（手、手指、手臂等所有肢体部位） |
-| X4 | 道具处于被持有、握持、佩戴、使用中的状态，禁止任何暗示使用场景的姿态 |
-| X5 | 出现暗示人物存在的元素（如手持痕迹、佩戴视角、使用姿态、人体工学握持造型） |
-| X6 | 无国风内核的纯西方赛博朋克设计，禁止与国风赛博世界观不符的违和元素 |
-| X7 | 古风场景出现过度未来化的违和元素（如都市智能硬件、枪械、西方赛博符号） |
-| X8 | 都市场景出现脱离新中式内核的违和元素（如纯古代冷兵器、仙侠玄幻无逻辑元素） |
-| X9 | 过度曝光的光效，发光元素必须自然柔和，不破坏整体材质质感与画面光影平衡 |
-| X10 | 画面中出现任何文字、标注、刻度线、水印、logo等多余元素 |
-| X11 | 透视畸变的3D建模，四宫格视图必须使用正交视角，确保道具结构比例精准统一 |
-| X12 | 无功能逻辑的赛博元素堆砌，所有机能部件必须有合理的功能对应，禁止无效设计 |
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
 </art_prop>
 
 <art_prop_derivative>
@@ -1116,7 +1116,7 @@ No text, watermarks, logos, or annotations.
 ### View Definitions
 (Universal for Ancient/Urban, 360° self-consistent spatial logic)
 
-> 摄像机固定于场景中心点，分别朝前/后/左/右四个方向平视拍摄，形成 360° 无死角环视，古风院落/都市街区通用。
+> The camera is fixed at the center point of the scene and shoots head-on in four directions: front/back/left/right, forming a 360° panoramic view without blind spots, suitable for use in ancient courtyards/urban blocks.
 
 | Location | View | Direction | Requirements | Prompt Keywords |
 |---|---|---|---|---|
@@ -1128,7 +1128,7 @@ No text, watermarks, logos, or annotations.
 ### Image Specifications
 (Universal for Ancient/Urban, strictly enforce consistency, prevent AI artifacts)
 
-| 项目 | 约束 |
+| Project | Constraints |
 |---|---|
 | | **Layout**: Four-pane grid (2x2), 360° surround from center point. | |
 | | **Figures**: **Strictly NO people, shadows, silhouettes, or animal silhouettes.** | |
@@ -1142,8 +1142,8 @@ No text, watermarks, logos, or annotations.
 ## VI. Prompt Template
 (Universal for Ancient/Urban, flexible placeholders, copy-ready)
 
-3D国风赛博场景衍生四视图设定图，基于{场景名}概念图，
-{场景类型：古风场景/现代都市场景二选一}，chinoiserie cyberpunk，国风赛博朋克，
+A four-view setting diagram derived from the 3D Chinese-style cyber scene, based on the {scene name} concept diagram,
+{Scene type: Choose one of ancient scenes/modern urban scenes}, chinoiserie cyberpunk, national style cyberpunk,
 3D Chinese-style cyberpunk scene derivative four-view reference sheet, based on {concept art name},
 {Scene Type: Ancient-Style / Modern Urban}, chinoiserie cyberpunk,
 {Ancient Exclusive: traditional architecture mixed with cyberpunk tech, eave/dougong brackets with neon pipelines, mortise-tenon with mechanical modules, traditional engravings with neon, holographic projection, cyber-traditional signage}
@@ -1165,7 +1165,7 @@ Four-pane grid (2x2): 360° surround view from center point, Front+Right+Back+Le
 All four views shot from same eye-level center point, consistent architecture, materials, and lighting, no person in the image,
 No text in the image.
 
-> **使用说明**：根据用户提供的信息自行判断需要应用的变化维度（Shot Type/Time-of-Day/天候），未提及的维度对应字段留空省略即可。无需为每种变体单独生成模板。古风/都市场景二选一填写，未选场景的专属字段直接删除。
+> **Instructions for use**: Based on the information provided by the user, you can judge the change dimensions that need to be applied (Shot Type/Time-of-Day/Weather). The fields corresponding to the dimensions not mentioned can be left blank and omitted. No need to generate separate templates for each variant. Choose one of the ancient style/urban scenes to fill in, and the exclusive fields for unselected scenes will be deleted directly.
 
 ---
 
@@ -1176,7 +1176,7 @@ No text in the image.
 
 | No. | Rule |
 |---|---|
-| R1 | 场景空间结构、路网/院落布局在所有变体中保持完全一致 |
+| R1 | The scene space structure and road network/courtyard layout remain completely consistent in all variants |
 | | **R2**: Time-of-day variants must adjust sky/atmosphere and adapt specific light sources. | |
 | | **R3**: Weather variants must adapt vegetation/surfaces and physical feedback. | |
 | | **R4**: Must be "Four-View reference" (Front+Right+Back+Left), 2x2 grid. | |
@@ -1195,12 +1195,12 @@ No text in the image.
 
 | No. | Strictly Forbidden |
 |---|---|
-| X1 | 变体间建筑结构/布局/路网/院落不一致 |
-| X2 | 天候与季节矛盾（夏天飞雪、雨季积雪等） |
-| X3 | 变体间材质/色调/风格突变、融合逻辑不一致 |
-| X4 | 出现任何人物、人影、人体剪影、人体轮廓、动物轮廓 |
-| X5 | 四视图之间建筑结构/材质/色调不一致，或视点中心/高度不统一 |
-| X6 | 低精度建模/粗糙贴图/塑料质感/平涂风格（禁用 low-poly、rough modeling、flat color 等词） |
+| X1 | The building structure/layout/road network/courtyard is inconsistent between variants |
+|
+|
+| X4 | Any person, silhouette, human silhouette, human silhouette, animal silhouette appears |
+|
+|
 | | **X4**: Inclusion of any human/animal figures or silhouettes. | |
 | | **X5**: Inconsistent views or viewpoint shifts. | |
 | | **X6**: Low-quality modeling, rough textures, or plastic styles. | |
@@ -1218,7 +1218,7 @@ When generating 3D Chinese-style cyberpunk videos, you must fully inject the vis
 |------|----------|
 | **General Multi-Parameter Mode (English)** | `Chinese traditional 3D render, PBR materials, volumetric lighting, oriental aesthetic, elegant and grand, cinematic, cyberpunk fusion, Chinese-style cyber neon aesthetics, holographic traditional Chinese elements, futuristic oriental cyber cityscape, traditional Chinese architecture with cybernetic retrofitting, rain-slicked reflective surfaces, neon glow atmosphere, high contrast dynamic lighting, seamless integration of classical Chinese culture and futuristic technology` |
 | **General Start/End Frame Mode (English)** | `Chinese traditional 3D render, PBR materials, volumetric lighting, oriental aesthetic, elegant and grand, cinematic, shallow depth of field, cyberpunk fusion, cinematic cyber-oriental framing, holographic Chinese calligraphy & pattern elements, neon-lit traditional Chinese pavilions, bokeh neon light effects, atmospheric depth, strong visual impact, retro-futuristic Chinese style` |
-| **Seedance 2.0 (Chinese)** | `国风3D渲染，PBR材质，体积光，东方美学，典雅大气，电影风格，国风赛博朋克，新中式未来科技，霓虹全息中式元素，赛博化传统中式建筑，雨幕反光路面，霓虹氛围光效，高对比动态光影，东方古韵与未来科技深度融合，赛博国风场景，超写实3D质感` |
+| **Seedance 2.0** | `Chinese style 3D rendering, PBR material, volumetric light, oriental aesthetics, elegance and atmosphere, movie style, Chinese style cyberpunk, new Chinese future technology, neon holographic Chinese elements, cyber traditional Chinese architecture, rain screen reflective road, neon atmosphere light effect, high contrast dynamic light and shadow, deep integration of ancient oriental charm and future technology, cyber Chinese style scenes, ultra-realistic 3D texture` |
 
 ---
 </art_storyboard_video>
@@ -1232,7 +1232,7 @@ When generating 3D Chinese-style cyberpunk videos, you must fully inject the vis
 ## I. Color Palette and Visual Tone
 (Dual-scenario self-check: Clear implementation standards for both Ancient and Urban scenes, with no adaptation blind spots)
 
-- **Color Foundation** — The entire piece utilizes Lunar White (C1), Cyan-Green (C2), and Indigo (C4) as the traditional oriental base colors, layered with core cyberpunk colors suited to the Chinese style (Vermilion neon, Fluorescent Cyan-Green, Cybernetic Indigo, and Gilded holographic tones). The overall color temperature is neutral-to-cool (4500-5800K). The saturation of traditional base colors is medium-to-high (55-75%), while the saturation of cyberpunk overlay colors can be controlled and heightened (70-90%). 【Ancient Scene】: Base colors are the core for architecture, costumes, and props. 【Urban Scene】: The same color family is used for skyscraper facades, cityscapes, public spaces, and costumes/props. Cyberpunk overlay colors are strictly anchored to the traditional oriental color system to avoid chaotic urban neon without oriental stylistic anchors.
+- **Color Foundation** — The entire piece utilizes Lunar White (C1), Cyan-Green (C2), and Indigo (C4) as the traditional oriental base colors, layered with core cyberpunk colors suited to the Chinese style (Vermilion neon, Fluorescent Cyan-Green, Cybernetic Indigo, and Gilded holographic tones). The overall color temperature is neutral-to-cool (4500-5800K). The saturation of traditional base colors is medium-to-high (55-75%), while the saturation of cyberpunk overlay colors can be controlled and heightened (70-90%). [Ancient Scene]: Base colors are the core for architecture, costumes, and props. [Urban Scene]: The same color family is used for skyscraper facades, cityscapes, public spaces, and costumes/props. Cyberpunk overlay colors are strictly anchored to the traditional oriental color system to avoid chaotic urban neon without oriental stylistic anchors.
 - **Emotional Palette Drive** — Six sets of dual-scenario universal emotional palettes correspond to different narrative segments. Each set employs a "Traditional Base Layer + Cyberpunk Overlay Layer" dual-track system. Palette switching must be perfectly synchronized with the story arc:
   1. Palatial grandeur / Urban centers of power
   2. Landscape imagery / Urban sky gardens
@@ -1240,9 +1240,9 @@ When generating 3D Chinese-style cyberpunk videos, you must fully inject the vis
   4. Martial arts tension / Urban workplace rivalry / Crime investigation
   5. Festive celebration / Urban city festivals / Nightlife narratives
   6. Serene moonlit night / Urban night solitude / Empty city shots
-- **Warm/Cool Narrative Contrast** — Traditional warm colors (Vermilion C3, Golden Yellow C5, Rouge C7, Gamboge C9) + Cyberpunk warm lighting (Neon Vermilion, Holographic Gilded) serve as visual signals for narrative shifts, used for emotional heating and festive segments. Traditional cool colors (Indigo C4, Ink Black C6) + Cyberpunk cool lighting (Fluorescent Cyan-Green, Cybernetic Indigo) are used for cold, melancholy, and serene segments. The light/color switching of cyberpunk elements serves as a visual anchor for strong narrative shifts. 【Ancient Scene】 focuses on traditional colors with cyberpunk as an accent; 【Urban Scene】 balances the weighting of the two tracks based on narrative needs.
+- **Warm/Cool Narrative Contrast** — Traditional warm colors (Vermilion C3, Golden Yellow C5, Rouge C7, Gamboge C9) + Cyberpunk warm lighting (Neon Vermilion, Holographic Gilded) serve as visual signals for narrative shifts, used for emotional heating and festive segments. Traditional cool colors (Indigo C4, Ink Black C6) + Cyberpunk cool lighting (Fluorescent Cyan-Green, Cybernetic Indigo) are used for cold, melancholy, and serene segments. The light/color switching of cyberpunk elements serves as a visual anchor for strong narrative shifts. [Ancient Scene] focuses on traditional colors with cyberpunk as an accent; [Urban Scene] balances the weighting of the two tracks based on narrative needs.
 - **Palette-First Principle** — Segment planning must first bind emotional scenarios, then determine the "Traditional Primary + Secondary + Cyberpunk Overlay" colors and lighting scheme. Avoid "correct plot, wrong emotion," ensuring the color logic of Ancient/Urban scenes is completely unified.
-- **Prohibited Color Gamut** — High-saturation messy fluorescent colors, jarring modern digital colors, low-quality cheap neon, and illogical Western cyberpunk clashes are incompatible with this style. 【Urban Scene】 Additional prohibitions: street advertising colors without oriental anchors, chaotic street neon, and pure industrial cold grey tones.
+- **Prohibited Color Gamut** — High-saturation messy fluorescent colors, jarring modern digital colors, low-quality cheap neon, and illogical Western cyberpunk clashes are incompatible with this style. [Urban Scene] Additional prohibitions: street advertising colors without oriental anchors, chaotic street neon, and pure industrial cold grey tones.
 
 ---
 
@@ -1250,17 +1250,17 @@ When generating 3D Chinese-style cyberpunk videos, you must fully inject the vis
 (Dual-scenario self-check: 7 schemes fully adapted for both Ancient + Urban, with specific usage instructions for each to avoid execution gaps)
 
 - **Lighting as Narrative** — 7 sets of dual-track Chinese Cyberpunk lighting schemes correspond to different emotional segments. During the planning stage, directors must determine the direction of "Traditional Base Lighting + Cyberpunk Overlay Lighting" at the segment level, rather than assigning them inconsistently shot-by-shot. Ancient and Urban scenes can directly reuse the same framework.
-- **Core 3D Rendering Lighting Features** — Volumetric lighting, Ambient Occlusion (AO), and depth-of-field blur are the core lighting tools for the traditional base. New additions like holographic effects, neon rim lighting, cyberpunk screen reflections, and energy volumetric lights are core to the cyberpunk layer. 【Urban Scene】 Additional adaptations: building neon rim lighting, multi-layer reflections on glass curtain walls, volumetric lighting in urban canyons, holographic billboard area lighting, skyscraper skyline backlighting, and subterranean CNC lighting. All lighting schemes must reflect PBR physical material rendering qualities, ensuring logical unity and physical credibility between traditional and cyberpunk layers.
+- **Core 3D Rendering Lighting Features** — Volumetric lighting, Ambient Occlusion (AO), and depth-of-field blur are the core lighting tools for the traditional base. New additions like holographic effects, neon rim lighting, cyberpunk screen reflections, and energy volumetric lights are core to the cyberpunk layer. [Urban Scene] Additional adaptations: building neon rim lighting, multi-layer reflections on glass curtain walls, volumetric lighting in urban canyons, holographic billboard area lighting, skyscraper skyline backlighting, and subterranean CNC lighting. All lighting schemes must reflect PBR physical material rendering qualities, ensuring logical unity and physical credibility between traditional and cyberpunk layers.
 
 | Lighting Scheme | Name | Color Tendency | Dual-Scenario Emotional & Scene Applicability |
 |---|---|---|---|
-| A | Warm Cyberpunk Splendor | Vermilion Base + Golden Holographic Highlight + Lunar White Bottom + Vermilion Neon Rim Light | 【Ancient】 Palatial luxury, solemnity, grand celebrations, power narratives<br>【Urban】 Top-level power spaces, corporate HQs, city landmarks, narrative climaxes |
-| B | Holographic Cyan-Green | Cyan-Green Base + Lunar White Volumetric Fog + Cyan Fluorescent Diffusion + Holographic Landscape Light | 【Ancient】 Landscape imagery, poetic, ethereal, cyber-zen<br>【Urban】 Sky gardens, urban ecological landmarks, holographic landscapes, zen offices |
-| C | CNC Soft Warm Shadows | Rouge Warm Base + Gold Accents + Soft Shadows + Warm Holographic Atmosphere Light | 【Ancient】 Gentle chambers, delicate, daily warmth, private narratives<br>【Urban】 High-end private residences, home-life scenes, gentle emotional segments |
-| D | Cold Prosthetic Lethality | Ink Black Base + Indigo Hard Light + High-Contrast Cutout + Cool Cyber Energy Light | 【Ancient】 Martial arts killing intent, cold/sharp, oppressive atmosphere, confrontation<br>【Urban】 Workplace rivalry, crime investigation, subterranean narratives, high-tension conflict |
-| E | CNC Window Diffused | Lunar White Base + Natural Side Light + AO + Window Grille Holographic Projection | 【Ancient】 Indoor daytime, daily life, quiet elegance, domestic narratives<br>【Urban】 Daytime office spaces, urban living, tea rooms/studies |
-| F | Cyber Moonlit Night | Indigo Base + Lunar White Cold Light + Gold Warm Accents + Artificial Moonlight Holographic Light | 【Ancient】 Moonlit night, serene, longing/solitude, atmospheric narratives<br>【Urban】 City night views, skyscraper empty shots, street night life, solitude |
-| G | Neon Festive Warmth | Vermilion Base + Gamboge Warm Light + High-Saturation Neon + Holographic Festive Projection | 【Ancient】 Festivals, lively, bustling life, ensemble narratives<br>【Urban】 City festivals, traditional night markets, city nightlife, ensemble shots |
+| A | Warm Cyberpunk Splendor | Vermilion Base + Golden Holographic Highlight + Lunar White Bottom + Vermilion Neon Rim Light | [Ancient] Palatial luxury, solemnity, grand celebrations, power narratives<br>[Urban] Top-level power spaces, corporate HQs, city landmarks, narrative climaxes |
+| B | Holographic Cyan-Green | Cyan-Green Base + Lunar White Volumetric Fog + Cyan Fluorescent Diffusion + Holographic Landscape Light | [Ancient] Landscape imagery, poetic, ethereal, cyber-zen<br>[Urban] Sky gardens, urban ecological landmarks, holographic landscapes, zen offices |
+| C | CNC Soft Warm Shadows | Rouge Warm Base + Gold Accents + Soft Shadows + Warm Holographic Atmosphere Light | [Ancient] Gentle chambers, delicate, daily warmth, private narratives<br>[Urban] High-end private residences, home-life scenes, gentle emotional segments |
+| D | Cold Prosthetic Lethality | Ink Black Base + Indigo Hard Light + High-Contrast Cutout + Cool Cyber Energy Light | [Ancient] Martial arts killing intent, cold/sharp, oppressive atmosphere, confrontation<br>[Urban] Workplace rivalry, crime investigation, subterranean narratives, high-tension conflict |
+| E | CNC Window Diffused | Lunar White Base + Natural Side Light + AO + Window Grille Holographic Projection | [Ancient] Indoor daytime, daily life, quiet elegance, domestic narratives<br>[Urban] Daytime office spaces, urban living, tea rooms/studies |
+| F | Cyber Moonlit Night | Indigo Base + Lunar White Cold Light + Gold Warm Accents + Artificial Moonlight Holographic Light | [Ancient] Moonlit night, serene, longing/solitude, atmospheric narratives<br>[Urban] City night views, skyscraper empty shots, street night life, solitude |
+| G | Neon Festive Warmth | Vermilion Base + Gamboge Warm Light + High-Saturation Neon + Holographic Festive Projection | [Ancient] Festivals, lively, bustling life, ensemble narratives<br>[Urban] City festivals, traditional night markets, city nightlife, ensemble shots |
 
 - **Warm/Cool Light Distribution** — Traditional warm lights + Cyberpunk warm lights apply to luxury, gentleness, and festive segments. Traditional cool lights + Cyberpunk cool lights apply to killing, melancholy, and serenity. Directors can adjust the switching points as needed; the toggling of cyberpunk lights acts as a visual signal for key narrative nodes. Both scenarios follow the same logic.
 - **Atmosphere Mapping** — Every scene must map to one of the atmosphere directions (A-G), ensuring visual consistency between layers for a unified style.
@@ -1270,14 +1270,14 @@ When generating 3D Chinese-style cyberpunk videos, you must fully inject the vis
 ## III. Texture Direction
 (Dual-scenario self-check: Complete coverage, clear aging standards, eliminating plastic/CG look)
 
-- **3D Rendering as Dual-Track Anchor** — Core of Chinese-Style Cyberpunk 3D: High-precision dual-track modeling, PBR physical material rendering, traditional layer volumetric lighting + cyberpunk layer holographic lighting, ambient occlusion, and depth-of-field blur, resulting in cinematic 3D renders. 【Ancient Scene】 Focuses on high-precision modeling of ancient architecture, traditional costumes, and landscapes. 【Urban Scene】 Focuses on high-precision dual-track modeling of New Chinese skyscrapers, public spaces, cyber-vehicles, and modern costumes, strictly following the same PBR standards.
+- **3D Rendering as Dual-Track Anchor** — Core of Chinese-Style Cyberpunk 3D: High-precision dual-track modeling, PBR physical material rendering, traditional layer volumetric lighting + cyberpunk layer holographic lighting, ambient occlusion, and depth-of-field blur, resulting in cinematic 3D renders. [Ancient Scene] Focuses on high-precision modeling of ancient architecture, traditional costumes, and landscapes. [Urban Scene] Focuses on high-precision dual-track modeling of New Chinese skyscrapers, public spaces, cyber-vehicles, and modern costumes, strictly following the same PBR standards.
 - **PBR Dual-Track Fusion** — All assets must achieve credible textures via PBR. The core is the "Organic fusion of traditional materials + cyberpunk materials":
-  - 【Ancient Core Materials】 Silk luster, wood grain/patina, metal reflectivity, translucent jade, porcelain glaze.
-  - 【Urban Core Materials】 Glass wall transparency vs. Chinese grille shadows; reinforced concrete texture vs. stone texture; matte aluminum vs. antiqued copper; asphalt wear vs. weathered flagstone; fiber-optic light vs. silk drape.
-- **Volumetric Lighting & DOF** — Volumetric light is the soul: 【Ancient】 Requires air perspective and natural light + cyber-neon scattering in outdoor scenes;室内 (indoor) scenes use window/candle/holographic projection for layering. 【Urban】 Requires volumetric canyon street lights, skyscraper skyline diffusion, neon volumetric scattering, and holographic screen light.
+  - [Ancient Core Materials] Silk luster, wood grain/patina, metal reflectivity, translucent jade, porcelain glaze.
+  - [Urban Core Materials] Glass wall transparency vs. Chinese grille shadows; reinforced concrete texture vs. stone texture; matte aluminum vs. antiqued copper; asphalt wear vs. weathered flagstone; fiber-optic light vs. silk drape.
+- **Volumetric Lighting & DOF** — Volumetric light is the soul: [Ancient] Requires air perspective and natural light + cyber-neon scattering in outdoor scenes; indoor (indoor) scenes use window/candle/holographic projection for layering. [Urban] Requires volumetric canyon street lights, skyscraper skyline diffusion, neon volumetric scattering, and holographic screen light.
 - **Aging Consistency** — Materials must not look brand new/flawless:
-  - 【Ancient】 Worn wood, weathered stone with moss, fabric folds, chipped tiles.
-  - 【Urban】 Asphalt tire marks, stained/weathered glass, oxidized/scratched metal, worn street furniture, flickering neon signs.
+  - [Ancient] Worn wood, weathered stone with moss, fabric folds, chipped tiles.
+  - [Urban] Asphalt tire marks, stained/weathered glass, oxidized/scratched metal, worn street furniture, flickering neon signs.
 - **Cyber is Not Cold** — Focus on the balance between oriental aesthetic warmth and cyberpunk vanguardism, conveying emotion through texture and light, not meaningless spectacle.
 
 ---
@@ -1285,11 +1285,11 @@ When generating 3D Chinese-style cyberpunk videos, you must fully inject the vis
 ## IV. Spatial Elements
 (Dual-scenario self-check: 100% adaptation, covering both traditional and cyber-urban functionality)
 
-- **Framing Elements** — 【Ancient】 Gauze/Screens/Frames; 【Urban】 Holographic gauze/CNC screens/AR door frames/Semi-transparent CNC glass. These create depth and "the interplay of real and virtual."
-- **Empty Space (Liubai) Imagery** — 【Ancient】 Gardens/Flowers/Rain/Bamboo; 【Urban】 Sky gardens/Roof holographic trees/Vertical greenery/CNC rain curtains/Clouds between skyscrapers. Used to convey mood (e.g., flowers blooming = relief).
-- **Light Source Carriers** — 【Ancient】 Candles/Moonlight/Lattice windows; 【Urban】 Holographic candles/Artificial moonlight/CNC window projections/Skyscraper area lights/Neon lanterns.
-- **Architectural Markers** — 【Ancient】 Eaves/Dou-gong/Tiles/Mortise and tenon; 【Urban】 New Chinese skyscraper eaves/Mechanical steel Dou-gong/Traditional facade textures/Metal tiles/Steel mortise and tenon. No illogical mechanical grafting allowed.
-- **Marketplace Narrative** — 【Ancient】 Old streets/Shops/Archways; 【Urban】 Cyber-streets/Skyscraper canyons/New Chinese shops/Neon-lit alleys/Holographic archways.
+- **Framing Elements** — [Ancient] Gauze/Screens/Frames; [Urban] Holographic gauze/CNC screens/AR door frames/Semi-transparent CNC glass. These create depth and "the interplay of real and virtual."
+- **Empty Space (Liubai) Imagery** — [Ancient] Gardens/Flowers/Rain/Bamboo; [Urban] Sky gardens/Roof holographic trees/Vertical greenery/CNC rain curtains/Clouds between skyscrapers. Used to convey mood (e.g., flowers blooming = relief).
+- **Light Source Carriers** — [Ancient] Candles/Moonlight/Lattice windows; [Urban] Holographic candles/Artificial moonlight/CNC window projections/Skyscraper area lights/Neon lanterns.
+- **Architectural Markers** — [Ancient] Eaves/Dou-gong/Tiles/Mortise and tenon; [Urban] New Chinese skyscraper eaves/Mechanical steel Dou-gong/Traditional facade textures/Metal tiles/Steel mortise and tenon. No illogical mechanical grafting allowed.
+- **Marketplace Narrative** — [Ancient] Old streets/Shops/Archways; [Urban] Cyber-streets/Skyscraper canyons/New Chinese shops/Neon-lit alleys/Holographic archways.
 - **Transition Rules** — Use scene "empty shots" for emotional buffering rather than hard cuts.
 
 ---
@@ -1307,7 +1307,7 @@ When generating 3D Chinese-style cyberpunk videos, you must fully inject the vis
 - **Ambience Layering** —
   - **Universal Base**: Insects/Crickets/Running water/Bamboo forest wind/Street hawking/Rain on eaves/Fabric rustle/Wind chimes/Birds.
   - **Urban Cyber Layer**: Skyscraper wind noise, low-frequency traffic hum, subway vibrations, neon buzz, holographic ambient chatter, CNC equipment whir.
-- **Standard**: 【Ancient】 1-2 traditional core sounds per scene. 【Urban】 1 traditional core sound + 1 cyber core sound per scene.
+- **Standard**: [Ancient] 1-2 traditional core sounds per scene. [Urban] 1 traditional core sound + 1 cyber core sound per scene.
 </director_planning_style>
 
 <director_storyboard>
@@ -1365,7 +1365,7 @@ Avoids stiff splicing of elements and adheres firmly to the core of Chinese aest
 | Luxurious | Warm gold neon, local highlights, metal reflections | Warm gold overhead/contour light, hall depth, glass reflections | PBR reflections, depth of field, holographic national-style pattern projections, full metallic texture |
 | Ethereal/Lonely | Volumetric light diffusion, misty holographic vibe, cyan neon fill | Volumetric light between buildings, high-altitude mist, cold diffusion, low saturation | Cyan-green tones, depth of field, holographic projections, layered light/shadow |
 | Gentle/Relaxed | Local soft light, gauze neon transmission, soft shadows | Indoor diffuse warm light, window neon fill, soft shadows, low contrast | Rouge + Pink-purple neon tones, close-up, holographic soft light, transparent texture |
-| Lethal/Strong | Cold hard light contrast, side/backlight contours, narrow neon fill | Cold hard light, side/backlight contours, strong明暗 contrast, narrow spotlighting | Indigo + Ink-black + Crimson neon, low saturation, metallic reflections, sharp light/shadow |
+| Lethal/Strong | Cold hard light contrast, side/backlight contours, narrow neon fill | Cold hard light, side/backlight contours, strong contrast, narrow spotlighting | Indigo + Ink-black + Crimson neon, low saturation, metallic reflections, sharp light/shadow |
 | Quiet/Serene | Moonlight overhead, cold/warm contrast, neon micro-accents | Moonlight diffusion + window neon, cold base + warm local light, weak contrast | Indigo background, warm yellow holographic spots, building contour lights, water/glass reflections |
 | Psychedelic | Multi-layered holographic effects, diffuse soft light, no clear main source | Multi-layered neon effects, glass refraction, holographic diffusion, no clear main source | Gradient neon tones, translucent holographic projections, depth of field, light mist |
 | Urban Vitality | Multi-source chaotic warm light, shop neon signs, lantern & holographic lighting mix | Multi-source street warm light, shop neon signs, night market lightbox mix, cold/warm contrast | High-saturation warm tones, crowd light layers, street reflections, full life atmosphere |
@@ -1524,7 +1524,7 @@ The storyboard is the director's core tool for translating a script into cinemat
 - **No Rapid Camera Movements** — Whip pans, sudden zooms, shaky-cam, high-speed tracking, strobing jumps, or fast first-person running are prohibited, as they clash with Guofeng 3D elegance. They are only allowed for extreme narrative conflict and must not exceed 20% of the shot's duration.
 - **No Flashy Transitions** — Wipes, spins, shutters, white flashes, glitch-art artifacts, or zooming/bouncing are forbidden.
   - **Permitted**: Lighting gradients, element-matching (e.g., ancient eaves matching cyber eaves, jade pendant matching keycard, lantern matching street lamp), slow depth-tracking, or slow dissolves. All transitions must be slow and elegant.
-- **Effective 3D Spatial Movement (Specifications)** — Use 3D spatial depth for slow pushes/wraps, maintaining a calm rhythm. Avoid "stunt" flying or穿越 (through-shot) movements.
+- **Effective 3D Spatial Movement (Specifications)** — Use 3D spatial depth for slow pushes/wraps, maintaining a calm rhythm. Avoid "stunt" flying or through-shot movements.
   - **Classical**: Slow rotation around courtyards; slow push-ins revealing cyberized interiors; default speed ≤0.5m/s.
   - **Urban**: Slow push-in from an ancient-style alleyway gate toward skyscraper hubs; slow rotation around New Chinese office buildings to show the blend of glass and eaves; default speed ≤0.5m/s. All movement must serve narrative and mood, not effect-showcasing.
 </director_storyboard_table_style>
