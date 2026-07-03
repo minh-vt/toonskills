@@ -34,8 +34,13 @@ Silence is a powerful dramatic tool. You must actively design silence:
 
 ## 2. Execution Workflow
 
+## Input/Output Rules
+
+1. **Input Data**: Read `<storyboard_table>` and `<voice_casting_board>` from the project workspace.
+2. **File Persistence**: Save your final sound design instructions directly to the project workspace using file-writing tools. Follow the global path rules defined in `AGENTS.md`.
+
 ### Step 1: Dialogue Generation (TTS)
-1.  Read the `Dialogue` column and the character's voice profile.
+1.  Analyze `<storyboard_table>` and `<voice_casting_board>`.
 2.  Generate the raw TTS audio using the appropriate voice ID and emotional markers (e.g., whispering, shouting, trembling).
 3.  Apply **Acoustic Perspective** processing:
     -   Identify the `Shot Type` (e.g., Close-Up) and `Acoustic Space` (e.g., `[Vast, echoing hall]`).

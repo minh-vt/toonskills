@@ -17,13 +17,16 @@ Toonskills encapsulates the structured workflows, creative rules, and quality ga
 
 ---
 
-## Architecture: Agnostic File I/O & Presets
+## Architecture: Agentic File Persistence
 
-Toonskills operates entirely on **Agnostic File I/O** (Markdown & JSON inputs/outputs) to ensure maximum compatibility and zero vendor lock-in. Legacy APIs (like `get_flowData` or custom databases) have been fully purged. Agents read markdown states, write markdown results, and call native tools (like `generate_image`) directly within the workspace.
+Toonskills operates entirely on **Agnostic File I/O** (Markdown & JSON inputs/outputs) to ensure maximum compatibility and zero vendor lock-in. To guarantee a standardized workflow across autonomous agents:
+- **Direct File Actions**: Agents act autonomously by directly reading from and writing to the project workspace using filesystem tools.
+- **Global Persistence Rules**: The [AGENTS.md](AGENTS.md) file acts as the single source of truth, standardizing file paths, formats, and persistence rules for all agents in the workspace.
+- **No Parser Dependency**: Skills no longer require a rigid orchestrator to parse XML tags. The agents directly manage state through well-defined file formats.
 
 Additionally, the repository utilizes:
-- **Attention Routing**: Filters instructions at the entry points so AI agents only look at permitted layout blocks and tags, eliminating cross-hallucination.
-- **Unified Presets**: Style-specific and genre-specific prompt files wrapped in semantic XML tags to avoid redundant context-reading overhead.
+- **Attention Routing**: Filters instructions at the entry points so AI agents only look at permitted reference materials, eliminating cross-hallucination.
+- **Unified Presets**: Style-specific and genre-specific prompt files to guide the creative process consistently across stages.
 
 ---
 
@@ -31,7 +34,7 @@ Additionally, the repository utilizes:
 
 ```
 toonskills/
-├── skills/                     # 9 Core execution skills (distributable)
+├── skills/                     # 10 Core text-based LLM execution skills
 │   ├── event-analysis/         # Raw novel chapter parsing to events
 │   ├── story-skeleton/         # Plot sequencing and structure planning
 │   ├── adaptation-strategy/    # Audio-visual direction & tone definition
@@ -40,10 +43,12 @@ toonskills/
 │   ├── director-plan/          # Technical planning, grouping, and duration rules
 │   ├── storyboard-table/       # Shot-by-shot detailed direction
 │   ├── storyboard-panel/       # Visual description and prompt construction
+│   ├── voice-casting/          # Character to TTS Voice ID assignment mapping
 │   └── sound-design/           # Multi-layered audio mixing & TTS design
-├── presets/                    # XML-wrapped style and genre guides
+├── presets/                    # Style and genre guides
 │   ├── art/                    # 11 Art presets (e.g. 2D Anime, Guofeng Cyber)
 │   └── story/                  # 12 Genre presets (e.g. Xianxia, Sci-fi Apocalypse)
+├── AGENTS.md                   # Global rules for autonomous agent file persistence
 └── README.md
 ```
 
@@ -79,7 +84,20 @@ Copy the markdown files under `skills/` to your `.agent/skills/` or reference th
 | [director-plan](skills/director-plan/SKILL.md) | Chunk script scenes, define timing, and map out visual contracts | Screenplay + Assets $\rightarrow$ Director's Plan Markdown |
 | [storyboard-table](skills/storyboard-table/SKILL.md) | Construct detailed frame sequences: shot type, camera, audio, visual description | Director's Plan $\rightarrow$ Storyboard Grid |
 | [storyboard-panel](skills/storyboard-panel/SKILL.md) | Formulate final prompts using reference-image tags (e.g., `@ImageN`) | Storyboard Grid $\rightarrow$ Storyboard Panel JSON |
+| [voice-casting](skills/voice-casting/SKILL.md) | Assign specific TTS Voice IDs and emotional baselines to characters | Assets + Adaptation Strategy $\rightarrow$ Voice Casting Board |
 | [sound-design](skills/sound-design/SKILL.md) | Generate TTS, ambient loop tracks, foley placements, and ducking mixes | Sonic Direction $\rightarrow$ Mixed Audio Master Instruction |
+
+---
+
+## Future Execution Roadmap
+
+> **Note:** Toonskills currently focuses exclusively on **text-based (LLM) workflows** to structure and direct the creative vision. The actual media generation tools are planned for future integrations.
+
+Future execution skills under development:
+- `image-generation`: Consumes storyboard-panel JSON to trigger SDXL/Midjourney APIs.
+- `video-generation`: Animates generated images via Runway/Sora/Kling APIs.
+- `tts-generation`: Produces `.wav` files via ElevenLabs using the `voice-casting` board.
+- `timeline-assembly`: Final automated NLE stitch of Video, BGM, SFX, and TTS.
 
 ---
 
@@ -121,25 +139,31 @@ Identify all unique characters, props, and locations.
 /extract-assets @presets/art/2D_90s_japanese_anime
 ```
 
-**6. Plan the Direction**
+**6. Voice Casting**
+Map characters in the assets database to specific TTS voice IDs and configurations.
+```bash
+/voice-casting
+```
+
+**7. Plan the Direction**
 Chunk the script into manageable scenes with estimated durations.
 ```bash
 /director-plan @presets/art/2D_90s_japanese_anime @presets/story/comedy-humor.md
 ```
 
-**7. Construct the Storyboard Table**
+**8. Construct the Storyboard Table**
 Map out every single shot (camera angle, visual description, action).
 ```bash
 /storyboard-table @presets/art/2D_90s_japanese_anime @presets/story/comedy-humor.md
 ```
 
-**8. Generate Prompts**
+**9. Generate Prompts**
 Convert the visual descriptions into precise image generation prompts with reference bindings.
 ```bash
 /storyboard-panel @presets/art/2D_90s_japanese_anime
 ```
 
-**9. Audio Design**
+**10. Audio Design**
 Generate the final audio mix instructions (TTS, Foley, Ambience).
 ```bash
 /sound-design

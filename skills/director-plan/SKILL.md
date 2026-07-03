@@ -31,8 +31,8 @@ Read the script markdown files within the same turn. **No techniques / skills ar
 *Step 2 · Scene Breakdown and Per-Scene Analysis**
 Faithfully break down the script into scenes according to the "Methodology" below. For each scene, count the dialogue, analyze the emotion, establish the sonic blueprint (Acoustic Space & Sonic Mood), summarize notes, and design inter-scene transitions as needed (first determine if necessary; do not add if not necessary). **Only faithfully split the script; do not create additional content** (the sole exception: inter-scene transitions may be supplemented with connective interstitial content based on experience). The methodology only guides how you write; **it must never be reiterated in the output.**
 
-*Step 3 · One-time Output of `<scriptPlan>` (This is your only remaining output action)**
-*At this point, no further tools are allowed to be called; begin writing directly.** Follow the "Output Structure" to write the scene contract section by section. The `<scriptPlan>…</scriptPlan>` tag and all its content **must be output completely in a single instance** (the "output" action occurs only once); splitting into multiple XML outputs is prohibited.
+*Step 3 · One-time Output**
+Follow the "Output Structure" to write the scene contract section by section and save it directly to the workspace as a markdown file.
 
 *Step 4 · Self-Correction** (Review and correct after writing; no rereading of data is permitted for this purpose)
 Check against each item in "Red Lines for This Stage" below.
@@ -44,12 +44,10 @@ A brief confirmation reply is sufficient, do not reiterate the full content; tas
 
 ## Workspace I/O Rules and Permissions
 
-> [!NOTE]
-> This system operates entirely on Markdown files. There are NO hidden database APIs (like `get_flowData`). To read inputs, read the corresponding `.md` files. To output results, write to `.md` files.
+## Input/Output Rules
 
--  **Read**: Read the script markdown files —— **Used only once in Step 1 for the entire task**; thereafter, strictly prohibited from calling any read-type tools. **No techniques / skills are to be activated or loaded.**
--  **Sole Output Action**: Output `<scriptPlan>…</scriptPlan>`. Aside from "Step 1 read" and "output scriptPlan", this stage **strictly prohibits calling any other tools** — no creation/modification/deletion/generation of any assets, no calling of any asset write or generation tools, and no calling of any tools from other stages such as storyboard / storyboard panel / image generation / derivative analysis. Any unauthorized call will be considered an error.
--  **Read-only Asset Reference**: The `assets` directory is only used to verify scene / character names, to align scene naming with existing assets; if the script requires something but `assets` is missing it, it should only be reflected in the text, **do not fabricate IDs**.
+1. **Input Data**: Read `<screenplay>` and `<assets_database>` from the project workspace.
+2. **File Persistence**: Save your final script plan directly to the project workspace using file-writing tools. Follow the global path rules defined in `AGENTS.md`.
 
 ---
 
@@ -106,7 +104,7 @@ A brief confirmation reply is sufficient, do not reiterate the full content; tas
 
 ## Output Structure
 
-Write all the following sections into a single `<scriptPlan>` in one go. **Only output structured content intended for downstream Agent parsing, without any overviews/narratives for human readers.** **The concepts behind each field are found in the "Methodology" section; this section only specifies what fields and what format to output, without restating concepts.**
+Write all the following sections into a single markdown file in one go. **Only output structured content intended for downstream Agent parsing, without any overviews/narratives for human readers.** **The concepts behind each field are found in the "Methodology" section; this section only specifies what fields and what format to output, without restating concepts.**
 
 ### Scene Summary Table (Core)
 
@@ -159,8 +157,8 @@ One entry per scene: Scene number + key points to note for that scene. **Each ty
 6.  **Accurate Dialogue Count**: Dialogue lines / word count must be faithfully counted, including voice-over/narration, with 0 recorded for no dialogue.
 7.  **Complete Per-Scene Emotions + Notes, Transitions As Needed**: Each scene must have an emotional intensity and tone, and per-scene notes (write "None" if none, points on separate lines); inter-scene transitions **first assess necessity, only add where necessary**, do not force N-1 rows.
 8.  **No Music**: No field throughout the document shall include music/soundtrack/instruments. Ambient soundscapes and physical sound effects are allowed and encouraged.
-9.  **Single, Complete XML Output**: The `<scriptPlan>…</scriptPlan>` tag and all its content must be output in a single instance; splitting into multiple XML outputs is prohibited.
-10.  **No Unauthorized Tool Usage**: Throughout the entire process, only "Step 1 read" + "output scriptPlan" actions are to be used; no assets or tools from other stages are to be used.
+9.  **Complete Output**: The markdown output must be complete.
+10.  **No Unauthorized Tool Usage**: Throughout the entire process, only "Step 1 read" + "Step 3 write" actions are to be used; no assets or tools from other stages are to be used.
 
 <supervision_rules>
 ### Supervision Quality Rules (from production_agent_supervision.md)
@@ -281,7 +279,7 @@ Storyboard table audit **only judges the output quality of the storyboard table 
 -  Dialogue fidelity, script coverage and sequence, segment duration, visual and sound prohibitions.
 
 *New Storyboard Table Structure** (Audit must read according to this specification, do not use old field names like `associateAssetsIds`/`description`/`lines`/`sound`):
--  **Scene Header**: `## Scene N: Scene Name ｜ Cast: Character A, Character B, …` —— Scene info is here, not in each shot.
+- **Scene Header**: `## Scene N: Scene Name | Cast: Character A, Character B, …` —— Scene info is here, not in each shot.
 -  **Segment**: `### Segment X (approx. Ns)`, followed by two lines of **Referenced Asset Names** / **Referenced Asset IDs** —— Asset reference is at the segment level, not in each shot.
 -  **Shot Table**: `| No. | Visual Description | Duration | Shot Type | Camera Movement | Dialogue | Sonic Direction |` —— **No independent columns for "Orientation", "Spatial Relationship", or "Character Action"**, orientation/action are merged into Visual Description.
 
@@ -332,7 +330,7 @@ Storyboard table audit **only judges the output quality of the storyboard table 
 2.  Traverse the **Reference Asset ID** of each segment and check if all IDs exist in the set.
 3.  Flag invalid IDs or cases where array indices are mistakenly used as IDs.
 
-不通过示例：assets 中无 ID `5`，但某片段 **Reference Asset ID**：[1, 5]。
+Example of failure: There is no ID `5` in assets, but a fragment has **Reference Asset ID**: [1, 5].
 
 #### Visible Character Association (→ R1)
 
@@ -342,8 +340,8 @@ Storyboard table audit **only judges the output quality of the storyboard table 
 4.  Flag: Characters that exist in assets but are missing in the segment reference or scene header.
 5.  **Do not report**: Characters mentioned in the visual description but lacking corresponding assets—this belongs to "missing assets," which are external inputs and cannot be added in any stage. The supervision layer does not audit such issues.
 
-不通过示例：assets 中已有"凌玄"和"青云令"，Visual Description写"凌玄手持青云令"，但片段 Reference Asset ID 只有凌玄，遗漏青云令。
-跳过示例：assets 中无"何鸿燊"资产，Visual Description出现"何鸿燊出镜+Dialogue"——本条不报告（缺少资产，无任何阶段可新增基础资产，监督层不审核）。
+Example of failure: There are "Ling Xuan" and "Qing Yun Ling" in the assets, and the Visual Description says "Ling Xuan holds the Qing Yun Ling", but the reference asset ID of the fragment is only Ling Xuan, and the Qing Yun Ling is omitted.
+Skip example: There is no "Ho Hong-shen" asset in assets, and the Visual Description appears "Ho Hong-shen appears + Dialogue" - this article is not reported (missing assets, no basic assets can be added at any stage, and supervision will not review).
 
 #### Scene Asset Association (→ R1)
 
@@ -358,7 +356,7 @@ Storyboard table audit **only judges the output quality of the storyboard table 
 2.  Traverse each segment's **Reference Asset ID**, and check the **Visual Description** of each shot to judge if it is clearly in a derivative state (damaged/bloody/night/activated, etc.).
 3.  If it is in a derivative state but only the parent ID is filled, or if both parent and derivative IDs exist in the same segment, it fails the audit.
 
-不通过示例：Visual Description明确"青云令裂痕发光（激活态）"，但片段仅填主资产 ID，未选择衍生 ID。
+Example of failure: The Visual Description clearly states "Qingyun Ling Crack Glows (Activated)", but the fragment only fills in the main asset ID and no derived ID is selected.
 
 #### Dialogue Integrity (→ R2)
 
@@ -366,7 +364,7 @@ Storyboard table audit **only judges the output quality of the storyboard table 
 2.  Compare each shot's **Dialogue** field to ensure the text is 100% identical, with the speaker clearly marked.
 3.  Flag missing, rewritten, omitted, or merged dialogues.
 
-不通过示例：剧本写"你以为你配？"，Dialogue 改写为"你觉得你配吗？"。
+Example of failure: The script reads "Do you think you are worthy?", and the Dialogue is rewritten as "Do you think you are worthy?".
 
 #### Script Coverage and Sequence (→ R2)
 
@@ -382,30 +380,30 @@ Storyboard table audit **only judges the output quality of the storyboard table 
 
 #### Prohibited Lighting/Tone
 
-1.  扫描每镜 Visual Description/运镜/Sound Effects 及Dialogue来源描述，匹配违规词：光/影/光线/打光/逆光/侧光/顶光/色温/明暗/色调/暖色/冷色/冷暖/暖光/冷光/阴影 等
+1. Scan the Visual Description/Mirror Movement/Sound Effects and Dialogue source description of each lens, and match the illegal words: light/shadow/light/lighting/backlight/side light/top light/color temperature/light and dark/hue/warm color/cold color/cold and warm/warm light/cold light/shadow, etc.
 2.  Scan the **Visual Description/Camera Movement/Sound Effects** and dialogue speaker descriptions of each shot, matching prohibited words: light, shadow, ray, lighting, backlight, sidelight, toplight, color temperature, brightness, tone, warm color, cool color, warm light, cool light, shadow, etc.
 3.  Any match is judged as a serious issue; special lighting needs should be reflected through scene derivative assets (night version, etc.), not in the text description.
 
-不通过示例：Visual Description写"暖色夕阳逆光勾勒侧脸"——含 暖色/逆光，违规。
+Example of failure: The Visual Description reads "Warm sunset backlighting outlines the side face" - including warm colors/backlighting, which is illegal.
 
 #### Sonic Design Compliance (→ R5)
 
-1.  扫描每镜 Sound Effects 列文本，匹配以下违规关键词（命中即判严重）：
+1. Scan the Sound Effects column text of each shot to match the following illegal keywords (hits will be considered serious):
 -  Scan the **Sound Effects** column of each shot, matching the following prohibited keywords:
 -  `BGM` / `soundtrack` / `background music` / `music` / `melody` / `theme song` / `interlude`
 -  `xx style music` / `piano/violin/harp/orchestra/flute/guzheng... to build/underlay/render atmosphere`
 2.  `tempo drum beats` `emotional music` `atmospheric music` and other abstract music descriptions.
 3.  Exception: Physical sound sources of instruments actually played by characters in the scene are allowed (e.g., "metallic vibration of fingers plucking strings + resonance box hum"). The key distinction is whether the description is "sound source behavior" or "atmospheric rendering".
 
-不通过示例：Sound Effects 列写"低沉大提琴铺底 + 喷血声"——大提琴铺底属配乐烘托，违规；保留"喷血声 + 沉闷跪地声 + 殿堂回声"即可。
+Example of failure: Sound Effects listed "low cello floor + sound of spurting blood" - the cello floor is a soundtrack background, which is illegal; just keep "spit of blood + dull sound of kneeling + echo of the hall".
 
 #### Character Appearance Not in Prompts
 
-1.  扫描每镜 Visual Description，标注固有外观描写：服装款式/颜色、发型、长相五官、固定饰物等（这些交给图片资产）
+1. Scan the Visual Description of each shot and mark the inherent appearance description: clothing style/color, hairstyle, facial features, fixed accessories, etc. (These are handed over to the image assets)
 2.  Scan the **Visual Description** of each shot, flagging inherent appearance descriptions: clothing style/color, hairstyle, facial features, fixed ornaments, etc. (these are handed over to image assets).
 3.  Allowed and encouraged: actions, postures, expressions, and current state changes (sweat, tears, messy clothes, veins popping, blood stains).
 
-不通过示例：Visual Description"身着金线绣龙红袍、高束发髻的凌玄怒视"——服装/发型属固有外观，应删，仅留"凌玄怒视、青筋暴起"。
+Example of failure: Visual Description "Wearing a red robe embroidered with gold threads and a high bun, Ling Xuan glares" - the clothing/hair style is an inherent appearance and should be deleted, leaving only "Ling Xuan glares with bulging veins".
 
 #### Reasonable Segment Duration
 
@@ -427,7 +425,7 @@ Storyboard table audit **only judges the output quality of the storyboard table 
 
 #### On-screen Characters Do Not Disappear
 
-1.  从场头参演角色Read本场全部出场角色
+1. Read all the characters appearing in this scene from the opening characters.
 2.  Read all present characters from the scene header's **Cast**.
 3.  Check each shot to ensure characters who haven't left the scene in the script have a visual presence (background/detail/reaction shot/out-of-focus silhouette/foreground obstruction/ambient sound).
 
