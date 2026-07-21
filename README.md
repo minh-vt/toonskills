@@ -34,12 +34,13 @@ Additionally, the repository utilizes:
 
 ```
 toonskills/
-├── skills/                     # 10 Core text-based LLM execution skills
+├── skills/                     # 11 Core text-based LLM execution skills
 │   ├── event-analysis/         # Raw novel chapter parsing to events
 │   ├── story-skeleton/         # Plot sequencing and structure planning
 │   ├── adaptation-strategy/    # Audio-visual direction & tone definition
 │   ├── write-script/           # Standard 3-column script writing
 │   ├── extract-assets/         # Scene/Character/Prop library management
+│   ├── character-design/       # Visual character design: silhouette, shape language, color, body language
 │   ├── director-plan/          # Technical planning, grouping, and duration rules
 │   ├── storyboard-table/       # Shot-by-shot detailed direction
 │   ├── storyboard-panel/       # Visual description and prompt construction
@@ -81,6 +82,7 @@ Copy the markdown files under `skills/` to your `.agent/skills/` or reference th
 | [adaptation-strategy](skills/adaptation-strategy/SKILL.md) | Translate prose style into screen directives and art style bindings | Story Skeleton $\rightarrow$ Adaptation Strategy Config |
 | [write-script](skills/write-script/SKILL.md) | Write multi-column screenplay containing visual actions and dialogues | Adaptation Strategy $\rightarrow$ 3-Column Screenplay |
 | [extract-assets](skills/extract-assets/SKILL.md) | Identify and bind character ids, locations, and props to prevent drift | Screenplay $\rightarrow$ Project Asset Database |
+| [character-design](skills/character-design/SKILL.md) | Design unforgettable characters: silhouette, shape language, color, body language, narrative anchoring | Assets Database $\rightarrow$ Character Design Briefs |
 | [director-plan](skills/director-plan/SKILL.md) | Chunk script scenes, define timing, and map out visual contracts | Screenplay + Assets $\rightarrow$ Director's Plan Markdown |
 | [storyboard-table](skills/storyboard-table/SKILL.md) | Construct detailed frame sequences: shot type, camera, audio, visual description | Director's Plan $\rightarrow$ Storyboard Grid |
 | [storyboard-panel](skills/storyboard-panel/SKILL.md) | Formulate final prompts using reference-image tags (e.g., `@ImageN`) | Storyboard Grid $\rightarrow$ Storyboard Panel JSON |
@@ -139,31 +141,37 @@ Identify all unique characters, props, and locations.
 /extract-assets @presets/art/2D_90s_japanese_anime
 ```
 
-**6. Voice Casting**
+**6. Design Characters**
+Create unforgettable visual designs for each character — silhouette, shape language, color palette, body language, and narrative-driven costume logic.
+```bash
+/character-design
+```
+
+**7. Voice Casting**
 Map characters in the assets database to specific TTS voice IDs and configurations.
 ```bash
 /voice-casting
 ```
 
-**7. Plan the Direction**
+**8. Plan the Direction**
 Chunk the script into manageable scenes with estimated durations.
 ```bash
 /director-plan @presets/art/2D_90s_japanese_anime @presets/story/comedy-humor.md
 ```
 
-**8. Construct the Storyboard Table**
+**9. Construct the Storyboard Table**
 Map out every single shot (camera angle, visual description, action).
 ```bash
 /storyboard-table @presets/art/2D_90s_japanese_anime @presets/story/comedy-humor.md
 ```
 
-**9. Generate Prompts**
+**10. Generate Prompts**
 Convert the visual descriptions into precise image generation prompts with reference bindings.
 ```bash
 /storyboard-panel @presets/art/2D_90s_japanese_anime
 ```
 
-**10. Audio Design**
+**11. Audio Design**
 Generate the final audio mix instructions (TTS, Foley, Ambience).
 ```bash
 /sound-design

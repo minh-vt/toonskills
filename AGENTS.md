@@ -47,6 +47,15 @@ When any skill requires project parameters (episode count, episode duration, pay
 
 If `config/project.json` already exists, read it and proceed. Do not re-interview.
 
+## Skills
+
+### Character Design
+`character-design` is a dedicated, independent skill for creating unforgettable character designs in any art style. It covers personality-first discovery, shape language, silhouette theory, narrative anchoring, color psychology, body language, and audience-aware design.
+
+**Integration with extract-assets**: Run `character-design` after `extract-assets` has identified the character roster. Extract-assets identifies *who* exists; character-design defines *what they look like and why*. The two skills combine: extract-assets produces the asset database entries (IDs, names, types, derived states); character-design produces the visual design brief for each character (silhouette, shapes, colors, body language, costume logic) that feeds into subsequent stages (voice-casting, storyboard-table, storyboard-panel).
+
+**Output**: Character design briefs are appended to `assets/assets.md` under each character entry, or saved to a dedicated `assets/character-designs.md` if the brief is extensive.
+
 ## Code Conventions
 - **Read First**: Always read the current state of the required workspace files (e.g. `assets/assets.md`) before generating new content. Modify existing content incrementally unless instructed to rewrite.
 - **Direct Save**: Save your final output directly to the correct file path using your file-writing tools.
