@@ -34,12 +34,13 @@ Before executing this skill, ensure the user has provided the following context 
 3.  Build Skeleton Content (Save the following content directly as markdown):
     -   Story Core: A one-sentence summary of the entire series' core appeal + core psychological pleasure point + "golden finger" and its constraints.
     -   Underlying Arc: The protagonist's internal growth trajectory (character arc).
-    -   Character Biographies: Core "Big Triangle" characters ≤4 people (protagonist + main antagonist + key supporting characters), five elements for each; protagonist additionally includes five immersive qualities, two sides of contrast, "golden finger" boundaries, speaking style, and entrance.
+    -   Character Biographies: Core "Big Triangle" characters ≤4 people (protagonist + main antagonist + key supporting characters), five elements for each; protagonist additionally includes five immersive qualities, two sides of contrast, "golden finger" boundaries, speaking style, entrance, and movement alphabet.
     -   Three-Act Structure: Function of each act, core question, covered chapters, corresponding episodes, and act-ending turning point.
-    -   Episode Pacing Decision: Automatically select episode-by-episode expansion (≤20 episodes) or overview + key episode expansion (>20 episodes) based on the total episode count.
+    -   Episode Pacing Decision: Automatically select episode-by-episode expansion (≤20 episodes) or overview + key episode expansion (>20 episodes) based on the total episode count. Each episode maps to Kishōtenketsu phases (Ki/Shō/Ten/Ketsu).
+    -   Ma Moment Map: ≥2 planned stillness moments per episode with location, duration, and emotional function.
     -   Global Deletion Decision Table.
     -   Paywall Design.
-    -   Stock Price-Level Reversal Registry (see [Constraints] and Section VIII).
+    -   Stock Price-Level Reversal Registry (see [Constraints] and Section VIII). Include an Escalated Cost column showing how each reversal makes the contradiction more irreversible.
 
 4.  Return Brief Confirmation (Wording and non-repetition rules see [Completion Constraints]).
 
@@ -56,7 +57,7 @@ Before executing this skill, ensure the user has provided the following context 
 
 ## Underlying Principles (Understand first, then apply techniques)
 
-The skeleton is not about flattening chapters into episodes, but about laying the groundwork at a structural level for "marketability". Three underlying principles govern all the techniques below:
+The skeleton is not about flattening chapters into episodes, but about laying the groundwork at a structural level for "marketability" and "cinematic artistry." Four underlying principles govern all the techniques below:
 
 1.  **Short Drama = Instant Emotional Product for Ad Monetization, Emotion First**: Long dramas are plot-first, short dramas are emotion-first. Platform algorithms only recognize single-episode retention rate/completion rate/interaction rate → daily ROI. Every structural choice in the skeleton ultimately comes back to one question—can this make the audience stay, keep watching, click on the next episode, and be willing to pay?
 2.  **Three Major Densities = Skeleton-Level Overall Metric** (evaluation standard for hit scripts):
@@ -65,6 +66,7 @@ The skeleton is not about flattening chapters into episodes, but about laying th
     -   **Plot Density** (makes the audience keep watching): Every event serves the main plot, has causality, escalating conflict, and irreversible value transformation (plot ≠ event).
     -   The skeleton must set up the structure for **sustainable supply** of these three: a single core emotional main line, front-loaded information, and every episode being a true plot point rather than a mere chronicle.
 3.  **Expectation Management (Establish Expectation → Break Expectation → Plant New Expectation) is the Core Mechanism for Retention**: Hooks/suspense/reversals/paywalls/pacing are its applications across different time scales. When designing any structural point, first ask: Is the audience currently establishing, breaking, or planting new expectations?
+4.  **Ma (間) — Emptiness is a Structural Element, Not an Absence** (from Studio Ghibli's Hayao Miyazaki): "If you just have non-stop action with no breathing space at all, it's just busyness." Emotional retention is built in the silence BETWEEN emotional beats, not in the density of beats themselves. Each episode must contain ≥2 planned Ma moments (3-6 seconds of intentional stillness/silence). The highest emotional impact comes from the contrast between intense comedy/conflict and the stillness that follows. Ma is not "slow pacing" — it is deliberate, loaded silence that lets the audience process, feel, and invest in the character. Design Ma moments at: (a) after a major revelation or emotional beat, (b) just before the protagonist makes a consequential choice, (c) when the mask slips and the audience sees the real person underneath.
 
 ## Skills
 
@@ -74,6 +76,7 @@ The skeleton is not about flattening chapters into episodes, but about laying th
 -   Big Triangle: 3 core characters/factions form the main conflict of the entire series, running through it and not easily changed.
 -   Small Triangles: Secondary conflicts revolving around the protagonist, resolving one before moving to the next, avoiding multiple parallel storylines.
 -   The mainstream structure is **linear**: the plot advances around a single main line, conflicts are concentrated, and pacing is coherent; short dramas target the mass market, multiple parallel lines are easily rejected.
+-   **Non-Human Apex (S-tier)**: The third vertex of the Big Triangle does NOT have to be a person. It can be an abstract force with its own motivation and arc: a system, a sealed being, fate itself, a corrupting power. This creates a Princess Mononoke-style three-way deadlock where no one can achieve their goal without feeding the third apex — resolution must be coexistence at a cost, not victory. When designing the Big Triangle, ask: is there a non-human force with its own unmet desire that both protagonist and antagonist are unknowingly serving?
 
 **Contradiction ≠ Conflict (Big Triangle must be built on strong contradictions, not by piling up arguments):**
 -   Contradiction = Internal, static "wanting but not getting" (character's strong desire "spear" vs. equally powerful obstacle "shield"); Conflict = External, dynamic "actions to resolve contradiction and confront adversaries".
@@ -85,6 +88,24 @@ The skeleton is not about flattening chapters into episodes, but about laying th
 3.  **Advanced Contradiction**: Desire is made more legitimate, obstacle more reasonable, **two good people heading towards different fates due to different choices** (protagonist steals water to save dying daughter, villain's water is for his dying wife – both are right, no absolute good or bad guy).
 4.  **Escalated Contradiction**: Protagonist's actions to resolve the initial contradiction lead to more serious, irreversible consequences (stealing water saves daughter → villain's wife dies of thirst → escalates into a blood feud to the death).
 -   **Key Takeaway**: The best contradiction is not good vs. evil, but **two good people heading towards different fates due to different choices**.
+
+### I-Cinematic: Kishōtenketsu Episode Architecture (S-tier — from Studio Ghibli / East Asian narrative tradition)
+
+Each episode's skeleton should default to the 4-part **Kishōtenketsu** structure, which is development-driven rather than conflict-driven (Hollywood's 3-act is conflict-driven and remains available as a fallback for action-heavy episodes):
+
+| Phase     | Japanese    | Function                                         | Comedy Application                                               |
+|-----------|-------------|--------------------------------------------------|------------------------------------------------------------------|
+| Ki (起)   | Introduction | Establish the world's normalcy. Everything is serious. | Play the xianxia STRAIGHT. The world is grand. The atmosphere is solemn. |
+| Shō (承)  | Development | Build on normalcy. Audience forms expectation.    | The protagonist is introduced within this world — but something is slightly off. The audience begins to notice. |
+| Ten (転)  | Twist       | Break the expectation. Reframe everything before. | The comedic reversal: what the audience thought was happening ISN'T. The victim is the victor. The weak is the strong. The joke that reframes the entire scene. |
+| Ketsu (結) | Conclusion  | Reconcile twist with normalcy. New status quo. Plant next Ki. | The world has changed slightly. A new element is introduced that becomes the Ki of the next episode. |
+
+-   **Why this is S-tier**: Kishōtenketsu allows comedy that doesn't rely on conflict escalation. The Ten (twist) can be anything — a character breaking the fourth wall, a sudden musical beat, a silent reaction that reframes a scene. Hollywood structure demands rising stakes. Kishōtenketsu demands rising understanding. The best comedy comes from the audience suddenly understanding the scene differently.
+-   **Rule**: For every episode skeleton, state which scenes map to Ki/Shō/Ten/Ketsu. If an episode needs extreme velocity (boss fight, climax), fall back to Hollywood 3-act and note the override reason.
+
+### I-Bonus: Spectacular Mundane (S-tier — from Studio Ghibli)
+
+Ghibli devotes full cinematic weight to ordinary actions: cooking, bathing, taking a train. These are not filler — they are where the audience falls in love with the world and the character. In the skeleton, identify 2-3 "mundane" system interactions per episode (checking stats, consuming resources, upgrading skills) that will receive **full 15-20 second cinematic treatment** with Ghibli-style pacing and quiet reverence. The comedy comes from the contrast between the ritual's solemnity and the ridiculousness of what is being tracked.
 
 ### I-Addendum: Psychological Pleasure Points and 'Golden Finger' Originality (Determines Marketability)
 
@@ -119,6 +140,7 @@ Only create biographies for **core 'Big Triangle' characters**: protagonist + ma
 **3. Speaking Style + Entrance (Prevent deviation, establish hooks):**
 -   **Speaking Style**: Preferred sentence structures + 2~3 recurring catchphrases for the entire series + changes in tone under contrasting states.
 -   **Entrance Design**: Apply at least one of the **Seven Entrance Techniques** (partial close-up/action entrance/supporting character foil/sound entrance/scene contrast/prop entrance/atmosphere buildup), giving the protagonist a memorable entrance.
+-   **Movement Alphabet (S-tier)**: Define 5 signature physical movements for the protagonist — each with a name, trigger condition, and what it communicates. These are rewatchable memory hooks: the audience should recognize the character by movement alone. Examples: The Weight Shift (after taking a hit, testing XP gain), The Spring (spotting a high-level target, predatory excitement), The Flourish (after a successful action, theatrical showmanship), The Deflate (faced with unexpected kindness, mask slipping), The Tally (checking stats, absent-minded counting). Each movement gets one crisp sentence. These are not just flavor — they are the physical voice of the character.
 
 **Ironclad Rule**: Antagonists must have reasonable motivation ("pure jealousy leading to harm" is low-level writing, not just a plot device); biographies only include main plot-relevant information.
 
@@ -249,6 +271,7 @@ At the skeleton stage, information asymmetry types need to be marked in episode 
 -   Hook Types (use two sets simultaneously, avoid all being the same type):
     -   Relationship-Internal Hooks: Identity subversion / Humanity shattered / Victory crushing defeat / Truth reversal.
     -   Functional Hooks: Intellectual hook / Suspense hook / Emotional hook / Worldview hook.
+    -   **Ma Hook (S-tier)**: Silence. A 3-5 second hold on the protagonist's face while their mask slips — the audience sees the real person underneath and MUST know what happens next. The absence of action IS the hook. Use ≥1 Ma Hook per 3 episodes to create emotional variety; a series where every hook is a cliffhanger burns out the audience.
 
 ### VIII. Stock Price-Level Reversal Design for the Entire Series (First-Tier Reversal, Determines Blockbuster Potential)
 

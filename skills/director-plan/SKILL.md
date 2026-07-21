@@ -16,7 +16,7 @@ This plan will **only address four tasks**, without any other creative work:
 1.  **Scene Breakdown** —— Faithfully divide the script into a sequence of scenes (only splitting, no creation)
 2.  **Dialogue Statistics** —— Count the dialogue lines for each scene.
 3.  **Emotion Analysis** —— Analyze the emotional tone for each scene.
-4.  **Transitions, Notes & Sonic Blueprint** —— Design transitions between scenes, list specific notes, and define the Acoustic Space and Sonic Mood for each scene.
+4.  **Transitions, Notes, Sonic Blueprint & Cinematic Anchors** —— Design transitions between scenes (including Ma pauses), list specific notes (including signature movements and visual motif phases), and define the Acoustic Space and Sonic Mood for each scene.
 
 The Director's Plan is **solely for downstream Agents** (storyboard), and contains no creative narratives intended for human readers: its content includes a scene summary table (dialogue count + emotion + sonic blueprint), scene-specific notes, and a scene transition table. Downstream Agents will **read field by field**, with structured and precise data.
 
@@ -35,7 +35,7 @@ Faithfully break down the script into scenes according to the "Methodology" belo
 Follow the "Output Structure" to write the scene contract section by section and save it directly to the workspace as a markdown file.
 
 *Step 4 · Self-Correction** (Review and correct after writing; no rereading of data is permitted for this purpose)
-Check against each item in "Red Lines for This Stage" below.
+Check against each item in "Red Lines for This Stage" below, paying special attention to: Ma Intensity must be explicitly filled (not default to 0), KTS Phase must be tagged for every scene, and at least one Ma Transition should be present in the inter-scene transition table (a script plan with zero Ma Transitions is either emotionally flat or missing opportunities for loaded silence).
 
 *Step 5 · End**
 A brief confirmation reply is sufficient, do not reiterate the full content; task terminated.
@@ -95,6 +95,7 @@ Before executing this skill, ensure the user has provided the following context 
 -  **Action Continuity Transition**: Use a connecting action that bridges the preceding and succeeding scenes (e.g., "character stands up, pushes door open and walks out → followed by Sc2 entering a new scene"), making the connection between scenes natural.
 -  **Establishing Shot Transition**: When crossing time-space / requiring emotional buffering, insert a specific establishing shot (specify the content direction of the shot, e.g., "pan to falling snow outside the window → fade into the next scene").
 -  **Fade In/Out / Dissolve**: Soft transitions for large time spans or the conclusion of major sections.
+-  **Ma Transition (S-tier)**: Intentional stillness/emptiness. A deliberate pause between scenes — not a connector but a *loaded silence*. Use when the previous scene ends on a major emotional revelation and the audience needs time to process before entering the next scene. Specify duration (2-5 seconds) and what fills the silence (fade-to-black / hold on last frame / empty frame with ambient sound only). The Ma transition is the *absence* of a transition — it communicates: "Sit with this. Feel this."
 -  **Transitions are the only segment where "creation" is allowed**: For smooth connection, you may **combine with the plot and supplement connective interstitial content not written in the script** (interstitial actions / establishing shots, etc.), judging by experience and serving the emotional and time-space alignment of the preceding and succeeding scenes, **without being limited to establishing shots**. However, this exception **is strictly limited to "Inter-scene Transitions"** — scene division, dialogue counting, emotions, and in-scene plot points must still faithfully adhere to the script and not involve creation.
 -  Transitions serve emotional pacing; **do not plan for lighting / music**.
 
@@ -102,9 +103,12 @@ Before executing this skill, ensure the user has provided the following context 
 
 -  For each scene, summarize points that downstream (storyboard / image generation) must particularly note, covering as needed:
 -  **Key Emotional Beat**: The most crucial moment in the scene that needs to be captured (a concise, concrete description).
+-  **Signature Movement (S-tier)**: When and which movement from the character's Signature Alphabet appears in this scene. Cross-reference the skeleton's Character Biography for the defined set. Tag: movement name + trigger moment. Skip this line if no signature movement occurs.
+-  **Visual Motif Phase (S-tier)**: If a visual motif (system UI, level-up effect, signature glow) appears in this scene, tag which of the 4 phases it is in. Use `N/A` if the motif does not appear.
 -  **Visual Consistency Anchor**: Character appearance / clothing / key props / spatial relationships that need to be maintained across scenes.
 -  **Space and Distance**: The critical role of character positioning / orientation / sense of distance for the scene's expression.
 -  **Ambient Sound Cue**: 1-2 core audible ambient sounds for the scene (specific sound source, e.g., "candlewick crackling, distant wind"; no music planning).
+-  **Sonic Evolution Note (S-tier)**: If a recurring system sound ("ding") appears, note its current phase and deviation from baseline. Enables downstream to maintain the sound arc.
 -  **Potential Pitfall Alert**: Difficulties requiring downstream attention, such as dense dialogue / multiple characters in frame / complex actions.
 -  For scenes with no specific notes, write "None"; do not force an entry.
 
@@ -118,12 +122,12 @@ Write all the following sections into a single markdown file in one go. **Only o
 
 One row per scene, **covering all scenes**:
 
-| Scene | Scene Name | Dialogue Lines | Dialogue Words | Emotional Intensity | Emotional Tone (incl. X→Y) | Acoustic Space | Sonic Mood |
-| :---- | :---------- | :------------- | :------------- | :------------------ | :------------------------- | :------------- | :--------- |
-| Sc1   | Location · Overview | 3              | 86             | 2                   | Solitary waiting · Muted oppression | Close, dry room acoustics | Ticking clock, faint refrigerator hum |
-| Sc2   | Location · Overview | 0              | 0              | 5                   | Startled reunion            | Vast, echoing hallway | Distant thunder, wind howling outside |
+| Scene | Scene Name | KTS Phase | Dialogue Lines | Dialogue Words | Emotional Intensity | Ma Intensity | Emotional Tone (incl. X→Y) | Acoustic Space | Sonic Mood |
+| :---- | :---------- | :-------- | :------------- | :------------- | :------------------ | :---------- | :------------------------- | :------------- | :--------- |
+| Sc1   | Location · Overview | Ki | 3              | 86             | 2                   | 8           | Solitary waiting · Muted oppression | Close, dry room acoustics | Ticking clock, faint refrigerator hum |
+| Sc2   | Location · Overview | Shō | 0              | 0              | 5                   | 3           | Startled reunion            | Vast, echoing hallway | Distant thunder, wind howling outside |
 
-Constraints: Numbers are continuous according to script order; dialogue lines/word count are faithfully counted, 0 for no dialogue; emotional intensity 0-10.
+Constraints: Numbers are continuous according to script order; dialogue lines/word count are faithfully counted, 0 for no dialogue; emotional intensity 0-10; **Ma Intensity 0-10** (the stillness/emptiness impact of this scene — independent of emotional intensity; a quiet scene can be 2/10 emotional but 9/10 Ma). **KTS Phase** (S-tier): Tag the scene's Kishōtenketsu phase — `Ki` (Introduction), `Shō` (Development), `Ten` (Twist), `Ketsu` (Conclusion), or `—` for transitional/pure-action scenes.
 
 ### Per-Scene Notes
 
@@ -131,9 +135,12 @@ One entry per scene: Scene number + key points to note for that scene. **Each ty
 
 -  **Sc1**:
 -  Key Emotional Beat: …
+-  Signature Movement (S-tier): When and which movement from the character's Alphabet appears — specify name (The Weight Shift / The Spring / The Flourish / The Deflate / The Tally) + trigger moment in this scene.
+-  Visual Motif Phase (S-tier): Which phase of the visual motif arc this scene belongs to — Phase 1 (friendly/innocent) / Phase 2 (subtle distortion) / Phase 3 (visible corruption) / Phase 4 (full transformation) / N/A if the motif does not appear in this scene.
 -  Consistency Anchor: …
 -  Space and Distance: …
 -  Ambient Sound: …
+-  Sonic Evolution Note (S-tier): If a recurring system sound (e.g., "ding") appears in this scene, note its current phase and any deviation from its baseline. The sound should evolve per the series Sound Arc.
 -  Potential Pitfall Alert: …
 -  **Sc2**: None
 
@@ -144,9 +151,10 @@ One entry per scene: Scene number + key points to note for that scene. **Each ty
 | Interval | Transition Type     | Description                                                  |
 | :------- | :------------------ | :----------------------------------------------------------- |
 | Sc1 → Sc2 | Action Continuity   | Character stands up, pushes door open and walks out → followed by Sc2 entering a new scene (supplementary interstitial action) |
-| Sc2 → Sc3 | Establishing Shot | Pan to falling snow outside the window → fade into the next scene, for emotional buffering |
+| Sc2 → Sc3 | Ma                  | Hold on last frame of Sc2 (character's face, expression frozen) for 3 seconds — silence except ambient wind — then hard cut to Sc3. Serves: let the emotional weight of Sc2's closing beat land before entering the next scene. |
+| Sc4 → Sc5 | Establishing Shot | Pan to falling snow outside the window → fade into the next scene, for emotional buffering |
 
-(If no inter-scene transitions require supplementation, write "None" for this section.)
+(If no inter-scene transitions require supplementation, write "None" for this section. Ma Transitions must total ≥1 across the entire plan.)
 
 ### Output Requirements
 
@@ -167,6 +175,9 @@ One entry per scene: Scene number + key points to note for that scene. **Each ty
 8.  **No Music**: No field throughout the document shall include music/soundtrack/instruments. Ambient soundscapes and physical sound effects are allowed and encouraged.
 9.  **Complete Output**: The markdown output must be complete.
 10.  **No Unauthorized Tool Usage**: Throughout the entire process, only "Step 1 read" + "Step 3 write" actions are to be used; no assets or tools from other stages are to be used.
+11.  **Ma Intensity Must Be Explicit**: Every scene's Ma Intensity field must be filled (0-10, not defaulting to 0). A script plan with blank/null/implied Ma Intensity values is incomplete — stillness impact must be explicitly scored even when zero.
+12.  **KTS Phase Coverage**: Every scene in the summary table must have a KTS Phase tag. Scenes that don't fit Ki/Shō/Ten/Ketsu should use `—` (transitional/pure-action). No blank cells in this column.
+13.  **At Least One Ma Transition**: The inter-scene transition table must contain ≥1 Ma Transition, unless the entire script is a single continuous real-time action sequence with no breathing space. The deliberate pause between emotional scenes is a cinematic structural element, not optional flavor.
 
 <supervision_rules>
 ### Supervision Quality Rules (from production_agent_supervision.md)

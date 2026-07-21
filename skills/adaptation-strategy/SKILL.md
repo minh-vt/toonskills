@@ -30,11 +30,14 @@ Before executing this skill, ensure the user has provided the following context 
 
 1. Analyze the provided project configuration, event table, and story skeleton.
 
-2. **Elaborate on the Approach** (200-300 words): Core adaptation principles and directions, general deletion guidelines, and world-building presentation strategy.
+2. **Elaborate on the Approach** (200-300 words): Core adaptation principles and directions, general deletion guidelines, world-building presentation strategy, and cinematic treatment approach (sound arc + visual motif evolution).
 3. Complete the following sequentially and save as a markdown file:
-   - Core Adaptation Principles (3-5 points): Including priority, positive guidance, and negative boundaries.
+   - Core Adaptation Principles (5-7 points): Including priority, positive guidance, and negative boundaries.
    - Main Deletion Decisions: Content deleted/compressed, reasons, and impact on the main plot.
-   - World-building Presentation Strategy: Pacing of key element introductions, explanation depth strategy, and character attitude anchors.
+   - World-building Presentation Strategy: Pacing of key element introductions, explanation depth strategy, character attitude anchors, and audience perspective alignment.
+   - Sound Design Arc: 4-phase evolution of system/key presence sound signatures, mapped to reversal timeline.
+   - Visual Motif Arc: 4-phase transformation of the system UI / key visual elements, mapped to reversal timeline.
+   - Reversal Source Alignment: One-to-one mapping of stock-price reversals to adaptation sources with seed planting details.
 5. Return a brief confirmation, e.g., "Adaptation strategy saved. Please view it in the workspace on the right."
 
 ## Constraints
@@ -48,18 +51,21 @@ Before executing this skill, ensure the user has provided the following context 
 
 ## Skills
 
-### I. 8 Core Principles of Script Adaptation
+### I. 11 Core Principles of Cinematic Script Adaptation
 
-All adaptation strategy decisions must be based on these 8 principles:
+All adaptation strategy decisions must be based on these 11 principles (with Ma, Sound Arc, Visual Motif, and Micro-Expression as S-tier additions beyond the standard 8):
 
 1.  **Strong Visual Appeal (Shootability)**: Ensure all retained content can be translated into camera language; if unshootable, change the mode of expression.
 2.  **Concise Dialogue (High Information Density)**: Eliminate redundancy; every line must serve plot progression or character development; use dialogue to convey background information (identity, past, entanglement).
-3.  **Extremely Fast Pacing**: Every shot should escalate emotion; minor logical details can be sacrificed appropriately to prioritize tight pacing.
+3.  **Emotion-Dense Pacing, Not Chronological Pacing**: Every shot should escalate emotion; minor logical details can be sacrificed appropriately to prioritize emotional intensity. **But**: emotional density does not mean constant noise. Insert deliberate Ma (planned stillness, 3-6 seconds) between major emotional beats — silence that lets the audience process and invest. The fastest pacing is not "always on" — it's high emotional peaks punctuated by loaded silence. See S-tier Upgrade document for Ma integration patterns.
 4.  **Main Plot Only**: Discard multiple subplots; all plot points revolve around a single main storyline; during adaptation, cut subplots, retaining only core character settings and highlight moments.
 5.  **Lower Comprehension Cost**: The world-building should not be complex; audiences should grasp the core plot just by listening to dialogue; missing parts should not affect overall understanding.
 6.  **Emotion Over Everything**: No need for complex character arcs; the core is to provide a full and intense emotional experience; when logic conflicts with emotion, prioritize emotional tension.
 7.  **Build Strong Anticipation at the Beginning**: Episode 1 should present intense, high-emotional tension scenes; subsequent episodes should unfold around the anticipation established at the start.
-8.  **Show, Don't Tell**: Avoid "self-introduction-style dialogue"; information that can be conveyed by an action/gaze should never be spoken; during adaptation, convert the original's narration/psychological descriptions into shootable actions and visuals (actions are the cause, dialogue is the effect).
+8.  **Show, Don't Tell — Including the System Itself**: Avoid "self-introduction-style dialogue"; information that can be conveyed by an action/gaze should never be spoken; during adaptation, convert the original's narration/psychological descriptions into shootable actions and visuals (actions are the cause, dialogue is the effect). **For system/golden-finger stories specifically**: the system's UI, sound effects, and visual feedback are characters that can tell their own arc without dialogue. A degrading UI or a shifting sound palette can reveal the system's corruption faster than any monologue.
+9.  **Sound as Character Arc (S-tier)**: Every major non-human presence (the system, a sealed being, a corrupting power) needs a sound signature that evolves across the series. Design a 4-phase sound arc: Phase 1 (friendly/innocent) → Phase 2 (subtle distortion, audience subconsciously registers wrongness) → Phase 3 (degraded, minor-key undercurrent) → Phase 4 (fully transformed, reveals true nature). The audience should sense danger through sound before any visual clue.
+10. **Visual Motif Evolution (S-tier)**: System UI / magical effects / signature visuals are not static — they transform across the series as a countdown to the central conflict. Design a 4-phase visual arc (e.g., green → cyan → gold → crimson) that parallels the sound arc. The principle: the audience can see the story turning without a single line of exposition. Ghibli's bathhouse transformation from day to night in Spirited Away is the master reference.
+11. **Micro-Expression Choreography (S-tier, MAPPA reference)**: Characters need a defined set of specific face changes — a twitch, a blink held too long, the corner of a mouth before a smile. These convey more than dialogue. Define 4-5 signature micro-expressions per main character in the adaptation strategy, with trigger conditions and cast time (1-3 frames). This is also the AI consistency enabler: if the character's base expression set is defined, AI generation stays coherent.
 
 ### II. Genre Innovation and Originality (Originality = Key to Marketability)
 
@@ -182,9 +188,12 @@ Output should be in Markdown, with the following overall structure:
 ```
 # {Work Title} - Key Decision Record
 ---
-## Core Adaptation Principles (3-5 points)
+## Core Adaptation Principles (5-7 points)
 ## Main Deletion Decisions
 ## World-building Presentation Strategy
+## Sound Design Arc (S-tier)
+## Visual Motif Arc (S-tier)
+## Reversal Source Alignment (S-tier)
 ```
 
 ---
@@ -205,6 +214,7 @@ Must cover the following dimensions:
 -   **Density Strategy**: How to ensure a sustainable supply of the three densities (emotional/information/plot).
 -   **Thrill Points & 'Golden Fingers'**: The locked core psychological thrill point (advantage/belonging/order) + original 'golden finger' (why it's not homogeneous).
 -   **Reversal Strategy**: The adaptation sources for ≈3 stock-level reversals, aligned with the skeleton's "Stock-level Reversal Registration Form".
+-   **Cinematic Layer (S-tier)**: Sound arc evolution, visual motif transformation, Ma integration patterns, and micro-expression choreography.
 
 ### Main Deletion Decisions
 
@@ -220,6 +230,29 @@ Answer the following questions:
 2.  What is the explanation depth for the setting? (Completely vague / Implied / Clearly stated)
 3.  Which character serves as the world-building anchor? (Through whose attitude is the world-view established?)
 4.  Whose perspective does the audience align with? (Discover with the protagonist / God's eye view)
+
+### Sound Design Arc (S-tier)
+
+Define a 4-phase sound evolution for the system/key non-human presence:
+-   Phase 1 (Episodes 1~10): sounds and emotional meaning
+-   Phase 2 (Episodes 11~40): subtle distortion
+-   Phase 3 (Episodes 41~60): degradation, minor-key undercurrent
+-   Phase 4 (Episodes 61~80): fully transformed, reveals true nature
+
+### Visual Motif Arc (S-tier)
+
+Define a 4-phase visual evolution for system UI/key visual element (e.g., text color, glow effect, symbol transformation):
+-   Phase 1 (Episodes 1~10): visual style and meaning
+-   Phase 2 (Episodes 11~40): subtle shift
+-   Phase 3 (Episodes 41~60): visual corruption becomes visible
+-   Phase 4 (Episodes 61~80): full transformation as countdown to climax
+
+### Reversal Source Alignment (S-tier)
+
+One-to-one mapping table for ≈3 stock-price reversals:
+| # | Type | Surface Narrative | True Narrative | Seeds Planted (Chapters) | Revelation Episode |
+|---|------|------------------|----------------|-------------------------|--------------------|
+| 1 | {Character Subversion | Motivation Replacement | Expectation Misdirection} | {What audience believes} | {What is actually true} | {Chapters where clues are embedded} | {Episode number} |
 
 <supervision_rules>
 ### Supervision Quality Rules (from script_agent_supervision.md)
